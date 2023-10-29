@@ -3,7 +3,7 @@ name: Hugo Deploy
 on:
   push:
     branches:
-      - main # 或者是你使用的默认分支名，如 "master"
+      - master # 或者是你使用的默认分支名，如 "master"
 
 jobs:
   build-and-deploy:
