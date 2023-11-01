@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+  <outpath value="..\项目路径"></outpath>
+  <tablemap name="excel文件名" csvfolder="excel-name">
+    <sheet src="子表名1" dest="name1"/>    
+    <sheet src="子表名2" dest="name2"/>
+  </tablemap>
+	<tablemap name="excel文件名2" csvfolder="excel-name2">
+	<sheet src="子表名1" dest="name1"/>    
+	<sheet src="子表名2" dest="name2"/>
+	</tablemap>
+</config>
