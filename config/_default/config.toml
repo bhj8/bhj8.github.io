@@ -14,3 +14,7 @@ hasCJKLanguage = false
 
 # Change it to your Disqus shortname before using
 disqusShortname = "bhj8-github-io"
+
+[services]
+  [services.googleAnalytics]
+    ID = 'G-WMRW9WR57B'
