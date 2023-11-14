@@ -4,9 +4,9 @@ date: 2023-11-14
 description: P2P联机的救星
 ---
 
-本文原载我的知乎，但是一键脚本需要有个地址挂载。故开一篇博客。  
+本文原载我的知乎，但是一键脚本需要有个地址挂载。故特开一篇博客。  
 
-[知乎原贴](https://zhuanlan.zhihu.com/p/666639903/preview?comment=0&catalog=1)  
+[知乎原贴](https://zhuanlan.zhihu.com/p/666639903)  
 
 
 [一键脚本下载](/downloads/LAN-party-fast-setup/LAN-party-fast-setup.sh)  

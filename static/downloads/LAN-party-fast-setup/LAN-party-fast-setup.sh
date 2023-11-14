@@ -29,7 +29,7 @@ chmod +x /etc/openvpn/checkpsw.sh
 
 # 实时显示日志文件内容
 echo "环境已配置完毕，正在启动服务。"
-echo "如末尾显示两个Initialization Sequence Completed，则表示UDP和TCP均启动成功。"
+
 tail -f /var/log/openvpn_udp.log &
 
 #echo "显示TCP OpenVPN服务的日志（按 Ctrl+C 停止查看）："
@@ -38,3 +38,7 @@ tail -f /var/log/openvpn_tcp.log &
 # 提示用户可以在任何时候通过按 Ctrl+C 来停止查看日志
 #echo "您可以在任何时候按 Ctrl+C 停止查看日志。"
 
+sleep 5
+
+echo "如依次看到日志有两个Initialization Sequence Completed，则表示UDP和TCP均启动成功。"
+echo "除非服务器重启，否则服务将一直在后台运行。"
