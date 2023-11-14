@@ -23,7 +23,16 @@ unzip -o -d /etc/openvpn/ server.zip
 # 修改checkpsw.sh文件的权限
 chmod +x /etc/openvpn/checkpsw.sh
 
-# 启动OpenVPN服务器
-/usr/sbin/openvpn --cd /etc/openvpn/ --config server_udp.conf &
-/usr/sbin/openvpn --cd /etc/openvpn/ --config server_tcp.conf &
- 
+# 启动OpenVPN服务器，并将输出重定向到日志文件
+/usr/sbin/openvpn --cd /etc/openvpn/ --config server_udp.conf > /var/log/openvpn_udp.log 2>&1 &
+/usr/sbin/openvpn --cd /etc/openvpn/ --config server_tcp.conf > /var/log/openvpn_tcp.log 2>&1 &
+
+# 稍等一段时间以确保OpenVPN服务启动
+sleep 5
+
+# 检查服务状态
+echo "检查UDP OpenVPN服务状态..."
+ps aux | grep openvpn | grep server_udp.conf
+
+echo "检查TCP OpenVPN服务状态..."
+ps aux | grep openvpn | grep server_tcp.conf
