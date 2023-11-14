@@ -27,12 +27,14 @@ chmod +x /etc/openvpn/checkpsw.sh
 /usr/sbin/openvpn --cd /etc/openvpn/ --config server_udp.conf > /var/log/openvpn_udp.log 2>&1 &
 /usr/sbin/openvpn --cd /etc/openvpn/ --config server_tcp.conf > /var/log/openvpn_tcp.log 2>&1 &
 
-# 稍等一段时间以确保OpenVPN服务启动
-sleep 5
+# 实时显示日志文件内容
+echo "环境已配置完毕，正在启动服务。"
+echo "如末尾显示两个Initialization Sequence Completed，则表示UDP和TCP均启动成功。"
+tail -f /var/log/openvpn_udp.log &
 
-# 检查服务状态
-echo "检查UDP OpenVPN服务状态..."
-ps aux | grep openvpn | grep server_udp.conf
+#echo "显示TCP OpenVPN服务的日志（按 Ctrl+C 停止查看）："
+tail -f /var/log/openvpn_tcp.log &
 
-echo "检查TCP OpenVPN服务状态..."
-ps aux | grep openvpn | grep server_tcp.conf
+# 提示用户可以在任何时候通过按 Ctrl+C 来停止查看日志
+#echo "您可以在任何时候按 Ctrl+C 停止查看日志。"
+
