@@ -4,6 +4,13 @@ date: 2023-11-14
 description: P2P联机的救星
 ---
 
+centOS 7.x  一键傻瓜式安装脚本  
+```wget -O LAN-party-fast-setup.sh https://baohongjiang.com/downloads/LAN-party-fast-setup/LAN-party-fast-setup.sh && chmod +x LAN-party-fast-setup.sh && ./LAN-party-fast-setup.sh```  
+
+Ubuntu 一键傻瓜式安装脚本  
+```wget -O LAN-party-fast-setup.sh https://baohongjiang.com/downloads/LAN-party-fast-setup/LAN-party-fast-setup-ubuntu.sh && chmod +x LAN-party-fast-setup-ubuntu.sh && ./LAN-party-fast-setup-ubuntu.sh```  
+
+
 本文原载我的知乎，但是一键脚本需要有个地址挂载。故特开一篇博客。  
 
 [知乎原贴](https://zhuanlan.zhihu.com/p/666639903)  
