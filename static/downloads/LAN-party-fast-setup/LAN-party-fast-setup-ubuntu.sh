@@ -11,13 +11,13 @@ apt-get update
 apt-get install unzip openvpn -y
 
 # 下载VPN配置文件
-wget -O server.zip https://baohongjiang.com/downloads/LAN-party-fast-setup/server.zip &&
+wget -O server-ubuntu.zip https://baohongjiang.com/downloads/LAN-party-fast-setup/server-ubuntu.zip &&
 
 # 创建目录（如果不存在）
 mkdir -p /etc/openvpn &&
 
 # 解压文件到指定目录，覆盖现有文件
-unzip -o -d /etc/openvpn/ server.zip
+unzip -o -d /etc/openvpn/ server-ubuntu.zip
 
 # 修改checkpsw.sh文件的权限
 chmod +x /etc/openvpn/checkpsw.sh
