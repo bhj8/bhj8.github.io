@@ -22,6 +22,10 @@ unzip -o -d /etc/openvpn/ server.zip
 # 修改checkpsw.sh文件的权限
 chmod +x /etc/openvpn/checkpsw.sh
 
+echo "配置系统ufw防火墙，允许特定端口..."
+ufw allow 3075/tcp
+ufw allow 3074/udp
+
 # 启动OpenVPN服务器，并将输出重定向到日志文件
 /usr/sbin/openvpn --cd /etc/openvpn/ --config server_udp.conf > /var/log/openvpn_udp.log 2>&1 &
 /usr/sbin/openvpn --cd /etc/openvpn/ --config server_tcp.conf > /var/log/openvpn_tcp.log 2>&1 &

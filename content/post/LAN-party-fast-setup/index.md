@@ -16,6 +16,11 @@ Ubuntu 一键傻瓜式安装脚本
 [知乎原贴](https://zhuanlan.zhihu.com/p/666639903)  
 
 
-[一键脚本下载](/downloads/LAN-party-fast-setup/LAN-party-fast-setup.sh)  
+### 使用一键脚本无需理睬下面
+[centOS一键脚本下载](/downloads/LAN-party-fast-setup/LAN-party-fast-setup.sh)  
 系统要求：centOS 7.x  
 防火墙开放 TCP:3075 UDP:3074  
+
+[centOS一键脚本下载](/downloads/LAN-party-fast-setup/LAN-party-fast-setup-ubuntu.sh)  
+系统要求：Ubuntu 20.04 &22.04  
+防火墙开放 TCP:3075 UDP:3074    
