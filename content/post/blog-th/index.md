@@ -2,7 +2,6 @@
 title: 我博客的背后的技术原理
 description: 深思熟虑后一个全球访问都飞速的方案，针对国内进行特别优化
 date: 2023-12-13
-draft: true
 categories:
     - 技术
 tags:
