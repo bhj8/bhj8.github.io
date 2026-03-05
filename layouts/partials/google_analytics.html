@@ -1,0 +1,14 @@
+{{- /*
+Compatibility shim for themes that call partial "google_analytics.html".
+Hugo v0.157 no longer exposes the old _internal/google_analytics.html template path,
+so render the GA4 gtag snippet directly when an ID is configured.
+*/ -}}
+{{- with site.Config.Services.GoogleAnalytics.ID }}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ . }}');
+</script>
+{{- end }}
