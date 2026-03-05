@@ -18,12 +18,13 @@ jobs:
       contents: write
     
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: 0.115.2
+          # Keep Hugo aligned with theme requirements (e.g. newer template funcs like `hash`).
+          hugo-version: "latest"
           extended: true
 
       - name: Update theme
