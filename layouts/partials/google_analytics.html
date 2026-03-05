@@ -1,0 +1,4 @@
+{{- /* Compatibility shim for themes expecting this partial. */ -}}
+{{- with site.Config.Services.GoogleAnalytics.ID -}}
+  {{ template "_internal/google_analytics.html" $ }}
+{{- end -}}
