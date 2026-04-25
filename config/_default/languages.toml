@@ -1,0 +1,17 @@
+[zh-cn]
+languageName = "中文"
+languageCode = "zh-cn"
+title = "鲍洪江的博客"
+weight = 1
+
+  [zh-cn.params.sidebar]
+  subtitle = "一个生来就热爱游戏的家伙，不仅玩，更致力于创造它们。"
+
+[en]
+languageName = "English"
+languageCode = "en"
+title = "Hongjiang Bao's Blog"
+weight = 2
+
+  [en.params.sidebar]
+  subtitle = "A guy born loving games — not just playing them, but building them."

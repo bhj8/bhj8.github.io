@@ -14,7 +14,7 @@ lastUpdated = "Jan 02, 2006 15:04 MST"
 
 [sidebar]
 emoji = "🫡"
-subtitle = "一个生来就热爱游戏的家伙，不仅玩，更致力于创造它们。"
+# `subtitle` lives in config/_default/languages.toml (per-language)
 
 [sidebar.avatar]
 enabled = true
