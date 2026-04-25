@@ -34,7 +34,7 @@ If you're hosting on a cloud server, you can skip the steps below — just open 
 Configure port forwarding for port 8211 on your router and modem.
 
 **Option 2**: LAN acceleration (recommended)
-[LAN acceleration deploy](https://baohongjiang.com/p/usbeam-lan-party-%E6%80%A5%E9%80%9F%E8%87%AA%E5%BB%BA%E4%B8%BB%E6%9C%BA%E6%8C%87%E5%8D%97%E7%BB%88%E6%9E%81%E7%89%88%E9%99%84%E4%B8%80%E9%94%AE%E9%83%A8%E7%BD%B2%E5%91%BD%E4%BB%A4/) (in Chinese)
+[LAN acceleration deploy]({{< ref "post/LAN-party-fast-setup" >}})
 Use a virtual LAN to play and accelerate. Because the relay server is right next door, latency drops to under 20ms.
 When connecting, use the LAN IP.
 

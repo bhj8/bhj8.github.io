@@ -11,7 +11,7 @@ tags:
 
 ## Foreword
 
-Around this time last year I wrote [Standing in 2025 — Looking Back at AI, and Looking Forward](https://baohongjiang.com/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/) (in Chinese). My take back then was: **AI is an amplifier — own the framework, hand the details to AI.**
+Around this time last year I wrote [Standing in 2025 — Looking Back at AI, and Looking Forward]({{< ref "post/AI2025-des" >}}). My take back then was: **AI is an amplifier — own the framework, hand the details to AI.**
 
 A year on, that conclusion isn't *wrong*. It's just no longer enough.
 
