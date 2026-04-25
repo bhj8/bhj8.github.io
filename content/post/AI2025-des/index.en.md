@@ -60,7 +60,7 @@ In short: I think AI intelligence will continue to compound exponentially, just 
 
 ### An article I wrote in December 2023 about how I understand and use AI
 Back in the GPT-3 era I'd already started using AI heavily. GPT-4's arrival especially gave my technical chops, vision, and thinking a quantum leap.
-Original (in Chinese): [How I Use AI — Notes from the Field](https://baohongjiang.com/p/ai%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/)
+Original: [How I Use AI — Notes from the Field]({{< ref "post/AI-des" >}})
 Now, with even more, even stronger AI products around, my hands-on ability has grown massively, and I'm even more convinced that what I wrote then was correct.
 That's exactly what the next section is about.
 

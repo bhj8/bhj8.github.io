@@ -17,7 +17,7 @@ I have an earlier post about using *UsbEAm LAN Party* to build a LAN — once ev
 So building a LAN gives a great speed-up to most P2P games! (This is also useful for remote-office intranets — fundamentally you're simulating a virtual LAN; whatever LAN-only feature you need, you have it.)
 
 ### Going deeper
-Building a virtual LAN over OpenVPN is easy. If you need a primer, see my other post [One-click LAN deploy](https://baohongjiang.com/p/usbeam-lan-party-%E6%80%A5%E9%80%9F%E8%87%AA%E5%BB%BA%E4%B8%BB%E6%9C%BA%E6%8C%87%E5%8D%97%E7%BB%88%E6%9E%81%E7%89%88%E9%99%84%E4%B8%80%E9%94%AE%E9%83%A8%E7%BD%B2%E5%91%BD%E4%BB%A4/).
+Building a virtual LAN over OpenVPN is easy. If you need a primer, see my other post [One-click LAN deploy]({{< ref "post/LAN-party-fast-setup" >}}).
 But I wanted to push it further. The LAN setups in that post all use a single server. Suppose you now need to play with friends in Hong Kong or Macau. Because cross-border routes differ, those friends might struggle to even reach your single server, and latency / loss will be brutal.
 That made me ask: can I deploy multiple servers? One in mainland China for domestic users. One in Hong Kong for cross-border users. The two servers connected over a GIA premium line, both stitched into the same LAN.
 

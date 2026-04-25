@@ -55,10 +55,10 @@ Walking every trunk *and* every leaf is too much for me. But touring all the tru
 This completely overturns my old "learn it all first, then do it" methodology. Now, as long as I have a sense of all the trunks, I can ship something that's theoretically possible but whose details I don't yet know — and ship it fast.
 
 A few examples:
-1. **Building this blog.** In theory, set up a website, get a server. The details are massive — see [The Tech Behind My Blog](https://baohongjiang.com/p/%E6%88%91%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%83%8C%E5%90%8E%E7%9A%84%E6%8A%80%E6%9C%AF%E5%8E%9F%E7%90%86/) (in Chinese). That much technical detail, even though I'd never done it before, was tractable because I knew the trunks; the leaves I learned from GPT-4.
+1. **Building this blog.** In theory, set up a website, get a server. The details are massive — see [The Tech Behind My Blog]({{< ref "post/blog-th" >}}). That much technical detail, even though I'd never done it before, was tractable because I knew the trunks; the leaves I learned from GPT-4.
 2. **Building an AI WeChat public account.** From an idea, starting with one official OpenAI API example, then a secondary WeChat account driven by simulated PC WeChat clicks, step by step it grew. I really was clueless at the start. Eventually it had Midjourney, Stable Diffusion, GPT-3.5/4, New Bing, voice-recognition chat, a membership system, and more. Tons of system and technical details. I knew it was theoretically doable and had a vague plan; GPT-4 filled in the rest. By the way, the account was called **Xiao Hui Hen Zhi Hui (小慧很智慧)**. At its peak it had 4k+ subscribers. Costs got too high and I had limited bandwidth, so I stopped maintaining it.
 3. **Building an AI chat website.** Started by forking an open-source vue3+express site from GitHub. Later I rewrote the backend in Python (FastAPI), with a database, account auth, etc. Eventually added WeChat Pay, SMS phone verification, and more. WeChat Pay especially is a beast — you also need an ICP-filed mainland China server and domain. But I knew it was possible, and I made it work in the end!
-4. [Building a giant LAN over OpenVPN tunnels](https://baohongjiang.com/p/%E4%BD%BF%E7%94%A8openvpn%E9%80%9A%E8%BF%87%E9%9A%A7%E9%81%93%E6%9E%84%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%9B%86%E7%BE%A4%E5%8A%A8%E6%80%81lan/)
+4. [Building a giant LAN over OpenVPN tunnels]({{< ref "post/openvpn-lan" >}})
 
 There are many similar cases in everyday work and life. I'll stop listing.
 
