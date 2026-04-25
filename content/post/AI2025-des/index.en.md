@@ -18,10 +18,10 @@ On **January 27, 2015**, an article was published that completely upended my vie
 If you're interested, please read the whole thing! I strongly recommend it!
 In this post I'll just lift two of its conclusions:
 1. Human technological progress is exponential!
-<img src="image.png" alt="alt text" width="500">
+{{< img src="image.png" alt="alt text" width="500" >}}
 
 2. AI's growth could leap past human cognition in an instant!
-<img src="image-1.png" alt="alt text" width="500">
+{{< img src="image-1.png" alt="alt text" width="500" >}}
 
 
 At the time, most people would have called this nonsense. After all, in January 2015 OpenAI didn't even exist. Look at the timeline:
@@ -41,7 +41,7 @@ If you read that article, you should be a little stunned right now. Its predicti
 Once again, I strongly recommend everyone who hasn't read it go read it.
 
 History has confirmed the article's accuracy. So let's see what that 2015 article predicted for *after* 2025.
-<img src="image-2.png" alt="alt text" width="500">
+{{< img src="image-2.png" alt="alt text" width="500" >}}
 The article splits AI into three stages: Artificial Narrow Intelligence (ANI), Artificial General Intelligence (AGI), and Artificial Super Intelligence (ASI). I think we'd all agree that as humans, we've now reached AGI.
 
 My personal take:
@@ -125,17 +125,11 @@ As of writing, March 12, 2025, here's my summary of the popular AIs out there, i
         - VITS was originally released by a Chinese developer; lots of forks and downstream work. Currently the strongest open-source one is GPT-SoVITS. With just a few minutes of source audio, it can produce highly similar multilingual speech. A home PC is enough to fine-tune and infer.
         Some "do it with your hands" results from me:
         Inferred version of my own voice
-        <audio controls>
-            <source src="my_AI.wav" type="audio/mpeg">
-        </audio>
+        {{< audio src="my_AI.wav" >}}
         WW2 commentary, original voice
-        <audio controls>
-            <source src="ww2Start.wav" type="audio/mpeg">
-        </audio>
+        {{< audio src="ww2Start.wav" >}}
         WW2 commentary, AI-synthesized
-        <audio controls>
-            <source src="ww2Start_AI.wav" type="audio/mpeg">
-        </audio>
+        {{< audio src="ww2Start_AI.wav" >}}
     - Other vendors — Microsoft TTS, Google TTS, Douyin, all closed-source. Custom fine-tuning is expensive; otherwise you're stuck with their pretrained voices. That said, the out-of-the-box quality is already excellent!
 4. STT (speech-to-text)
     - **Whisper** — OpenAI's open-source model, supports 100+ languages. Currently the strongest open-source STT. Runs locally on a home PC.
@@ -175,14 +169,14 @@ Here are a few practical AI deployments I've distilled from work — some alread
     - Idea collection. AI can quickly throw out a lot of ideas; you still have to filter and synthesize.
 3. **Art**
     - Reference and inspiration. Set up SD and Midjourney pipelines. Anything you can't Google up in the right "vibe," ask AI to draw. Quickly confirm direction with the requesting team. Build a curated prompt library by style — you can rapidly produce on-brief mockups, and unimportant cutscenes / scene art can ship as-is.
-    <img src="IMG_3637.JPG" alt="alt text" width="500">
-    <img src="IMG_3638.JPG" alt="alt text" width="500">
-    <img src="IMG_3639.JPG" alt="alt text" width="500">
+    {{< img src="IMG_3637.JPG" alt="alt text" width="500" >}}
+    {{< img src="IMG_3638.JPG" alt="alt text" width="500" >}}
+    {{< img src="IMG_3639.JPG" alt="alt text" width="500" >}}
     - **Item icons, character concept art** — already shipped successfully in the past. Tons of icons, even character concepts. AI does the first pass, art polishes — huge efficiency gain.
-    <img src="image-3.png" alt="alt text" width="800">
-    <img src="image-4.png" alt="alt text" width="250">
-    <img src="image-5.png" alt="alt text" width="250">
-    <img src="image-6.png" alt="alt text" width="250">
+    {{< img src="image-3.png" alt="alt text" width="800" >}}
+    {{< img src="image-4.png" alt="alt text" width="250" >}}
+    {{< img src="image-5.png" alt="alt text" width="250" >}}
+    {{< img src="image-6.png" alt="alt text" width="250" >}}
 4. **Other**
     - Voiceover. If you need it, GPT-SoVITS does customized VO well.
 
