@@ -18,10 +18,10 @@ tags:
 有兴趣可以详细阅读全文！我强烈建议看看！  
 在本篇文章中，我重点引用两点结论：  
 1.人类科技发展是指数级增长的！  
-<img src="image.png" alt="alt text" width="500">
+![alt text](image.png)
 
 2.AI发展将可能一瞬间超越人类认知！  
-<img src="image-1.png" alt="alt text" width="500">
+![alt text](image-1.png)
 
 
 站在当时看，大多数人都会觉得无稽之谈。毕竟2015年1月，连openai都没成立。我们看下时间线
@@ -41,7 +41,7 @@ tags:
 这里我再一次强烈推荐还没看该文的小伙伴，去阅读一下！  
 
 历史证明该文正确性。那我们再看看，10年的该文，对2025年现在之后是怎么预测的。  
-<img src="image-2.png" alt="alt text" width="500">  
+![alt text](image-2.png)  
 该文将人工智能分为3个阶段，弱人工智能，强人工智能，超人工智能。我相信大家都认可，当下我们人类已经实现了强人工智能。  
 
 个人的总结是：  
@@ -125,17 +125,11 @@ DeepSeek R1强大思维逻辑能力，可以从各个问题的各个角度去思
         - VITS最早版本由国人发布，经过大量的fork各种二次加工。目前最强开源是GPT-SoVITs。只要几分钟的音频源，就可以推理出非常相似的多语言语音。家用电脑就足够微调训练和推理。  
         以下是我“动手”出来的：  
         我声音的推理版  
-        <audio controls>
-            <source src="my_AI.wav" type="audio/mpeg">
-        </audio>  
+        {{< audio src="my_AI.wav" >}}
         二战解说原声  
-        <audio controls>
-            <source src="ww2Start.wav" type="audio/mpeg">
-        </audio>  
+        {{< audio src="ww2Start.wav" >}}
         二战解说AI合成  
-        <audio controls>
-            <source src="ww2Start_AI.wav" type="audio/mpeg">
-        </audio>  
+        {{< audio src="ww2Start_AI.wav" >}}
     - 其它各家类 微软TTS，谷歌TTS，抖音，都是闭源的。必须定制化微调，成本较高。否则的话，只能用他们训练好的。总体效果已经也非常棒了！  
 4. STT类（语音转文本）
     - Whisper Openai开源产品，支持上百种语言的识别。是目前开源STT最强选手。家用电脑即可本地部署。
@@ -175,14 +169,14 @@ DeepSeek R1强大思维逻辑能力，可以从各个问题的各个角度去思
     - 创意收集，可以通过AI快速收集创意点，最终还是需要自己分辨和处理。
 3. 美术
     - 创意和参考 配置SD，mid管线。google不到那个味道素材，可以摇AI画。快速和需求端确认效果图。整理画风提示词库，可以快速画出对位的效果图，不重要的过场，场景图均可直接用。  
-    <img src="IMG_3637.JPG" alt="alt text" width="500">  
-    <img src="IMG_3638.JPG" alt="alt text" width="500">  
-    <img src="IMG_3639.JPG" alt="alt text" width="500">  
+    ![alt text](IMG_3637.JPG)
+    ![alt text](IMG_3638.JPG)
+    ![alt text](IMG_3639.JPG)
     - **物品图标，角色原画**  在过往，已经有上线成功案例。大量的各类图标，甚至角色原画。AI初稿，美术精修，大大提升素材效率。  
-    <img src="image-3.png" alt="alt text" width="800">  
-    <img src="image-4.png" alt="alt text" width="250">  
-    <img src="image-5.png" alt="alt text" width="250">  
-    <img src="image-6.png" alt="alt text" width="250">  
+    ![alt text](image-3.png)
+    ![alt text](image-4.png)
+    ![alt text](image-5.png)
+    ![alt text](image-6.png)
 4. 其它
     - 配音解说 如有需求的话，可以使用GPT-SoVITs，进行定制化配音。
 
