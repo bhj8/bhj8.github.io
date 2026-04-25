@@ -1,0 +1,20 @@
+{{- /*
+  Project-level <img> shortcode that resolves the src against the page bundle's
+  resources via .Page.Resources.GetMatch — this is needed for translations
+  (e.g. index.en.md), where raw <img src="..."> would otherwise resolve as a
+  page-relative URL and 404, because Hugo only publishes bundle resources at
+  the path of the page that owns them. Using the resource's RelPermalink
+  produces a working absolute URL regardless of the current page's language.
+
+  Args:
+    src    (required) — filename within the page bundle, or absolute URL
+    alt    (optional) — alt text
+    width  (optional) — explicit pixel width (kept verbatim)
+*/ -}}
+{{- $src := .Get "src" -}}
+{{- $alt := .Get "alt" | default "" -}}
+{{- $width := .Get "width" -}}
+{{- $img := .Page.Resources.GetMatch $src -}}
+{{- $url := $src -}}
+{{- with $img -}}{{- $url = .RelPermalink -}}{{- end -}}
+<img src="{{ $url | safeURL }}"{{ with $alt }} alt="{{ . }}"{{ end }}{{ with $width }} width="{{ . }}"{{ end }} loading="lazy">

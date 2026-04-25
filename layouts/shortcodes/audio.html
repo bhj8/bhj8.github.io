@@ -1,0 +1,18 @@
+{{- /*
+  Project-level <audio> shortcode mirroring the img shortcode: resolves the
+  src against the page bundle's resources so translations don't 404 on
+  shared bundle assets. See layouts/shortcodes/img.html for the rationale.
+
+  Args:
+    src   (required) — filename within the page bundle, or absolute URL
+    type  (optional) — MIME type, defaults to audio/mpeg to match the
+                       original raw-HTML markup in the Chinese posts
+*/ -}}
+{{- $src := .Get "src" -}}
+{{- $type := .Get "type" | default "audio/mpeg" -}}
+{{- $audio := .Page.Resources.GetMatch $src -}}
+{{- $url := $src -}}
+{{- with $audio -}}{{- $url = .RelPermalink -}}{{- end -}}
+<audio controls>
+    <source src="{{ $url | safeURL }}" type="{{ $type }}">
+</audio>
