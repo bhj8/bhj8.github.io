@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AI on 鲍洪江的博客</title><link>https://bhj8.github.io/tags/ai/</link><description>Recent content in AI on 鲍洪江的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 23 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://bhj8.github.io/tags/ai/index.xml" rel="self" type="application/rss+xml"/><item><title>站在2026年，我用AI的下一个阶段</title><link>https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82026%E5%B9%B4%E6%88%91%E7%94%A8ai%E7%9A%84%E4%B8%8B%E4%B8%80%E4%B8%AA%E9%98%B6%E6%AE%B5/</link><pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate><guid>https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82026%E5%B9%B4%E6%88%91%E7%94%A8ai%E7%9A%84%E4%B8%8B%E4%B8%80%E4%B8%AA%E9%98%B6%E6%AE%B5/</guid><description>&lt;h2 id="前言"&gt;前言
+&lt;/h2&gt;&lt;p&gt;去年这个时候，我写了一篇 &lt;a class="link" href="https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/" &gt;《站在2025年，回顾和展望AI》&lt;/a&gt; 。当时我的观点是：&lt;strong&gt;AI 是放大器，掌握框架、细节交给 AI。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;一年过去，这个结论没错，但它已经不够用了。&lt;/p&gt;
+&lt;p&gt;因为&amp;quot;让 AI 处理细节&amp;quot;这件事本身，已经分化出了天差地别的好几层。停在不同层级的人，生产力差距正在迅速拉开。&lt;/p&gt;
+&lt;p&gt;而我自己，正好又卡在了一个新的瓶颈上。这篇文章就是记录我怎么看这个瓶颈，以及我认为的下一阶段是什么。&lt;/p&gt;
+&lt;h2 id="我用-ai-的五个阶段"&gt;我用 AI 的五个阶段
+&lt;/h2&gt;&lt;p&gt;先回顾一下这几年我个人的使用演进：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;阶段&lt;/th&gt;
+&lt;th&gt;形态&lt;/th&gt;
+&lt;th&gt;代表&lt;/th&gt;
+&lt;th&gt;我做什么&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;L1&lt;/td&gt;
+&lt;td&gt;网页对话&lt;/td&gt;
+&lt;td&gt;ChatGPT 网页&lt;/td&gt;
+&lt;td&gt;复制问题进去，复制答案出来&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;L2&lt;/td&gt;
+&lt;td&gt;IDE 插件&lt;/td&gt;
+&lt;td&gt;GitHub Copilot&lt;/td&gt;
+&lt;td&gt;AI 在我身边做补全，我主导&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;L3&lt;/td&gt;
+&lt;td&gt;AI 原生 IDE&lt;/td&gt;
+&lt;td&gt;Cursor&lt;/td&gt;
+&lt;td&gt;AI 可以改多个文件，我审阅&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;L4&lt;/td&gt;
+&lt;td&gt;终端原生 Agent&lt;/td&gt;
+&lt;td&gt;Claude Code&lt;/td&gt;
+&lt;td&gt;AI 能碰我整台电脑，我对话确认&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;L5&lt;/td&gt;
+&lt;td&gt;？&lt;/td&gt;
+&lt;td&gt;？&lt;/td&gt;
+&lt;td&gt;？&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;这条线的本质是一件事：&lt;strong&gt;AI 的操作边界在不断扩大，人类被从一层一层的具体操作里解放出来。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;每一跃，都是一次数量级的跃迁。&lt;/p&gt;
+&lt;h2 id="瓶颈顶级专家-3-个-max-20x-都不够用我一个-pro-都用不完"&gt;瓶颈：顶级专家 3 个 Max 20x 都不够用，我一个 Pro 都用不完
+&lt;/h2&gt;&lt;p&gt;我最近买了 Claude 的 Max 5x，结果是：&lt;strong&gt;我发现自己已经用不完了。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;与此同时，一些顶级开发者公开说，自己同时开 3 个 Max 20x 账号都嫌不够用。&lt;/p&gt;
+&lt;p&gt;这个对比让我停下来想——同样的工具，为什么他们能烧掉十几倍的算力？专家这么牛，竟然都不够用，到底差距在哪？&lt;strong&gt;我该怎么才能追上去？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;想了一圈，答案很清楚：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;瓶颈在我。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;每一个任务，我都还在和 Claude Code 反复对话：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;先搜一下相关代码再改&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;这个方案不对，换一个思路&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;先跑测试&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;确认一下再提交&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;我同时控制 3～5 个 Agent，脑子已经开始累了。人类的上下文切换是有成本的，撑死管 5～7 个。&lt;/p&gt;
+&lt;p&gt;这种感觉挺微妙的——&lt;strong&gt;我手里拿着火箭，但我还在一档一档换挡。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id="下一阶段从操作者到立法者"&gt;下一阶段：从&amp;quot;操作者&amp;quot;到&amp;quot;立法者&amp;quot;
+&lt;/h2&gt;&lt;p&gt;这个瓶颈怎么破？&lt;/p&gt;
+&lt;p&gt;观察了一圈 Anthropic 的公开文档、Boris Cherny（Claude Code 之父）的工作流分享、以及一些重度用户的实践之后，我的结论是：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;下一阶段不是&amp;quot;管更多 Agent&amp;quot;，而是你不再亲自管 Agent。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;听起来玄，拆开讲其实很实际：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;L4（我现在）&lt;/th&gt;
+&lt;th&gt;L5（下一阶段）&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;我在循环里&lt;/td&gt;
+&lt;td&gt;是&lt;/td&gt;
+&lt;td&gt;否&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;我做什么&lt;/td&gt;
+&lt;td&gt;对话、确认、纠错&lt;/td&gt;
+&lt;td&gt;写规则、定验收、审仲裁&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;AI 什么时候停&lt;/td&gt;
+&lt;td&gt;我说停&lt;/td&gt;
+&lt;td&gt;规则说过了就停&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;我离开键盘 8 小时&lt;/td&gt;
+&lt;td&gt;系统停在原地等我&lt;/td&gt;
+&lt;td&gt;系统已经自己推进了 8 小时&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;L5 的核心判断标准只有一条：你离开键盘 8 小时回来，系统是停在原地等你，还是已经自己跑完了？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;L5 阶段，你的工作重心彻底换了：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;写 Spec（规格说明），不写 Prompt&lt;/li&gt;
+&lt;li&gt;定义验收标准（测试、lint、人审 checkpoint），不审每一步&lt;/li&gt;
+&lt;li&gt;设计 hooks 和 guard rails，不做确认按钮&lt;/li&gt;
+&lt;li&gt;搭 feedback loop（失败自动回灌给 AI 继续迭代），不手动重试&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;你早上打开电脑，看到的不再是&amp;quot;Claude 在等我批准什么&amp;quot;，而是 &lt;strong&gt;&amp;ldquo;昨晚 12 个 PR 里 9 个已经通过自动验收了，3 个标了红等我判断&amp;rdquo;&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;你做的唯一的事是：&lt;strong&gt;看红色的那 3 个，以及修补让它们红的那条规则&lt;/strong&gt;。&lt;/p&gt;
+&lt;h2 id="其实我已经在往那爬了l45-的真实体感"&gt;其实我已经在往那爬了：L4.5 的真实体感
+&lt;/h2&gt;&lt;p&gt;说 L5 像在说远方，但其实我的 L4 已经在往 L4.5 过渡了。&lt;/p&gt;
+&lt;p&gt;现在的体感已经不太一样：Claude Code 可以远程、后台跑任务，我不再逐行盯着它怎么写。一天里的大部分时间，我都在&lt;strong&gt;看它交给我的汇报&lt;/strong&gt;，然后做几件事：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;判断这个方向对不对&lt;/li&gt;
+&lt;li&gt;决定要不要继续、换思路、还是打回重做&lt;/li&gt;
+&lt;li&gt;在关键节点给出判断和决策&lt;/li&gt;
+&lt;li&gt;处理它搞不定、卡住的地方&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;说白了，我现在更像一个远程指挥的领导，而不是程序员。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;代码不是我写的，但&lt;strong&gt;方向是我定的，边界是我划的，质量是我判的&lt;/strong&gt;。这种状态挺奇妙的——节奏完全变了，一天能推进的事情明显变多，但每一个决策的权重也更大。错一个方向，下游好几个小时的输出可能都白搭。&lt;/p&gt;
+&lt;p&gt;这还没到 L5。L5 是连&amp;quot;看汇报&amp;quot;这个环节都部分交出去，规则自动过滤掉 80% 的内容，我只看剩下的 20%。但 L4.5 这个过渡态已经足够让我感受到——&lt;strong&gt;管理 AI 的感觉，和自己动手写代码，完全是两种职业。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id="生产力差距正在拉开"&gt;生产力差距正在拉开
+&lt;/h2&gt;&lt;p&gt;这就是我想重点说的一件事——&lt;strong&gt;停在不同阶段的人，生产力差距正在以数量级的方式拉开&lt;/strong&gt;。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;L1&lt;/strong&gt; 的人，用 AI 回答问题、替自己查资料。效率提升有限，但有。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;L2、L3&lt;/strong&gt; 的人，把 AI 嵌进了自己的代码编辑流程。效率是前者的数倍。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;L4&lt;/strong&gt; 的人，能让 AI 跑起来、独立干完一整个任务。效率又是前者的数倍。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;L5&lt;/strong&gt; 的人，同时有十几条任务在跑，自己只做仲裁和立法。效率再往上一个数量级。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这几层之间的门槛不是线性的。从 L1 到 L2 很容易，装个插件就行。从 L4 到 L5 非常难——它要求你重新设计你工作的整个形态。&lt;strong&gt;你不再是&amp;quot;用工具的人&amp;quot;，你变成了&amp;quot;设计工具使用规则的人&amp;quot;。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id="对人的要求既要知识密度也要知识总量"&gt;对人的要求：既要知识密度，也要知识总量
+&lt;/h2&gt;&lt;p&gt;这是最反直觉的一点。&lt;/p&gt;
+&lt;p&gt;很多人以为 AI 时代对人的要求降低了——&amp;ldquo;反正细节 AI 会做，我学个皮毛就行&amp;rdquo;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;错。完全相反。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;AI 时代对人的要求&lt;strong&gt;提高了&lt;/strong&gt;，而且是&lt;strong&gt;两个维度一起提高&lt;/strong&gt;：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;知识总量——你得知道的东西更多了。&lt;/strong&gt; 你要判断方向、划定边界、审仲裁，这些决策都建立在你真的懂这个领域的基础上。你对一个技术栈只懂皮毛，AI 写出来的烂代码你根本看不出问题。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;知识密度——你在单位时间里做出的判断要更多、更准。&lt;/strong&gt; L5 阶段你的日常变成这样：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;看 10 分钟 PR 摘要，判断要不要合并&lt;/li&gt;
+&lt;li&gt;看 5 分钟失败报告，判断是改代码还是改规则&lt;/li&gt;
+&lt;li&gt;用 20 分钟写一份 Spec，定义清楚一个功能的验收边界&lt;/li&gt;
+&lt;li&gt;花 30 分钟 review 一条新规则，判断它会不会误伤别的任务&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;每一个动作都是在做决策，没有一个动作是在&amp;quot;执行&amp;quot;。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;你得在&lt;strong&gt;更短的时间里做更多、更准的判断&lt;/strong&gt;：看一眼就能判断 AI 会在哪翻车；写 Spec 的时候就能预判边界会爆在哪；看到一条新规则就知道它会误伤什么。&lt;/p&gt;
+&lt;p&gt;这些能力，AI 替代不了。因为它们本质是&lt;strong&gt;经验 + 品味 + 判断&lt;/strong&gt;，不是信息处理。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;我的判断是&lt;strong&gt;今年下半年到明年上半年&lt;/strong&gt;，会出现第一个真正像样的原生 L5 产品——可能是 Anthropic 自己做，也可能是基于 Claude API 的第三方。到那时候，人与人的差距会更加大。&lt;/p&gt;</description></item><item><title>站在2025年，回顾和展望AI</title><link>https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/</link><pubDate>Wed, 12 Mar 2025 00:00:00 +0000</pubDate><guid>https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/</guid><description>&lt;p&gt;前言：&lt;br&gt;
+现在是2025年，AI已经非常热门。我想通过本文，谈谈我个人对AI的理解，展望，以及事业上的帮助和发展。&lt;/p&gt;
+&lt;h2 id="站在过去时间点看待现在的ai站在现在的时间点预测未来的ai"&gt;站在过去时间点，看待现在的AI。站在现在的时间点，预测未来的AI。
+&lt;/h2&gt;&lt;h3 id="一篇2015年1月预测ai发展的文章"&gt;一篇2015年1月预测AI发展的文章
+&lt;/h3&gt;&lt;p&gt;在&lt;strong&gt;2015年1月27号&lt;/strong&gt;，有这么一篇文章发布了，颠覆了我对AI认知！这里附上翻译后的文章地址：&lt;br&gt;
+&lt;a class="link" href="https://zhuanlan.zhihu.com/p/19950456" target="_blank" rel="noopener"
+&gt;人工智能很可能导致人类的永生或者灭绝，而这一切很可能在我们的有生之年发生。&lt;/a&gt;&lt;br&gt;
+有兴趣可以详细阅读全文！我强烈建议看看！&lt;br&gt;
+在本篇文章中，我重点引用两点结论：&lt;br&gt;
+1.人类科技发展是指数级增长的！&lt;br&gt;
+&lt;img src="https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/image.png"
+width="1120"
+height="688"
+srcset="https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/image_hu_608fd31f9c5075c.png 480w, https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/image_hu_6076e0a1ada71714.png 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="162"
+data-flex-basis="390px"
+&gt;&lt;/p&gt;
+&lt;p&gt;2.AI发展将可能一瞬间超越人类认知！&lt;br&gt;
+&lt;img src="https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/image-1.png"
+width="1376"
+height="1124"
+srcset="https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/image-1_hu_dc914e6f3ec72b85.png 480w, https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/image-1_hu_f4729ea222e5a6fb.png 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="122"
+data-flex-basis="293px"
+&gt;&lt;/p&gt;
+&lt;p&gt;站在当时看，大多数人都会觉得无稽之谈。毕竟2015年1月，连openai都没成立。我们看下时间线&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;span class="lnt"&gt;6
+&lt;/span&gt;&lt;span class="lnt"&gt;7
+&lt;/span&gt;&lt;span class="lnt"&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;2015年 – OpenAI 成立，专注于通用人工智能（AGI）。
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;2016年 – AlphaGo 战胜李世石，标志AI在围棋上超越人类。
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;2017年 – Transformer 结构（Google提出）引领NLP革命，成为后续GPT、BERT等模型的基础。
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;2019年 – GPT-2（OpenAI）发布，展示强大的文本生成能力。
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;2020年 – GPT-3（1750亿参数）发布，开启AI生成内容（AIGC）热潮。
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;2022年 – ChatGPT（基于GPT-3.5） 发布，迅速成为爆款产品。
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;2023年 – GPT-4 发布，性能大幅提升，支持多模态输入（文本、图像）。
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;2023年及以后，大量AI产品涌现。
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;如果你看过这篇文章，你现在应该会非常惊讶。这篇文章预测的简直一模一样，简直太有前瞻性了！&lt;br&gt;
+&lt;strong&gt;在10年前，连互联网才普及没多久，在大多数人都还刚用上智能手机时。该文的作者，已经准确预测到了10后的当下的AI发展。&lt;/strong&gt;&lt;br&gt;
+这里我再一次强烈推荐还没看该文的小伙伴，去阅读一下！&lt;/p&gt;
+&lt;p&gt;历史证明该文正确性。那我们再看看，10年的该文，对2025年现在之后是怎么预测的。&lt;br&gt;
+&lt;img src="https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/image-2.png"
+width="1190"
+height="979"
+srcset="https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/image-2_hu_ac4fee9463f84589.png 480w, https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/image-2_hu_50acefc6d248380f.png 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="121"
+data-flex-basis="291px"
+&gt;&lt;br&gt;
+该文将人工智能分为3个阶段，弱人工智能，强人工智能，超人工智能。我相信大家都认可，当下我们人类已经实现了强人工智能。&lt;/p&gt;
+&lt;p&gt;个人的总结是：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;当超人工智能来临的一瞬间，他的智能将在一瞬间远远超过所有人类的集合。以难以置信，夸张的指数成长。人类因此灭亡或永生。&lt;/li&gt;
+&lt;li&gt;最乐观的估计是2030年出现，保守估计是2050年，悲观是2080年甚至永远不会出现超人工智能。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;目前所有AI本质上都是模拟人脑来实现的。我们从算力角度看看这个问题：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;截至 2024 年，全球最快的超级计算机（如 Frontier）已经达到了 1.2 EFLOPS（即 1.2 × 10¹⁸ FLOPS）。
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;由于人脑的运作方式与计算机不同，很难直接比较，但通常的估算范围是 1 EFLOPS 到 100 EFLOPS（10¹⁸ 到 10²⁰ FLOPS）。
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;可以见得，当下最强的算力已经接近人脑了。我一直认为，当计算机算力超过人脑时，智能也会非常接近人脑。现在看，强如o3（即便他的算力还远远够不上人脑）已经远远超过的绝大部分人。未来呢？未来算力继续增长会发生什么？&lt;/p&gt;
+&lt;p&gt;综上，我认为AI智能依旧如该文预测一样，还会飞速指数级变强。甚至达到强人工智能。&lt;/p&gt;
+&lt;h3 id="一篇2023年12月我写下对ai理解和运用的文章"&gt;一篇2023年12月我写下对AI理解和运用的文章
+&lt;/h3&gt;&lt;p&gt;在GPT3的时候，我已经开始大量的使用AI了。特别是GPT-4的出现，让我技术实力，眼界，思维飞跃式的提升。&lt;br&gt;
+原文链接：&lt;a class="link" href="https://bhj8.github.io/p/ai%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/" &gt;ai使用心得&lt;/a&gt;&lt;br&gt;
+直到现在，有更多更强大的AI产品出现。现在的我应用能力大幅度增涨，更加确信当时的我判断和思路是正确的。&lt;br&gt;
+也就是下一章，我要表达内容。&lt;/p&gt;
+&lt;h2 id="基于ai天翻地覆的根本上的解决问题方式和思维改变"&gt;基于AI，天翻地覆的根本上的解决问题方式和思维改变。
+&lt;/h2&gt;&lt;p&gt;我引用我之间的结论：&lt;br&gt;
+&lt;strong&gt;人的生命是有限的，掌握不了如此多的知识和技能。&lt;br&gt;
+AI颠覆了传统学习与实践方式，掌握框架，细节交给AI，从而极大提升效率和能力上限。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;从以下几点描述：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt; 1
+&lt;/span&gt;&lt;span class="lnt"&gt; 2
+&lt;/span&gt;&lt;span class="lnt"&gt; 3
+&lt;/span&gt;&lt;span class="lnt"&gt; 4
+&lt;/span&gt;&lt;span class="lnt"&gt; 5
+&lt;/span&gt;&lt;span class="lnt"&gt; 6
+&lt;/span&gt;&lt;span class="lnt"&gt; 7
+&lt;/span&gt;&lt;span class="lnt"&gt; 8
+&lt;/span&gt;&lt;span class="lnt"&gt; 9
+&lt;/span&gt;&lt;span class="lnt"&gt;10
+&lt;/span&gt;&lt;span class="lnt"&gt;11
+&lt;/span&gt;&lt;span class="lnt"&gt;12
+&lt;/span&gt;&lt;span class="lnt"&gt;13
+&lt;/span&gt;&lt;span class="lnt"&gt;14
+&lt;/span&gt;&lt;span class="lnt"&gt;15
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;### AI彻底革新了知识学习和技能掌握的方式
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;传统学习模式需要全面掌握知识体系，而AI可以辅助完成具体细节，极大加快学习速度。
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;只需要掌握知识体系的“树干”，细节“树叶”可以通过AI补充。
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;### AI加速实践，从学习到落地的效率大幅提升
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;以往需要完整掌握才能动手做的项目，现在只需要知道大致可行性，就能借助AI快速推进。
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;例如，博客搭建、AI公众号、AI对话网页等项目，都是先有概念，然后通过AI完善细节并落地。
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;### AI是高效的执行助手，但上限仍由个人决定
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;AI能作为辅助工具帮助解决已有成熟方案的问题，但对前沿探索性问题仍有局限。
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;人的能力和思维深度决定了最终成就，AI只是放大器。
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;### 实践是关键，使用AI的最佳方式是“动手”
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;真正的提升来源于实际使用，技巧在实践中自然习得。
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;“能用就用、折腾起来”，比空谈技巧更重要。
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;作为我个人而言，我现在约80%以上的事务，都由AI介入。不限于工作和开发。&lt;br&gt;
+DeepSeek R1强大思维逻辑能力，可以从各个问题的各个角度去思考。其眼界和知识，远超当下的自己。如果有一天，真正的能学会这种结构化的思维，那简直不敢想象。&lt;br&gt;
+如我所描述的，实践是关键，深度用过，自然就懂。没用过就像镜花水月，多说无益。&lt;/p&gt;
+&lt;h2 id="当下各类ai的盘点"&gt;当下各类AI的盘点
+&lt;/h2&gt;&lt;p&gt;截止写问的2025年3月12日，我归纳总结市面上大部分流行，以及我用过的AI产品。总结其特点和优缺点。包括但不限于LLM大模型。抛砖引玉，供各位参考：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;LLM大模型类&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;GPT系列
+&lt;ul&gt;
+&lt;li&gt;o3 ,o1 作为当下最强，也是最贵的推理模型。拥有超高（o1为200K）的上下文，是当前推理和逻辑能力最强的模型。特别擅长代码分析和逻辑推理。只有他小弟们解决不了，一般才会考虑动用这位大哥。&lt;/li&gt;
+&lt;li&gt;o1-mini，o3-mini，o3-mini-high 作为上面的mini版，在性能，价格，速度上有优势。困难代码问题一般先请他们解决。&lt;/li&gt;
+&lt;li&gt;4o 作为多模态模型。全面，快速。可以直接看懂图片，解析音频。速度和价格都很优秀。是当下我最常用的模型。&lt;/li&gt;
+&lt;li&gt;4.5 作为最新的GPT模型，创意和人性化水平强很多。但是价格非常非常昂贵。我一般用于创意和文案方面。&lt;/li&gt;
+&lt;li&gt;其它GPT模型 其它都是弟中弟，除了便宜一点点，没有任何优点。不予讨论&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;DeepSeek系列
+&lt;ul&gt;
+&lt;li&gt;R1 作为当下中文推理能力最强，极具性价比的推理模型。其强大之处，我相信各位有目共睹。价格低廉，特别擅长中文场景下的各类问题推理。重点强调的是，其代码能力相比其他模型较弱，非常不推荐写代码。我一般用于各类中文味很强的问题。很贴地气。&lt;/li&gt;
+&lt;li&gt;V3 没有推理能力的版本。一般很少使用。&lt;/li&gt;
+&lt;li&gt;其它参数版 DeepSeek强就强在用最少的算力和硬件，实现了堪比gpt-4o的能力。现在很多网站用鸡贼的用32B，70B参数版冒充671B满血版。这里特提的原因是，R1 32B 4位量化版，是在4090 24G家用显卡下能本地部署最好的模型。经体验，一般用于涉及保密的问题。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Claude系列
+&lt;ul&gt;
+&lt;li&gt;Claude3.7 有多个版本，一般常用为Sonnet。该模型为当下除了GPT以外，算老二了。用起来非常人性化，大量使用过的人表示，其代码能力强于GPT-4o。关键是交互非常人性化，canvas就是其率先引入的。同时，github copilot还将其纳入会员中。足以证明其代码能力的性价比。一般用于交叉验证GPT代码。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Gork系列
+&lt;ul&gt;
+&lt;li&gt;Gork3 马斯克家的AI，据说推理用算力是目前最强的。用下来和其他家在代码能力上没有明显优势。重点强调的是，其内容政策审核极为宽松。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Gemini系列
+&lt;ul&gt;
+&lt;li&gt;Gemini2.0 google家的。得益于google强大的技术实力，速度非常快。原生多模态。同时在搜索能力上，明显强于其它模型。（毕竟google嘛~）一般用的较少，智能上相比其他的没有明显优势。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;其它各类及本地模型
+&lt;ul&gt;
+&lt;li&gt;在抱脸上，有大量的各类模型，国内也有QwQ等，各有优缺点。大多数都是参数较少，特化针对某个领域的专业产品。在有限的精力下，我们一般不考虑和使用。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;manus
+&lt;ul&gt;
+&lt;li&gt;大量信息显示，就是一场炒作和骗局。等真正用上了，再看看是不是金子。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;AI绘图类&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Stable Diffusion 大名鼎鼎的SD，开源且可高度定制。根据调用的底模不同，可以绘制各类题材画风。甚至可以结合多种插件玩出各种花活。在家用电脑上就可以轻松部署和绘画。缺点也很明显，结果内容全看底模，使用难度也偏高。&lt;/li&gt;
+&lt;li&gt;Midjourney 也是大名鼎鼎的MJ。能力非常强，仅能通过使用其服务画画。极多样的画风。但缺点也是，缺乏定制，价格较为昂贵。和SD正好是两个极端。&lt;/li&gt;
+&lt;li&gt;DALL-E 3 比上面两个差远了。唯一的优点就是融入到原生的GPT网页服务中。实在没啥用。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;TTS类（文本转语音）&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;VITS系列
+&lt;ul&gt;
+&lt;li&gt;VITS最早版本由国人发布，经过大量的fork各种二次加工。目前最强开源是GPT-SoVITs。只要几分钟的音频源，就可以推理出非常相似的多语言语音。家用电脑就足够微调训练和推理。&lt;br&gt;
+以下是我“动手”出来的：&lt;br&gt;
+我声音的推理版&lt;br&gt;
+&lt;audio controls&gt;
+&lt;source src="https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/my_AI.wav" type="audio/mpeg"&gt;
+&lt;/audio&gt;
+二战解说原声&lt;br&gt;
+&lt;audio controls&gt;
+&lt;source src="https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/ww2Start.wav" type="audio/mpeg"&gt;
+&lt;/audio&gt;
+二战解说AI合成&lt;br&gt;
+&lt;audio controls&gt;
+&lt;source src="https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/ww2Start_AI.wav" type="audio/mpeg"&gt;
+&lt;/audio&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;其它各家类 微软TTS，谷歌TTS，抖音，都是闭源的。必须定制化微调，成本较高。否则的话，只能用他们训练好的。总体效果已经也非常棒了！&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;STT类（语音转文本）&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Whisper Openai开源产品，支持上百种语言的识别。是目前开源STT最强选手。家用电脑即可本地部署。&lt;/li&gt;
+&lt;li&gt;其它类 微软谷歌讯飞等等，都有大量API可调用。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;其它&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;suno 用于AI合成音乐，效果不错，但是目前实用性较弱。未来可期&lt;/li&gt;
+&lt;li&gt;sora 视频合成的AI现在非常多。但总体效果一般，看起来非常奇怪。另外一条路子是高度定制SD，通过拼接图片做视频。两种方式现在都有不少人在做。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;组合工具类&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;github copilot 强烈推荐，微软家的扛把子。高度融合各类IDE，特别是vscode和vs。有白嫖版，会员每个月10刀。融合GPT,claude,Gemini。和IDE深度融合后，可以自动读取上下文，非常方便。&lt;/li&gt;
+&lt;li&gt;cursor 基于vscode开发的一款深度融合AI的IDE，和github copilot不相上下。也是非常方便。但因其实IDE，而不是插件。IDE灵活性欠缺一些。&lt;/li&gt;
+&lt;li&gt;POE 融合各家AI的一个综合性平台，本质上是个套娃前端。通过其API调用各家AI。优点是一站式使用各家AI，可以白嫖使用一些次数。缺点也很明显，API调用大多数时候没有官网原生的效果好，功能丰富。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="个人对ai未来应用的展望和思考"&gt;个人对AI未来应用的展望和思考
+&lt;/h2&gt;&lt;p&gt;我认为AI已经彻底的改变了我思维方式，解决问题的路径。&lt;br&gt;
+&lt;del&gt;当然要是超人工智能出现，人类直接毁灭了就没有意义了。我们当下必然是以AI将会带领我们人类科技突破为出发点。&lt;/del&gt;&lt;br&gt;
+在这个时代，我们必须紧跟时代，不断提升自我，不断接收新的知识。&lt;br&gt;
+&lt;strong&gt;世界上唯一不变的，就是变化本身。&lt;/strong&gt;&lt;br&gt;
+经历国内市场虚假需求的繁荣日子后，我认为，AI本身并没有像其它技术那样自己就可以带来很大的价值。它必须和各类领域结合，才能发挥奇妙的化学反应。&lt;br&gt;
+例如和互联网开发，传统零售，传统机械加工，文学影视，教育等等等等。&lt;/p&gt;
+&lt;p&gt;无论如何，我们都应该作为一个创业者去思考。让AI给我们完善细节，帮我们打工才是正道。构建自己的知识框架，不再拘泥于细节。抓住问题的本质和主要矛盾。&lt;br&gt;
+在未来，我将更加深度的使用AI到我任何事务中。同时我也希望能提升所有团队成员的AI应用水平，并改进工作流。&lt;br&gt;
+以下是几点我从工作中，提炼一些AI可实际落地的方案，有已经落地经验果的，也有想要以后团队实现的：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;代码开发
+&lt;ul&gt;
+&lt;li&gt;深度使用github copilot，大幅度提升代码开发效率。并有效进行自动化查错。特别是针对结构化的代码。对于一些不熟悉库，接口，也可以轻松做到“虽然我记不住，但是我竟然会用~” “虽然我没空看文档，但是我了解框架后，竟然马上就能上手写”。&lt;/li&gt;
+&lt;li&gt;利用hook，在每次提交，使用AI进行review。确保代码质量，和避免明显错误。&lt;/li&gt;
+&lt;li&gt;规范项目目录，使用tree命令（win），搭配AI，规范项目结构化目录。&lt;/li&gt;
+&lt;li&gt;需求解决的思路推理，有很多时候，碰到一个没有做过的需求，自己考虑的可能不周全。可以摇AI分析一下，解决思路是如何，需要考虑哪些问题。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;策划配置
+&lt;ul&gt;
+&lt;li&gt;使用AI进行变量命名，大多数小伙伴都很难做到信达雅的变量命名。导致后期很容易混淆，AI可以有效帮助。&lt;/li&gt;
+&lt;li&gt;使用AI进行本地化翻译，甚至做到一键化脚本。高效低成本的做出及格的多语言。&lt;/li&gt;
+&lt;li&gt;使用AI进行excel公式配置和数值计算，高难度excel公式极其复杂，不如请AI帮忙。&lt;/li&gt;
+&lt;li&gt;使用AI进行报错查问题，策划同学一般不是代码出身，遇到报错很多时候会一头雾水。这时候复制报错，给AI看看，大多数情况能给出有效的信息，以便决定解决方式。（这条针对所有具有项目工程的同学！）&lt;/li&gt;
+&lt;li&gt;使用AI进行策划工具编写，根据自己任务的痛点，快速的写一些工具提升效率。&lt;/li&gt;
+&lt;li&gt;创意收集，可以通过AI快速收集创意点，最终还是需要自己分辨和处理。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;美术
+&lt;ul&gt;
+&lt;li&gt;创意和参考 配置SD，mid管线。google不到那个味道素材，可以摇AI画。快速和需求端确认效果图。整理画风提示词库，可以快速画出对位的效果图，不重要的过场，场景图均可直接用。&lt;br&gt;
+&lt;img src="https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/IMG_3637.JPG"
+width="1440"
+height="1440"
+srcset="https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/IMG_3637_hu_b59e4a1f7830201c.JPG 480w, https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/IMG_3637_hu_da8e9108dc4dbe5a.JPG 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="240px"
+&gt;
+&lt;img src="https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/IMG_3638.JPG"
+width="1024"
+height="1024"
+srcset="https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/IMG_3638_hu_37d3bbbecbcafa5.JPG 480w, https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/IMG_3638_hu_6d1c597a91f21d7a.JPG 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="240px"
+&gt;
+&lt;img src="https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/IMG_3639.JPG"
+width="1024"
+height="1024"
+srcset="https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/IMG_3639_hu_17b90cedcddd3ab5.JPG 480w, https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/IMG_3639_hu_285697749b7ab9cf.JPG 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="240px"
+&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;物品图标，角色原画&lt;/strong&gt; 在过往，已经有上线成功案例。大量的各类图标，甚至角色原画。AI初稿，美术精修，大大提升素材效率。&lt;br&gt;
+&lt;img src="https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/image-3.png"
+width="1659"
+height="939"
+srcset="https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/image-3_hu_f1dc21b19e32ae1d.png 480w, https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/image-3_hu_b0d65b58d9757c6b.png 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="176"
+data-flex-basis="424px"
+&gt;
+&lt;img src="https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/image-4.png"
+width="348"
+height="417"
+srcset="https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/image-4_hu_a8b740841bad1695.png 480w, https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/image-4_hu_c747cccfc666f5b2.png 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="83"
+data-flex-basis="200px"
+&gt;
+&lt;img src="https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/image-5.png"
+width="411"
+height="273"
+srcset="https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/image-5_hu_8525486876b4ef6b.png 480w, https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/image-5_hu_d51a8f8b8da45747.png 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="150"
+data-flex-basis="361px"
+&gt;
+&lt;img src="https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/image-6.png"
+width="238"
+height="279"
+srcset="https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/image-6_hu_333e0f42a7ff06ee.png 480w, https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/image-6_hu_9d5ade1676bbad4e.png 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="85"
+data-flex-basis="204px"
+&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;其它
+&lt;ul&gt;
+&lt;li&gt;配音解说 如有需求的话，可以使用GPT-SoVITs，进行定制化配音。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;两篇参考视频，读懂AI技术起源：&lt;br&gt;
+&lt;a class="link" href="https://www.youtube.com/watch?v=RUtvBkibIT8" target="_blank" rel="noopener"
+&gt;【计算机博物志】自然语言处理的“古往”和“今来”&lt;/a&gt;&lt;br&gt;
+&lt;a class="link" href="https://www.youtube.com/watch?v=7iNJyEbYDdc&amp;amp;t=408s" target="_blank" rel="noopener"
+&gt;为什么费曼技巧被称为终极学习法&lt;/a&gt;&lt;/p&gt;</description></item><item><title>AI使用心得</title><link>https://bhj8.github.io/p/ai%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</link><pubDate>Tue, 26 Dec 2023 00:00:00 +0000</pubDate><guid>https://bhj8.github.io/p/ai%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</guid><description>&lt;h3 id="gpt有史以来最伟大的发明"&gt;GPT有史以来最伟大的发明
+&lt;/h3&gt;&lt;p&gt;个人观点。当然，至少截止目前是。&lt;br&gt;
+我的编程和计算机水平大幅度提升，真的多亏了GPT的帮助，特别是GPT4。虽然他已经历经多个版本的迭代。和最开始的相差甚远。&lt;/p&gt;
+&lt;h3 id="主流ai"&gt;主流AI
+&lt;/h3&gt;&lt;p&gt;这里简单的介绍以下当前主流的对话大模型AI。以推荐顺序排序：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;GPT4&lt;/strong&gt; 最强最实用&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Claude2&lt;/strong&gt; 最大支持100k上下文&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;newbing&lt;/strong&gt; 基于GPT4，可以白嫖使用，搜东西不错&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GPT3.5&lt;/strong&gt; 便宜，一般用来大量调用API&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;bard&lt;/strong&gt; Google产品，马马虎虎。优点是可以白嫖用&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;讯飞星火&lt;/strong&gt; 效果还行。优点是国内方便。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;百度文星一言&lt;/strong&gt; 不予评价。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;其它杂七杂八&lt;/strong&gt; 有这么多更好的选择，为啥我要用这些垃圾？&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;各类LLM本地模型&lt;/strong&gt; 可以部署在本地，可以自行训练。和直接用他人产品相比，有更多的创造可能性。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;经实测，GPT4对工作生活帮助最大，也是最好用的。缺点是注册和订阅非常麻烦，20刀一个月蛮贵的。但是我可以很肯定的告诉你，绝对物超所值！真的是太牛了。&lt;br&gt;
+接下来我们只讨论GPT4，其它产品不予讨论。&lt;/p&gt;
+&lt;h3 id="gpt4带给我的变化"&gt;GPT4带给我的变化
+&lt;/h3&gt;&lt;p&gt;网上有大量的文章和教程，说GPT4怎么怎么牛逼，要怎么怎么用。我们这里不予重复，只谈对我个人最大的提升和变化。&lt;/p&gt;
+&lt;h4 id="知识和做事方法的彻底革新"&gt;知识和做事方法的彻底革新
+&lt;/h4&gt;&lt;p&gt;传统写代码，学新技能。必须全面学习，且反复经过项目锤炼，踩坑才能自豪的说，我会处理这类问题。&lt;br&gt;
+这个世界的知识浩如烟海，学的越多，发现自己不懂的更多。在有限的人生中，人能学会并使用的知识不过九牛一毛。特别是互联网技术日新月异，学的还没创新的快。&lt;br&gt;
+把所有知识和技能比做大树，某个模块比作树干，例如python就是主干的上的树干，python的语法和各类库是这个树干下的树叶。&lt;br&gt;
+一般来说，你要用python写一套软件，那你必须得把树干和大部分树叶都融会贯通，才能写出一个还ok的软件。&lt;br&gt;
+现在问题来了，仅仅现在就有python，go，C#，java，js，ts，C++等等这么多流行语言。还有linux系统各种操作和软件包，如nginx，ufw，vim，openvpn等等等等。dot net环境下，又有一大堆新的环境。还不包括各种算法，各种框架，各种设计模式，docker，堡垒机等等等等。&lt;br&gt;
+这么多知识，就算用尽一生，也只能精通掌握其中一两样。其它的东西，只能当作没看到了。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;人的生命是有限的，掌握不了如此多的知识和技能。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;GPT4的到来，完全颠覆了这个事情。GPT4能解答疑惑，并且生成大量的代码，只要轻轻一提需求。答案就出来了。（当然，专业水平仍旧决定了你的上限）&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;GPT4大幅度加速了学习速度，特别是检索知识和排查错误的速度。&lt;/li&gt;
+&lt;li&gt;GPT4能作为一个下属，完成你指示的工作。上限由你本身能力决定。&lt;/li&gt;
+&lt;li&gt;其它大量杂活。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;GPT4作为能力的衍生，完成细节工作。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;继续前面把知识比喻成树干和树叶的比喻。树干和大框架，由自己学会。树叶和细节由GPT4来完成。&lt;br&gt;
+遍历学习完所有的树干和树叶，这对我来说太难了。但是遍历了解所有树干，这就非常轻松。当有需要的时候，再借助GPT4的力量，来细化具体这块的树叶。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;尽可能大而全的掌握所有树干，当遇到问题时，再借助GPT4的力量来完善树叶。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这完全颠覆了之前我必须得全部学会，学完才能完成一项工作的方法论。现在我只要对所有树干有了解，那么我可以飞快完成一个理论上可行的，但细节我尚不明确的工作。&lt;/p&gt;
+&lt;p&gt;以下举例说明：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;构建博客 理论上就搭个网站，搞台服务器。细节内容非常多，请参阅&lt;a class="link" href="https://bhj8.github.io/p/%E6%88%91%E5%8D%9A%E5%AE%A2%E7%9A%84%E8%83%8C%E5%90%8E%E7%9A%84%E6%8A%80%E6%9C%AF%E5%8E%9F%E7%90%86/" &gt;我博客的技术原理&lt;/a&gt;。如此大量的技术细节，即便我之前没有做过。但因为我知道树干，树叶由GPT4来教我细化完成。&lt;/li&gt;
+&lt;li&gt;构建AI微信公众号 俺的公众号，从最开始一个想法起步。从一个openai官方的调用gpt的API示例开始。随后一个微信小号PC微信模拟操作，一步一步发展而来。最开始的时候，我是真的菜。啥也不懂。最后里面聚合的大量的功能，mid绘画、sd绘画、gpt3.5和gpt4、newbing、语音的识别的对话、会员系统等等等等。中间有大量的系统和技术细节。理论上可行，大概要怎么做。心里有数，接下来就靠GPT4来给我细化了。另外 我的公众号叫做 小慧很智慧 巅峰订阅人数已经4k+。后面成本太高，精力有限，不再维护。&lt;/li&gt;
+&lt;li&gt;构建AI对话网页 最初也是扒了github上一个vue3+express写一个开源网页。。后面自己用python重写了后端，含数据库，账号验证模块等等等等。使用的是fastapi，非常标准的各类接口。后期还增加了微信支付，手机短信验证等等各类功能。特别是微信支付，非常复杂。还需要有个备案的国内服务器和域名。但我知道这个可行，最后也是完成了！&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://bhj8.github.io/p/%E4%BD%BF%E7%94%A8openvpn%E9%80%9A%E8%BF%87%E9%9A%A7%E9%81%93%E6%9E%84%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%9B%86%E7%BE%A4%E5%8A%A8%E6%80%81lan/" &gt;openvpn搭建大lan内网&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;日常工作生活中还有大量类似的案例。不再列举。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;GPT4完全颠覆传统我先全学完，再开工的方式。现在只要理论上可行，那么我完全可以立即行动，并以飞快的速度学会和完成任务&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;当然，对于一些极其复杂和探索性任务。GPT4和我都无能为力。例如研究新算法，搭建分布式千万并发的框架。&lt;br&gt;
+总而言之，对于大部分&lt;strong&gt;有人已经完成过的任务&lt;/strong&gt;，借助GPT4的力量，我都能非常较好的完成。&lt;/p&gt;
+&lt;p&gt;对于具体的使用技巧，网上太多了，三言两句也说不完。你要有心，你就折腾起来用，能用，技巧用着用着就会了。不能用，BB再多都是废话。&lt;/p&gt;</description></item></channel></rss>

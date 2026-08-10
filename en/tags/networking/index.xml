@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Networking on Hongjiang Bao's Blog</title><link>https://bhj8.github.io/en/tags/networking/</link><description>Recent content in Networking on Hongjiang Bao's Blog</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 14 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://bhj8.github.io/en/tags/networking/index.xml" rel="self" type="application/rss+xml"/><item><title>Building a Dynamic Multi-Server LAN over OpenVPN Tunnels</title><link>https://bhj8.github.io/en/p/building-a-dynamic-multi-server-lan-over-openvpn-tunnels/</link><pubDate>Thu, 14 Dec 2023 00:00:00 +0000</pubDate><guid>https://bhj8.github.io/en/p/building-a-dynamic-multi-server-lan-over-openvpn-tunnels/</guid><description>&lt;h3 id="disclaimer"&gt;Disclaimer
+&lt;/h3&gt;&lt;p&gt;This post is strictly about OpenVPN tunneling/forwarding. The use cases are LAN-style co-op acceleration and remote-office intranets. Nothing else.&lt;/p&gt;
+&lt;h3 id="background"&gt;Background
+&lt;/h3&gt;&lt;p&gt;Lately I&amp;rsquo;ve been playing co-op with friends — &lt;em&gt;Raft&lt;/em&gt;, &lt;em&gt;Stardew Valley&lt;/em&gt;, &lt;em&gt;Overcooked&lt;/em&gt;, etc. Mainland Chinese ISPs use NAT extensively (especially China Mobile), so even when players are geographically close, P2P co-op is laggy, high-latency, and packet-lossy. Often you can&amp;rsquo;t even join the lobby.
+I have an earlier post about using &lt;em&gt;UsbEAm LAN Party&lt;/em&gt; to build a LAN — once everyone&amp;rsquo;s on a virtual LAN, you can play locally. Even when going through Steam&amp;rsquo;s API for relays, most games will switch to LAN co-op.
+So building a LAN gives a great speed-up to most P2P games! (This is also useful for remote-office intranets — fundamentally you&amp;rsquo;re simulating a virtual LAN; whatever LAN-only feature you need, you have it.)&lt;/p&gt;
+&lt;h3 id="going-deeper"&gt;Going deeper
+&lt;/h3&gt;&lt;p&gt;Building a virtual LAN over OpenVPN is easy. If you need a primer, see my other post &lt;a class="link" href="https://bhj8.github.io/en/p/usbeam-lan-party-fast-self-hosted-server-guide-ultimate-edition-with-one-click-deploy/" &gt;One-click LAN deploy&lt;/a&gt;.
+But I wanted to push it further. The LAN setups in that post all use a single server. Suppose you now need to play with friends in Hong Kong or Macau. Because cross-border routes differ, those friends might struggle to even reach your single server, and latency / loss will be brutal.
+That made me ask: can I deploy multiple servers? One in mainland China for domestic users. One in Hong Kong for cross-border users. The two servers connected over a GIA premium line, both stitched into the same LAN.&lt;/p&gt;
+&lt;h3 id="implementation"&gt;Implementation
+&lt;/h3&gt;&lt;p&gt;Building a shared LAN across two-or-more servers is significantly harder than one. Good news: I figured it out. Approach:
+&lt;strong&gt;Server A&lt;/strong&gt; in Hangzhou (mainland): all users connecting to it get IPs in &lt;code&gt;10.251.0.0/16&lt;/code&gt; and &lt;code&gt;10.250.0.0/16&lt;/code&gt;.
+&lt;strong&gt;Server B&lt;/strong&gt; in Hong Kong: all users connecting to it get IPs in &lt;code&gt;10.249.0.0/16&lt;/code&gt; and &lt;code&gt;10.248.0.0/16&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Server B runs OpenVPN as a &lt;em&gt;client&lt;/em&gt; and connects to Server A, getting the address &lt;code&gt;10.251.0.2&lt;/code&gt;.
+IP forwarding has to be enabled on both servers.&lt;/p&gt;
+&lt;p&gt;Routes on Server A:
+Outbound: &lt;code&gt;10.249.0.0/16&lt;/code&gt;, &lt;code&gt;10.248.0.0/16&lt;/code&gt; → route via &lt;code&gt;10.251.0.2&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Routes on Server B:
+Outbound: &lt;code&gt;10.251.0.0/16&lt;/code&gt;, &lt;code&gt;10.250.0.0/16&lt;/code&gt; → route via &lt;code&gt;10.251.0.1&lt;/code&gt; (Server A&amp;rsquo;s intranet address).&lt;/p&gt;
+&lt;p&gt;The middle wiring is fiddly; you have to debug it piece by piece. Some Linux commands you&amp;rsquo;ll use a lot:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;route&lt;/code&gt; — view the current routing table&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ip a&lt;/code&gt; — view all network interfaces&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;netstat -an&lt;/code&gt; — view current network connections&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Don&amp;rsquo;t forget to &lt;code&gt;push&lt;/code&gt; the route table to clients on both A and B&amp;rsquo;s server configs.&lt;/p&gt;
+&lt;p&gt;End result: whether you connect to A or B, you&amp;rsquo;re inside the same big &lt;code&gt;10.0.0.0/8&lt;/code&gt;. Both sides can ping each other freely, and if clients use TUN mode you can even go further at L2 / link layer. I&amp;rsquo;ll stop here.&lt;/p&gt;
+&lt;h3 id="notes"&gt;Notes
+&lt;/h3&gt;&lt;p&gt;What if we make the problem harder — say, hundreds of servers building one giant intranet? How would you architect that?
+The above only had Server B talking to Server A as a client. If we add Servers C, D, E… how do &lt;em&gt;they&lt;/em&gt; talk?&lt;/p&gt;
+&lt;p&gt;Two basic options.
+&lt;strong&gt;Option 1&lt;/strong&gt;: pick one server as primary, the rest as secondary. All secondaries only talk to the primary, which forwards traffic between secondaries.
+This is easy to configure but if the primary goes down everyone loses connection. Secondaries can&amp;rsquo;t talk to each other directly; everything has to go through the primary, dramatically reducing network utilization. The cluster&amp;rsquo;s network is bottlenecked on the primary&amp;rsquo;s max throughput. Also, you&amp;rsquo;ll see packets taking the long way round. So…
+&lt;strong&gt;Option 2&lt;/strong&gt;: every server talks pairwise with every other server, maintaining routing tables to form one giant mesh.
+That has its own problem: each server has to keep connections open with every other server. As the count grows, this resource cost balloons. And the configuration is a nightmare — every server&amp;rsquo;s route table is unique, every one has to be maintained. (You can script it, of course.)&lt;/p&gt;
+&lt;p&gt;Each has trade-offs; in real-world deployments you mix them. Within a region, one primary with several secondaries underneath. Across regions worldwide, primaries talk to each other and cascade. The &amp;ldquo;secondary&amp;rdquo; of an upper layer becomes the &amp;ldquo;primary&amp;rdquo; of the lower layer — recursive nesting.
+I&amp;rsquo;ve never operated a cluster that big; my mental model is probably very primitive. But the core idea should be 80–90% on track. The real production setup is probably way more complex.&lt;/p&gt;
+&lt;p&gt;That said — for game devs, you usually shard by country anyway. Even ultra-high-concurrency Redis lives inside the data center&amp;rsquo;s intranet. There may be the occasional cross-country sync, but most of the time you don&amp;rsquo;t need this. From things like Cloudflare Tunnel though, you can see this kind of architecture &lt;em&gt;is&lt;/em&gt; used in the wild.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ll write a separate post sometime on ultra-high-concurrency Redis in games.&lt;/p&gt;</description></item><item><title>The Tech Behind My Blog</title><link>https://bhj8.github.io/en/p/the-tech-behind-my-blog/</link><pubDate>Wed, 13 Dec 2023 00:00:00 +0000</pubDate><guid>https://bhj8.github.io/en/p/the-tech-behind-my-blog/</guid><description>&lt;h3 id="problems-i-needed-the-blog-to-solve"&gt;Problems I needed the blog to solve
+&lt;/h3&gt;&lt;p&gt;Before building the blog, I had a few requirements:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Pick a simple, general-purpose blog framework — and one that looks good.&lt;/li&gt;
+&lt;li&gt;Full feature set: comments, etc.&lt;/li&gt;
+&lt;li&gt;Bullet-proof against attacks, especially DDoS.&lt;/li&gt;
+&lt;li&gt;Optimized for mainland-China network conditions — fast access from inside China too.&lt;/li&gt;
+&lt;li&gt;No ICP filing — even though there&amp;rsquo;s no problematic content, I just don&amp;rsquo;t want the hassle.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="full-breakdown-of-the-tech"&gt;Full breakdown of the tech
+&lt;/h3&gt;&lt;p&gt;The blog framework is Hugo (Go), with a sharp-looking theme.
+The site is fully hosted on GitHub Pages; the backend is a GitHub Codespace where I write remotely with VS Code. GitHub Actions auto-deploys on push, so a new post is live in about 10 seconds.
+On Cloudflare I bought 10 years of &lt;code&gt;baohongjiang.com&lt;/code&gt; and pointed it at GitHub Pages. Visit &lt;code&gt;baohongjiang.com&lt;/code&gt; and you&amp;rsquo;re at the blog. Everything is HTTPS-encrypted end to end.
+Traffic analytics use Google Analytics and Cloudflare in parallel, so I have accurate visitor metrics.
+Comments are managed via Disqus — for well-known reasons, comments are not visible or postable from inside mainland China.&lt;/p&gt;
+&lt;p&gt;At this point the blog is full-featured and fast. The site is essentially static, so backend attacks aren&amp;rsquo;t a thing. And because the site is hosted on GitHub Pages and proxied through Cloudflare, a DDoS attack would have to first break Cloudflare and &lt;em&gt;then&lt;/em&gt; take down GitHub before it could even touch my blog. Roughly speaking, you&amp;rsquo;d need tens of terabits per second to be able to hurt me. I kind of wish my blog were big enough to be worth that kind of attack. Haha.&lt;/p&gt;
+&lt;p&gt;Now, for well-known reasons, although mainland China can reach the site fine and the speed is OK, latency is over 200ms and packet loss is bad. So I had to specifically optimize for mainland China.
+Cloudflare does have geo load-balancing, but it&amp;rsquo;s enterprise-only and &lt;em&gt;expensive&lt;/em&gt;. So I bought &lt;code&gt;baohongjiang.cn&lt;/code&gt;, ran a bunch of tests, and picked the best Hong Kong GIA-line VPS I could find for nginx reverse-proxying.
+When you visit &lt;code&gt;baohongjiang.cn&lt;/code&gt;, you&amp;rsquo;re really hitting the GIA-line VPS, which then fetches my site. Latency from mainland Chinese ISPs drops to around 30ms with very low packet loss. It flies.&lt;/p&gt;
+&lt;p&gt;The full request path:
+user → baohongjiang.cn → Hong Kong VPS → baohongjiang.com → Cloudflare → GitHub Pages (origin)&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;baohongjiang.com&lt;/code&gt; is the rock-solid international entry point. &lt;code&gt;baohongjiang.cn&lt;/code&gt; is the mainland-China fast lane.&lt;/p&gt;
+&lt;p&gt;This setup is &lt;em&gt;not&lt;/em&gt; the cheapest possible — straight GitHub Pages costs you nothing. But I just wanted to flex.&lt;/p&gt;</description></item></channel></rss>

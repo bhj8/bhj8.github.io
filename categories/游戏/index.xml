@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>游戏 on 鲍洪江的博客</title><link>https://bhj8.github.io/categories/%E6%B8%B8%E6%88%8F/</link><description>Recent content in 游戏 on 鲍洪江的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Fri, 07 Aug 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://bhj8.github.io/categories/%E6%B8%B8%E6%88%8F/index.xml" rel="self" type="application/rss+xml"/><item><title>我做的游戏</title><link>https://bhj8.github.io/p/%E6%88%91%E5%81%9A%E7%9A%84%E6%B8%B8%E6%88%8F/</link><pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate><guid>https://bhj8.github.io/p/%E6%88%91%E5%81%9A%E7%9A%84%E6%B8%B8%E6%88%8F/</guid><description>&lt;img src="https://bhj8.github.io/p/%E6%88%91%E5%81%9A%E7%9A%84%E6%B8%B8%E6%88%8F/void-protocol.jpg" alt="Featured image of post 我做的游戏" /&gt;&lt;p&gt;不用下载，浏览器打开就是游戏。&lt;/p&gt;
+&lt;h2 id="void-protocol"&gt;VOID PROTOCOL
+&lt;/h2&gt;&lt;p&gt;第一人称波次射击。你是回收进程，被派进一个正在被释放的区块——里面的东西都没做完，所以贴图、音效、模型、动画全是代码在运行时生成的，一个素材文件都没有。&lt;/p&gt;
+&lt;p&gt;终端：PC · 移动端未适配&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://bhj8.github.io/games/void-protocol/" &gt;&lt;img src="https://bhj8.github.io/p/%E6%88%91%E5%81%9A%E7%9A%84%E6%B8%B8%E6%88%8F/void-protocol-play.jpg"
+width="1280"
+height="720"
+srcset="https://bhj8.github.io/p/%E6%88%91%E5%81%9A%E7%9A%84%E6%B8%B8%E6%88%8F/void-protocol-play_hu_8b5d25f54641c5df.jpg 480w, https://bhj8.github.io/p/%E6%88%91%E5%81%9A%E7%9A%84%E6%B8%B8%E6%88%8F/void-protocol-play_hu_d82a68bfb8c7854a.jpg 1024w"
+loading="lazy"
+alt="VOID PROTOCOL"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style="text-align:center;margin:1.2em 0 2.4em"&gt;
+&lt;a href="https://bhj8.github.io/games/void-protocol/" target="_blank" rel="noopener"
+style="display:inline-block;padding:1em 3.4em;border-radius:10px;font-size:1.15em;
+background:#05070c;color:#5fe6ff;border:2px solid #5fe6ff;letter-spacing:.18em;
+font-weight:700;text-decoration:none;box-shadow:0 0 22px rgba(95,230,255,.35)"&gt;
+▶ 开 始 游 戏
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h2 id="战线-frontline"&gt;战线 FRONTLINE
+&lt;/h2&gt;&lt;p&gt;2.5D 即时战略。没有农民，没有采矿，资源来自你占领的据点。掩体决定伤害，压制决定推进，侧翼决定胜负。&lt;/p&gt;
+&lt;p&gt;终端：PC · 移动端未适配&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://bhj8.github.io/games/frontline/" &gt;&lt;img src="https://bhj8.github.io/p/%E6%88%91%E5%81%9A%E7%9A%84%E6%B8%B8%E6%88%8F/frontline.jpg"
+width="1280"
+height="720"
+srcset="https://bhj8.github.io/p/%E6%88%91%E5%81%9A%E7%9A%84%E6%B8%B8%E6%88%8F/frontline_hu_ecddb0ef0c025957.jpg 480w, https://bhj8.github.io/p/%E6%88%91%E5%81%9A%E7%9A%84%E6%B8%B8%E6%88%8F/frontline_hu_72983c4f7d4e1c7a.jpg 1024w"
+loading="lazy"
+alt="战线 FRONTLINE"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style="text-align:center;margin:1.2em 0 2.4em"&gt;
+&lt;a href="https://bhj8.github.io/games/frontline/" target="_blank" rel="noopener"
+style="display:inline-block;padding:1em 3.4em;border-radius:10px;font-size:1.15em;
+background:#14100a;color:#e0a54a;border:2px solid #e0a54a;letter-spacing:.18em;
+font-weight:700;text-decoration:none;box-shadow:0 0 22px rgba(224,165,74,.35)"&gt;
+▶ 开 始 游 戏
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;后续做一个加一个。&lt;/p&gt;</description></item></channel></rss>

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>战线 · FRONTLINE — 2.5D RTS</title>
+<style>
+:root{
+  --field:#171a12;--panel:#12150e;--panel2:#1b1f16;--ink:#e4e6d6;--dim:#8d947e;
+  --line:rgba(228,230,214,.13);--blue:#5aa6e0;--blue-d:#2d6b98;--red:#d9603c;--red-d:#8f3a20;--amber:#d9a441;
+  --mono:ui-monospace,"SF Mono","Cascadia Mono","JetBrains Mono",Menlo,Consolas,monospace;
+  --sans:"Inter","Helvetica Neue","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;overflow:hidden;background:#080a05;color:var(--ink);font-family:var(--sans);
+  -webkit-user-select:none;user-select:none}
+/* 只有覆盖层里的说明文字允许选中复制，战场与 HUD 一律禁止（拖框选时会误选文字） */
+.box,.box *{-webkit-user-select:text;user-select:text}
+canvas{display:block}
+#game{position:fixed;inset:0;cursor:crosshair}
+#game.amove{cursor:cell}
+.hud{position:fixed;pointer-events:none;z-index:10}
+.pane{background:var(--panel);border:1px solid var(--line);pointer-events:auto}
+#top{top:0;left:0;right:0;height:46px;display:flex;align-items:stretch;
+     background:linear-gradient(180deg,rgba(10,13,7,.96),rgba(10,13,7,.7));border-bottom:1px solid var(--line)}
+#res{display:flex;align-items:center;gap:18px;padding:0 16px}
+.res{display:flex;align-items:baseline;gap:6px;font-family:var(--mono)}
+.res .lb{font-size:9px;letter-spacing:.18em;color:var(--dim)}
+.res .vl{font-size:17px;font-variant-numeric:tabular-nums}
+.res .rate{font-size:9px;color:var(--dim)}
+#front{flex:1;display:flex;flex-direction:column;justify-content:center;padding:0 20px;gap:5px}
+#vpbar{height:9px;background:#0b0d07;border:1px solid var(--line);display:flex;position:relative;overflow:hidden}
+#vp0{background:linear-gradient(90deg,var(--blue-d),var(--blue));height:100%}
+#vp1{background:linear-gradient(270deg,var(--red-d),var(--red));height:100%;margin-left:auto}
+#vprow{display:flex;justify-content:space-between;font-family:var(--mono);font-size:10px;letter-spacing:.1em;color:var(--dim)}
+#dots{display:flex;gap:5px;align-items:center}
+.dot{width:16px;height:6px;border:1px solid var(--line);background:#0b0d07;transition:background .3s}
+.dot.b{background:var(--blue)}.dot.r{background:var(--red)}
+#clock{padding:0 16px;display:flex;align-items:center;font-family:var(--mono);font-size:15px;color:var(--dim);border-left:1px solid var(--line)}
+#sndbtn{padding:0 12px;display:flex;align-items:center;font-family:var(--mono);font-size:10px;letter-spacing:.1em;
+        color:var(--dim);border-left:1px solid var(--line);cursor:pointer;background:none;border-top:0;border-right:0;border-bottom:0}
+#sndbtn:hover{color:var(--ink)}
+#bottom{bottom:0;left:0;right:0;height:132px;display:flex;align-items:stretch}
+#mini{width:196px;flex:none;position:relative;background:var(--panel);border:1px solid var(--line);border-bottom:0;border-left:0}
+#minic{position:absolute;inset:5px;width:calc(100% - 10px);height:calc(100% - 10px);cursor:pointer}
+#sel{flex:1;background:var(--panel);border-top:1px solid var(--line);padding:8px 14px;overflow:hidden;pointer-events:auto}
+#selhead{font-size:10px;letter-spacing:.22em;color:var(--dim);margin-bottom:6px}
+#selbody{display:flex;gap:8px;flex-wrap:wrap;align-items:flex-start}
+.card{border:1px solid var(--line);background:var(--panel2);padding:6px 9px;min-width:132px}
+.card .nm{font-size:12px;letter-spacing:.05em}
+.card .st{font-size:9px;color:var(--dim);font-family:var(--mono);letter-spacing:.08em;margin-top:3px}
+.card .hp{height:3px;background:#0b0d07;margin-top:5px}
+.card .hp>i{display:block;height:100%;background:var(--blue)}
+.card.warn .hp>i{background:var(--amber)}
+.card.crit .hp>i{background:var(--red)}
+#abils{display:flex;gap:6px;margin-top:7px;flex-wrap:wrap}
+.abil{border:1px solid var(--line);background:var(--panel2);color:var(--ink);padding:4px 9px;cursor:pointer;
+      font-family:var(--sans);font-size:11px;letter-spacing:.04em;transition:border-color .12s}
+.abil:hover{border-color:rgba(217,164,65,.55)}
+.abil.on{border-color:var(--amber);background:rgba(217,164,65,.12)}
+.abil b{font-family:var(--mono);font-size:9px;color:var(--amber);margin-left:5px;font-weight:500}
+.chip{border:1px solid var(--line);background:var(--panel2);padding:5px 8px;font-family:var(--mono);font-size:11px}
+.chip b{color:var(--amber);font-weight:500}
+#build{width:496px;flex:none;background:var(--panel);border:1px solid var(--line);border-bottom:0;border-right:0;
+       padding:7px;display:flex;flex-direction:column;gap:6px;pointer-events:auto}
+/* auto-fit 而不是写死 3 列：兵种是配置表里的一行，加一个就该自己排开，
+   不该回来改 CSS。窄屏时也会自动塌成更少的列。 */
+#btns{display:grid;grid-template-columns:repeat(auto-fit,minmax(112px,1fr));gap:5px;flex:1}
+.bt{position:relative;background:var(--panel2);border:1px solid var(--line);text-align:left;padding:6px 8px;
+    color:var(--ink);font-family:var(--sans);cursor:pointer;transition:border-color .12s}
+.bt:hover{border-color:rgba(217,164,65,.55)}
+.bt:disabled{opacity:.34;cursor:not-allowed;border-color:var(--line)}
+.bt .k{position:absolute;top:5px;right:7px;font-family:var(--mono);font-size:9px;color:var(--amber)}
+.bt .n{font-size:11.5px;letter-spacing:.03em}
+.bt .c{font-family:var(--mono);font-size:9px;color:var(--dim);margin-top:3px;letter-spacing:.06em}
+#queue{height:20px;display:flex;gap:4px;align-items:stretch}
+.q{flex:0 0 62px;border:1px solid var(--line);position:relative;font-family:var(--mono);font-size:9px;
+   color:var(--dim);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.q>i{position:absolute;left:0;top:0;bottom:0;background:rgba(90,166,224,.26)}
+.q>span{position:relative}
+#qempty{font-family:var(--mono);font-size:9px;color:#5a5f4e;letter-spacing:.16em;align-self:center}
+#log{left:0;bottom:132px;width:196px;padding:6px 8px;font-family:var(--mono);font-size:9.5px;line-height:1.55;
+     color:var(--dim);background:linear-gradient(0deg,rgba(10,13,7,.85),transparent)}
+#log .hi{color:var(--amber)}
+.overlay{position:fixed;inset:0;z-index:30;display:flex;align-items:center;justify-content:center;
+         background:radial-gradient(ellipse at center,rgba(20,24,15,.9),rgba(5,7,3,.98))}
+.overlay.hide{display:none}
+.box{width:min(680px,92vw);border:1px solid var(--line);background:var(--panel);padding:34px 38px}
+.eyebrow{font-family:var(--mono);font-size:10px;letter-spacing:.4em;color:var(--amber)}
+h1{font-size:46px;letter-spacing:.02em;font-weight:600;margin:8px 0 2px;line-height:1}
+h1 small{display:block;font-size:11px;letter-spacing:.5em;color:var(--dim);font-weight:400;margin-top:9px}
+.rule{height:1px;background:var(--line);margin:22px 0}
+.lead{font-size:13px;line-height:1.75;color:#b9bfa9}
+.keys{display:grid;grid-template-columns:auto 1fr auto 1fr;gap:6px 12px;font-size:11.5px;margin-top:14px;align-items:center}
+.keys kbd,#keyhelp kbd{font-family:var(--mono);font-size:10px;background:var(--panel2);
+          border:1px solid var(--line);
+          padding:2px 6px;color:var(--amber);white-space:nowrap;text-align:center}
+.keys span{color:var(--dim)}
+.row{display:flex;gap:10px;margin-top:24px;flex-wrap:wrap}
+.pick{flex:1;min-width:120px;background:var(--panel2);border:1px solid var(--line);color:var(--ink);
+      padding:13px 10px;cursor:pointer;font-family:var(--sans);transition:.14s}
+.pick:hover{border-color:var(--amber)}
+.pick.on{border-color:var(--amber);background:rgba(217,164,65,.1)}
+.pick .t{font-size:13px;letter-spacing:.06em}
+.pick .d{font-size:10px;color:var(--dim);margin-top:4px;font-family:var(--mono)}
+.go{width:100%;margin-top:14px;padding:15px;background:var(--amber);color:#14170e;border:0;cursor:pointer;
+    font-family:var(--mono);font-size:12px;letter-spacing:.34em;font-weight:700}
+.go:hover{background:#eab851}
+#endt{font-size:44px;letter-spacing:.04em}
+.win{color:var(--blue)}.lose{color:var(--red)}
+#loading{position:fixed;inset:0;z-index:40;display:flex;align-items:center;justify-content:center;background:#080a05;
+  font-family:var(--mono);font-size:11px;letter-spacing:.3em;color:var(--amber)}
+#loading.hide{display:none}
+/* ---- 对局大厅：单人与联机共用同一界面，模式只决定席位能否被真人占据 ---- */
+.box.lobby{width:min(1060px,96vw);max-height:94vh;padding:0;display:flex;flex-direction:column}
+.lhead{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;
+       padding:24px 30px 18px;border-bottom:1px solid var(--line)}
+.lhead h1{font-size:38px;margin:6px 0 0}
+.lhead h1 small{font-size:10px;letter-spacing:.42em;margin-top:7px}
+.modes{display:flex;gap:6px;flex:none}
+.modebtn{background:var(--panel2);border:1px solid var(--line);color:var(--dim);cursor:pointer;
+         padding:10px 16px;font-family:var(--mono);font-size:11px;letter-spacing:.16em}
+.modebtn:hover{color:var(--ink)}
+.modebtn.on{border-color:var(--amber);color:var(--amber);background:rgba(217,164,65,.1)}
+.lbody{display:flex;flex:1;min-height:0;overflow:hidden}
+.lmap{width:290px;flex:none;padding:20px 22px;border-right:1px solid var(--line);overflow-y:auto}
+.lright{flex:1;padding:20px 24px;overflow-y:auto;min-width:0}
+#mappv{width:100%;height:auto;border:1px solid var(--line);background:#0d1008;display:block}
+.mapinfo{font-family:var(--mono);font-size:10px;color:var(--dim);letter-spacing:.06em;margin:9px 0 12px}
+.mapinfo b{color:var(--ink);font-weight:500}
+.fieldrow{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+.fieldrow label{font-family:var(--mono);font-size:10px;color:var(--dim);letter-spacing:.1em;
+                width:66px;flex:none}
+.fieldrow input,.fieldrow select{flex:1;min-width:0;background:var(--panel2);border:1px solid var(--line);
+  color:var(--ink);padding:7px 9px;font-family:var(--mono);font-size:11.5px;letter-spacing:.04em}
+.fieldrow input:focus,.fieldrow select:focus{outline:none;border-color:var(--amber)}
+.fieldrow input:disabled,.fieldrow select:disabled{opacity:.4}
+.hintline{font-family:var(--mono);font-size:9.5px;color:#6f7663;line-height:1.7;margin-top:6px}
+.hintline b{color:var(--amber);font-weight:500}
+.rulegrid{display:grid;grid-template-columns:1fr 1fr;gap:0 14px}
+.checks{display:flex;gap:14px;flex:1}
+.ck{display:flex;align-items:center;gap:5px;font-family:var(--mono);font-size:10.5px;color:var(--dim);
+    width:auto;cursor:pointer}
+.ck input{flex:none;width:auto;padding:0}
+/* ---- 席位表 ---- */
+.slothead,.slotrow{display:grid;grid-template-columns:14px 1fr 78px 84px 116px 62px 22px;
+                   gap:7px;align-items:center}
+.slothead{font-family:var(--mono);font-size:9px;color:#5f6553;letter-spacing:.12em;
+          padding:0 2px 5px;border-bottom:1px solid var(--line);margin-bottom:6px}
+.slotrow{padding:4px 2px;border-bottom:1px solid rgba(228,230,214,.05)}
+.slotrow.off{opacity:.45}
+.slotrow.me{background:rgba(217,164,65,.055)}
+.slotrow.over{background:rgba(217,96,60,.10)}
+.sdot{width:10px;height:10px;border-radius:50%;flex:none}
+.slotrow input,.slotrow select{background:var(--panel2);border:1px solid var(--line);color:var(--ink);
+  padding:5px 6px;font-family:var(--mono);font-size:10.5px;min-width:0;width:100%}
+.slotrow input:focus,.slotrow select:focus{outline:none;border-color:var(--amber)}
+.slotrow input:disabled,.slotrow select:disabled{opacity:.45;cursor:not-allowed}
+.splayer{font-size:11.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+.splayer b{font-family:var(--mono);font-size:8.5px;color:var(--amber);font-weight:500;
+           margin-left:6px;letter-spacing:.08em}
+.splayer i{font-family:var(--mono);font-size:8.5px;color:#7fc98a;font-style:normal;
+           margin-left:5px;letter-spacing:.08em}
+.splayer.dimmed{color:var(--dim);font-family:var(--mono);font-size:10.5px}
+.splayer.waiting{color:#5f6553;font-family:var(--mono);font-size:10px;letter-spacing:.08em}
+.sready{font-family:var(--mono);font-size:9px;color:#6f7663;letter-spacing:.06em;text-align:right}
+.sready.on{color:#7fc98a}
+.sready.gone{color:var(--red)}
+/* ---- 赛后统计 ---- */
+#endstats{text-align:left;margin:16px 0 4px;max-height:44vh;overflow-y:auto;
+          border-top:1px solid var(--line);padding-top:12px}
+.stblk{margin-bottom:13px}
+.sthead{display:flex;align-items:center;gap:7px;font-size:12.5px;letter-spacing:.04em;
+        margin-bottom:5px}
+.sthead .sdot{width:9px;height:9px}
+.sthead b{font-family:var(--mono);font-size:10px;color:var(--dim);font-weight:500;
+          letter-spacing:.06em;margin-left:auto}
+.strow{display:grid;grid-template-columns:74px 1fr;gap:8px;font-size:11px;
+       padding:2px 0;align-items:baseline}
+.strow>span:first-child{font-family:var(--mono);font-size:9px;color:#5f6553;
+       letter-spacing:.08em;text-align:right}
+.strow em{font-style:normal;color:var(--dim);font-family:var(--mono);font-size:10px}
+.stfoot{font-family:var(--mono);font-size:10px;color:var(--dim);letter-spacing:.05em;
+        border-top:1px solid var(--line);padding-top:9px;margin-top:4px}
+.skick{background:none;border:1px solid rgba(217,96,60,.4);color:#a8563c;border-radius:3px;
+       font-size:11px;line-height:1;padding:3px 0;cursor:pointer;font-family:var(--mono)}
+.skick:hover{border-color:var(--red);color:var(--red);background:rgba(217,96,60,.12)}
+/* ---- 联机连接条与底部 ---- */
+.lnet{padding:14px 24px;border-top:1px solid var(--line);display:none}
+.lnet.on{display:block}
+.lfoot{display:flex;align-items:center;gap:12px;padding:16px 24px;border-top:1px solid var(--line)}
+#lobbystatus{flex:1;font-family:var(--mono);font-size:10.5px;color:var(--dim);letter-spacing:.06em}
+.lfoot .go{width:auto;margin:0;padding:13px 34px;flex:none}
+.lfoot .go:disabled{opacity:.35;cursor:not-allowed;background:var(--panel2);color:var(--dim)}
+#readybtn{padding:13px 24px}
+#readybtn.on{border-color:#7fc98a;color:#7fc98a}
+.netrow{display:flex;gap:8px;margin-top:4px}
+.netbtn{background:var(--panel2);border:1px solid var(--line);color:var(--ink);cursor:pointer;
+        padding:9px 18px;font-family:var(--mono);font-size:11px;letter-spacing:.16em;white-space:nowrap}
+.netbtn:hover{border-color:var(--amber);color:var(--amber)}
+.netbtn:disabled{opacity:.35;cursor:not-allowed}
+#netmsg{font-family:var(--mono);font-size:10px;color:var(--dim);margin-top:10px;line-height:1.7;
+        border-left:2px solid var(--line);padding-left:9px;min-height:34px}
+#netmsg b{color:var(--amber);font-weight:500}
+/* ---- 大厅座位 ---- */
+#seats{margin-top:14px;display:flex;flex-direction:column;gap:7px}
+.seat{display:flex;align-items:center;gap:10px;border:1px solid var(--line);background:var(--panel2);
+      padding:9px 12px}
+.seat i{width:9px;height:9px;flex:none;border-radius:50%;background:#4a5040}
+.seat.b i{background:var(--blue)}.seat.r i{background:var(--red)}
+.seat .nm{font-size:12px;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.seat .tag{font-family:var(--mono);font-size:9px;color:var(--dim);letter-spacing:.1em}
+.seat.me{border-color:rgba(217,164,65,.55)}
+.seat.me .tag{color:var(--amber)}
+/* ---- 调参面板 ---- */
+#dbg{position:fixed;top:0;right:0;bottom:0;width:400px;max-width:96vw;z-index:50;background:var(--panel);
+     border-left:1px solid var(--line);display:flex;flex-direction:column;font-family:var(--sans)}
+#dbg.hide{display:none}
+.dbghead{display:flex;align-items:center;justify-content:space-between;padding:12px 14px;
+         border-bottom:1px solid var(--line)}
+.dbghead b{font-size:12px;letter-spacing:.22em;font-weight:500}
+.dbgclose{cursor:pointer;color:var(--dim);font-size:14px;padding:0 4px}
+.dbgclose:hover{color:var(--amber)}
+.dbgtabs{display:flex;flex-wrap:wrap;gap:4px;padding:9px 12px;border-bottom:1px solid var(--line)}
+.dbgtab{background:var(--panel2);border:1px solid var(--line);color:var(--dim);cursor:pointer;
+        padding:5px 10px;font-family:var(--mono);font-size:10px;letter-spacing:.06em}
+.dbgtab:hover{color:var(--ink)}
+.dbgtab.on{border-color:var(--amber);color:var(--amber)}
+.dbghint{padding:9px 14px;font-family:var(--mono);font-size:9.5px;color:#6f7663;line-height:1.7;
+         border-bottom:1px solid var(--line)}
+.dbghint i{color:var(--amber);font-style:normal}
+.dbgbody{flex:1;overflow-y:auto;padding:10px 14px}
+.dbgrow{display:flex;align-items:center;gap:9px;margin-bottom:5px}
+.dbgrow span{font-family:var(--mono);font-size:10.5px;color:var(--dim);flex:1;min-width:0;
+             overflow:hidden;text-overflow:ellipsis}
+.dbgrow input{width:132px;flex:none;background:var(--panel2);border:1px solid var(--line);color:var(--ink);
+              padding:4px 7px;font-family:var(--mono);font-size:11px}
+.dbgrow input:focus{outline:none;border-color:var(--amber)}
+.dbgrow input[type=checkbox]{width:auto}
+.dbggrp{border-left:1px solid var(--line);padding-left:10px;margin:8px 0 10px}
+.dbggrpname{font-family:var(--mono);font-size:10px;color:var(--amber);letter-spacing:.12em;margin-bottom:5px}
+.dbgfoot{display:flex;flex-wrap:wrap;gap:5px;padding:10px 14px;border-top:1px solid var(--line)}
+.dbgbtn{background:var(--panel2);border:1px solid var(--line);color:var(--ink);cursor:pointer;
+        padding:7px 11px;font-family:var(--mono);font-size:10px;letter-spacing:.08em}
+.dbgbtn:hover{border-color:var(--amber);color:var(--amber)}
+#dbgtip{position:fixed;bottom:6px;right:10px;z-index:11;font-family:var(--mono);font-size:9px;
+        color:#5a5f4e;letter-spacing:.1em;pointer-events:none}
+#netbadge{position:fixed;top:52px;right:8px;z-index:12;font-family:var(--mono);font-size:9.5px;
+  letter-spacing:.1em;color:var(--dim);background:rgba(10,13,7,.8);border:1px solid var(--line);padding:3px 8px}
+#netbadge.hide{display:none}
+@media (max-width:1100px){#sel{display:none}}
+@media (max-width:820px){#build{width:330px}}
+</style>
+</head>
+<body>
+<canvas id="game"></canvas>
+
+<div class="hud" id="top">
+  <div id="res">
+    <div class="res"><span class="lb">人力</span><span class="vl" id="mp">0</span><span class="rate" id="mpr">+0</span></div>
+    <div class="res"><span class="lb">燃油</span><span class="vl" id="fu">0</span><span class="rate" id="fur">+0</span></div>
+    <div class="res"><span class="lb">人口</span><span class="vl" id="pop">0</span></div>
+  </div>
+  <div id="front">
+    <div id="vprow"><span id="vp0t">1250</span><span id="dots"></span><span id="vp1t">1250</span></div>
+    <div id="vpbar"><i id="vp0"></i><i id="vp1"></i></div>
+  </div>
+  <div id="clock">00:00</div>
+  <button id="sndbtn">音效 开</button>
+</div>
+
+<div class="hud" id="log"></div>
+
+<div class="hud" id="bottom">
+  <div id="mini"><canvas id="minic"></canvas></div>
+  <div id="sel"><div id="selhead">未选择单位 · 框选你的部队</div><div id="selbody"></div>
+    <div id="abils"></div></div>
+  <div id="build"><div id="btns"></div><div id="queue"><span id="qempty">生产队列 空</span></div></div>
+</div>
+
+<div class="overlay" id="starto">
+  <div class="box lobby">
+    <div class="lhead">
+      <div>
+        <div class="eyebrow">垂直切片 · M1 · 2.5D</div>
+        <h1>战线<small>F R O N T L I N E</small></h1>
+      </div>
+      <div class="modes">
+        <button class="modebtn on" data-mode="solo">单 人 遭 遇 战</button>
+        <button class="modebtn" data-mode="net">局 域 网 联 机</button>
+      </div>
+    </div>
+
+    <div class="lbody">
+      <!-- 左：地图 -->
+      <div class="lmap">
+        <div class="eyebrow" style="margin-bottom:9px">地 图</div>
+        <canvas id="mappv"></canvas>
+        <div id="mapinfo" class="mapinfo"></div>
+        <div class="fieldrow"><label>预设</label>
+          <select id="mpreset">
+            <option value="small">交战线 · 2 席</option>
+            <option value="medium">河谷 · 4 席</option>
+            <option value="large">战区 · 8 席</option>
+          </select></div>
+        <div class="fieldrow"><label>宽 / 高</label>
+          <input id="mgw" type="number" min="40" max="400" step="8">
+          <input id="mgh" type="number" min="30" max="300" step="8"></div>
+        <div class="fieldrow"><label>种子</label>
+          <input id="mseed" placeholder="留空 = 随机">
+          <button class="netbtn" id="mrand">随机</button></div>
+        <div class="hintline">
+          出生点由地图决定，改预设会同时改尺寸与据点布局。
+        </div>
+        <button class="netbtn" id="dbgopen" style="width:100%;margin-top:10px">调 参 面 板 &nbsp;`</button>
+      </div>
+
+      <!-- 右：席位与规则 -->
+      <div class="lright">
+        <div class="eyebrow" style="margin-bottom:9px">席 位</div>
+        <div class="slothead">
+          <span></span><span>名字</span><span>类型</span><span>难度</span><span>队伍</span><span>状态</span><span></span>
+        </div>
+        <div id="slots"></div>
+        <div id="capline" class="hintline"></div>
+
+        <div class="eyebrow" style="margin:16px 0 9px">对 局 规 则</div>
+        <div class="rulegrid">
+          <div class="fieldrow"><label>起始人力</label><input id="rmp" type="number" min="0" step="20"></div>
+          <div class="fieldrow"><label>起始燃油</label><input id="rfu" type="number" min="0" step="5"></div>
+          <div class="fieldrow"><label>人口上限</label><input id="rpop" type="number" min="6" step="2"></div>
+          <div class="fieldrow"><label>战力值</label><input id="rvp" type="number" min="100" step="50"></div>
+        </div>
+        <div class="fieldrow" style="margin-top:2px">
+          <label>胜利条件</label>
+          <span class="checks">
+            <label class="ck"><input type="checkbox" id="wvp" checked> 战力耗尽</label>
+            <label class="ck"><input type="checkbox" id="whq" checked> 摧毁基地</label>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 联机连接条：只在联机模式显示 -->
+    <div class="lnet" id="lnet">
+      <div class="fieldrow" style="margin:0">
+        <label>昵称</label><input id="netname" maxlength="16" placeholder="指挥官" spellcheck="false">
+        <label style="width:auto;margin-left:8px">地址</label>
+        <input id="netaddr" placeholder="192.168.1.10:8080" spellcheck="false">
+        <button class="netbtn" id="netbtn">连 接</button>
+        <button class="netbtn" id="netleave" disabled>断 开</button>
+      </div>
+      <div id="netmsg">房主在项目目录运行 <b>node host.js</b>，它会打印局域网地址；把那个地址填进来。空席由 AI 接管。</div>
+    </div>
+
+    <div class="lfoot">
+      <div id="lobbystatus"></div>
+      <button class="netbtn" id="readybtn" style="display:none">准 备</button>
+      <button class="go" id="gobtn">开 始 对 局</button>
+    </div>
+  </div>
+</div>
+
+<div class="overlay hide" id="endo">
+  <div class="box" style="text-align:center">
+    <div class="eyebrow" id="ende">战 斗 结 束</div>
+    <h1 id="endt">胜利</h1><div class="rule"></div>
+    <p class="lead" id="endd"></p>
+    <div id="endstats"></div>
+    <div class="row" style="justify-content:center">
+      <button class="go" id="again">再 来 一 局</button>
+      <button class="netbtn" id="savetape">下 载 录 像</button>
+    </div>
+  </div>
+</div>
+
+<div class="overlay hide" id="helpo">
+  <div class="box">
+    <div class="eyebrow">战 场 手 册</div>
+    <h1 style="font-size:30px">机制速查</h1><div class="rule"></div>
+    <p class="lead">
+      <b style="color:var(--amber)">掩体</b> — 沙袋与矮墙有朝向，减伤 34%~54%，被绕到侧后完全无效。<b>部队抵达目的地后会自动就近进驻掩体</b>，逐兵分配，不是整队一个判定。<br>
+      <b style="color:var(--amber)">压制</b> — 被密集火力覆盖会进入压制/钉扎，移速与精度暴跌。机枪班是压制之王。<br>
+      <b style="color:var(--amber)">架设</b> — 机枪与迫击炮需要停下架设，架设后有射界限制，转向要重新架设。<br>
+      <b style="color:var(--amber)">撤退</b> — 按 T 让残兵跑回基地，途中减伤但无法开火，回到基地自动花人力补员。<br>
+      <b style="color:var(--amber)">进驻建筑</b> — 选中步兵右键点建筑即可进驻。射程与视野提升，稳定重掩体，但挨炸伤害接近翻倍，别一直龟着。<br>
+      <b style="color:var(--amber)">装甲分级</b> — 步兵 / 轻装甲（装甲车）/ 重装甲（坦克）。轻武器打轻装甲只剩两成、打坦克几乎无伤。<br>
+      <b style="color:var(--amber)">反坦克组</b> — 火箭筒对重装甲有 30% 额外加成，射程压过坦克主炮；但打步兵伤害只剩四分之一且很难命中。纯粹的克制单位，没有它就拦不住坦克。<br>
+      <b style="color:var(--amber)">坦克</b> — 主炮带溅射，能压着步兵推进，也能把驻守的建筑打塌。但射程短于反坦克组、转向慢，独自突进会被两组反坦克在十几秒内点掉。<br>
+      <b style="color:var(--amber)">克制链</b> — 步枪吃机枪，机枪吃不动装甲，装甲吃反坦克，反坦克怕步枪与迫击炮。任何单一兵种堆到底都会被针对。<br>
+      <b style="color:var(--amber)">战力值</b> — 谁占的据点多，对方战力值就持续流失。归零即败。摧毁敌方基地同样获胜。
+    </p>
+    <div class="rule"></div>
+    <p class="lead" id="keyhelp">
+      <b style="color:var(--amber)">选择</b> — 左键点选或拖框；<kbd>Shift</kbd> 加选；双击选中屏幕内所有同兵种；<kbd>Tab</kbd> 在已选中的部队里循环，镜头跟着走。<br>
+      <b style="color:var(--amber)">下令</b> — 右键移动；点敌人是攻击，点建筑是进驻。<kbd>A</kbd> 后左键是攻击移动。<kbd>Ctrl</kbd>+右键是强制攻击，<b>伤害不分敌我</b>，绞肉中的建筑只能这么打。<br>
+      <b style="color:var(--amber)">编队</b> — <kbd>Ctrl</kbd>+<kbd>1</kbd>~<kbd>9</kbd> 设定，按数字调出，<b>连按两下镜头跟过去</b>；<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+数字是追加而不是替换。<br>
+      <b style="color:var(--amber)">小地图</b> — 左键挪视野，<b>右键直接派兵过去</b>，<kbd>A</kbd> 后左键是攻击移动过去。<br>
+      <b style="color:var(--amber)">其他</b> — <kbd>D</kbd> 架设 · <kbd>S</kbd> 停止 · <kbd>T</kbd> 撤退 · <kbd>空格</kbd> 回基地 · 中键拖动 / 边缘滚屏 / 滚轮缩放 · <kbd>Q W E R F G</kbd> 生产 · <kbd>`</kbd> 调参面板。
+    </p>
+    <button class="go" id="closehelp">返 回 战 场</button>
+  </div>
+</div>
+
+<div id="netbadge" class="hide"></div>
+<div id="dbg" class="hide"></div>
+<div id="dbgtip">` 调参面板</div>
+<div id="loading" class="hide">正 在 烘 焙 地 形 与 贴 图 …</div>
+
+<!-- 模块按依赖顺序加载。用普通 script 而非 ES module，是为了 file:// 双击也能跑；
+     harness.js / host.js / build.js 都从这里读取顺序，这份列表是唯一来源。 -->
+<script src="src/core/constants.js"></script>
+<script src="src/core/config.js"></script>
+<script src="src/core/terrain.js"></script>
+<script src="src/core/state.js"></script>
+<script src="src/core/mapcfg.js"></script>
+<script src="src/core/mapgen.js"></script>
+<script src="src/core/init.js"></script>
+<script src="src/core/pathfind.js"></script>
+<script src="src/core/vision.js"></script>
+<script src="src/core/fx.js"></script>
+<script src="src/core/stats.js"></script>
+<script src="src/core/replay.js"></script>
+<script src="src/core/sim.js"></script>
+<script src="src/view/audio.js"></script>
+<script src="src/view/assets.js"></script>
+<script src="src/view/bake.js"></script>
+<script src="src/view/render.js"></script>
+<script src="src/view/input.js"></script>
+<script src="src/view/net.js"></script>
+<script src="src/view/hud.js"></script>
+<script src="src/view/lobby.js"></script>
+<script src="src/view/debug.js"></script>
+<script src="src/main.js"></script>
+</body>
+</html>

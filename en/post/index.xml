@@ -1,0 +1,846 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Hongjiang Bao's Blog</title><link>https://bhj8.github.io/en/post/</link><description>Recent content in Posts on Hongjiang Bao's Blog</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 07 Aug 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://bhj8.github.io/en/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Games I've Made</title><link>https://bhj8.github.io/en/p/games-ive-made/</link><pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate><guid>https://bhj8.github.io/en/p/games-ive-made/</guid><description>&lt;img src="https://bhj8.github.io/p/%E6%88%91%E5%81%9A%E7%9A%84%E6%B8%B8%E6%88%8F/void-protocol.jpg" alt="Featured image of post Games I've Made" /&gt;&lt;p&gt;No download — the link is the game.&lt;/p&gt;
+&lt;h2 id="void-protocol"&gt;VOID PROTOCOL
+&lt;/h2&gt;&lt;p&gt;First-person wave shooter. You&amp;rsquo;re a reclamation process dropped into a block being freed — nothing inside it was ever finished, which is why every texture, sound, model and animation is generated in code at runtime. Not a single asset file.&lt;/p&gt;
+&lt;p&gt;Platform: PC · no mobile support&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://bhj8.github.io/games/void-protocol/" &gt;&lt;img src="https://bhj8.github.io/p/%E6%88%91%E5%81%9A%E7%9A%84%E6%B8%B8%E6%88%8F/void-protocol-play.jpg"
+width="1280"
+height="720"
+srcset="https://bhj8.github.io/p/%E6%88%91%E5%81%9A%E7%9A%84%E6%B8%B8%E6%88%8F/void-protocol-play_hu_8b5d25f54641c5df.jpg 480w, https://bhj8.github.io/p/%E6%88%91%E5%81%9A%E7%9A%84%E6%B8%B8%E6%88%8F/void-protocol-play_hu_d82a68bfb8c7854a.jpg 1024w"
+loading="lazy"
+alt="VOID PROTOCOL"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style="text-align:center;margin:1.2em 0 2.4em"&gt;
+&lt;a href="https://bhj8.github.io/games/void-protocol/" target="_blank" rel="noopener"
+style="display:inline-block;padding:1em 3.4em;border-radius:10px;font-size:1.15em;
+background:#05070c;color:#5fe6ff;border:2px solid #5fe6ff;letter-spacing:.18em;
+font-weight:700;text-decoration:none;box-shadow:0 0 22px rgba(95,230,255,.35)"&gt;
+▶ PLAY NOW
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h2 id="frontline"&gt;FRONTLINE
+&lt;/h2&gt;&lt;p&gt;2.5D real-time strategy. No workers, no mining — income comes from the strongpoints you hold. Cover decides damage, suppression decides advance, flanking decides the match.&lt;/p&gt;
+&lt;p&gt;Platform: PC · no mobile support&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://bhj8.github.io/games/frontline/" &gt;&lt;img src="https://bhj8.github.io/p/%E6%88%91%E5%81%9A%E7%9A%84%E6%B8%B8%E6%88%8F/frontline.jpg"
+width="1280"
+height="720"
+srcset="https://bhj8.github.io/p/%E6%88%91%E5%81%9A%E7%9A%84%E6%B8%B8%E6%88%8F/frontline_hu_ecddb0ef0c025957.jpg 480w, https://bhj8.github.io/p/%E6%88%91%E5%81%9A%E7%9A%84%E6%B8%B8%E6%88%8F/frontline_hu_72983c4f7d4e1c7a.jpg 1024w"
+loading="lazy"
+alt="FRONTLINE"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style="text-align:center;margin:1.2em 0 2.4em"&gt;
+&lt;a href="https://bhj8.github.io/games/frontline/" target="_blank" rel="noopener"
+style="display:inline-block;padding:1em 3.4em;border-radius:10px;font-size:1.15em;
+background:#14100a;color:#e0a54a;border:2px solid #e0a54a;letter-spacing:.18em;
+font-weight:700;text-decoration:none;box-shadow:0 0 22px rgba(224,165,74,.35)"&gt;
+▶ PLAY NOW
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;More to come, one at a time.&lt;/p&gt;</description></item><item><title>Standing in 2026 — The Next Stage of How I Use AI</title><link>https://bhj8.github.io/en/p/standing-in-2026-the-next-stage-of-how-i-use-ai/</link><pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate><guid>https://bhj8.github.io/en/p/standing-in-2026-the-next-stage-of-how-i-use-ai/</guid><description>&lt;h2 id="foreword"&gt;Foreword
+&lt;/h2&gt;&lt;p&gt;Around this time last year I wrote &lt;a class="link" href="https://bhj8.github.io/en/p/standing-in-2025-looking-back-at-ai-and-looking-forward/" &gt;Standing in 2025 — Looking Back at AI, and Looking Forward&lt;/a&gt;. My take back then was: &lt;strong&gt;AI is an amplifier — own the framework, hand the details to AI.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A year on, that conclusion isn&amp;rsquo;t &lt;em&gt;wrong&lt;/em&gt;. It&amp;rsquo;s just no longer enough.&lt;/p&gt;
+&lt;p&gt;Because &amp;ldquo;have AI handle the details&amp;rdquo; has itself splintered into multiple wildly different layers. The productivity gap between people stuck on different layers is widening fast.&lt;/p&gt;
+&lt;p&gt;And I&amp;rsquo;ve personally hit a new bottleneck. This post is me writing down how I see that bottleneck and what I think the next stage is.&lt;/p&gt;
+&lt;h2 id="my-five-stages-of-using-ai"&gt;My five stages of using AI
+&lt;/h2&gt;&lt;p&gt;A quick recap of how my own usage has evolved:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Stage&lt;/th&gt;
+&lt;th&gt;Form&lt;/th&gt;
+&lt;th&gt;Representative&lt;/th&gt;
+&lt;th&gt;What I do&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;L1&lt;/td&gt;
+&lt;td&gt;Web chat&lt;/td&gt;
+&lt;td&gt;ChatGPT web&lt;/td&gt;
+&lt;td&gt;Paste question in, paste answer out&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;L2&lt;/td&gt;
+&lt;td&gt;IDE plugin&lt;/td&gt;
+&lt;td&gt;GitHub Copilot&lt;/td&gt;
+&lt;td&gt;AI completes alongside me; I&amp;rsquo;m in the driver&amp;rsquo;s seat&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;L3&lt;/td&gt;
+&lt;td&gt;AI-native IDE&lt;/td&gt;
+&lt;td&gt;Cursor&lt;/td&gt;
+&lt;td&gt;AI edits multiple files; I review&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;L4&lt;/td&gt;
+&lt;td&gt;Terminal-native agent&lt;/td&gt;
+&lt;td&gt;Claude Code&lt;/td&gt;
+&lt;td&gt;AI can touch my whole machine; I confirm via dialogue&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;L5&lt;/td&gt;
+&lt;td&gt;?&lt;/td&gt;
+&lt;td&gt;?&lt;/td&gt;
+&lt;td&gt;?&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;The throughline is one thing: &lt;strong&gt;AI&amp;rsquo;s operating boundary keeps expanding, and humans are progressively freed from layer after layer of concrete operation.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Each leap is an order-of-magnitude jump.&lt;/p&gt;
+&lt;h2 id="the-bottleneck-top-experts-cant-get-enough-out-of-three-max-20xs-i-cant-even-use-up-one-pro"&gt;The bottleneck: top experts can&amp;rsquo;t get enough out of three Max 20x&amp;rsquo;s; I can&amp;rsquo;t even use up one Pro
+&lt;/h2&gt;&lt;p&gt;I just bought Claude&amp;rsquo;s Max 5x. The result: &lt;strong&gt;I can&amp;rsquo;t even fully use it.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Meanwhile, some top developers publicly say they can&amp;rsquo;t get enough capacity out of running three Max 20x accounts at the same time.&lt;/p&gt;
+&lt;p&gt;That contrast made me stop and think — same tools, why can they burn through ten times the compute? Experts this strong, even &lt;em&gt;they&lt;/em&gt; don&amp;rsquo;t have enough? Where&amp;rsquo;s the actual gap? &lt;strong&gt;How do I close it?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Thinking it through, the answer is clear:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;I&amp;rsquo;m the bottleneck.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;For every task I&amp;rsquo;m still going back and forth with Claude Code:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;Search for related code first before changing anything&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;That approach isn&amp;rsquo;t right, try a different angle&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Run the tests first&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Confirm before committing&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I&amp;rsquo;m running 3–5 Agents in parallel and my brain is already taxed. Human context-switching has a cost. Tops, you can manage 5–7.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s a strange feeling — &lt;strong&gt;I&amp;rsquo;m holding a rocket but I&amp;rsquo;m still shifting gears one at a time.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id="the-next-stage-from-operator-to-legislator"&gt;The next stage: from &amp;ldquo;operator&amp;rdquo; to &amp;ldquo;legislator&amp;rdquo;
+&lt;/h2&gt;&lt;p&gt;How do you break this bottleneck?&lt;/p&gt;
+&lt;p&gt;After working through Anthropic&amp;rsquo;s public docs, the workflow notes from Boris Cherny (the creator of Claude Code), and a bunch of heavy-user practices, my conclusion is:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The next stage isn&amp;rsquo;t &amp;ldquo;manage more Agents.&amp;rdquo; It&amp;rsquo;s that you stop personally managing Agents at all.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;That sounds abstract, but unpack it and it&amp;rsquo;s very concrete:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;L4 (where I am)&lt;/th&gt;
+&lt;th&gt;L5 (next stage)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Am I in the loop?&lt;/td&gt;
+&lt;td&gt;Yes&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;What do I do?&lt;/td&gt;
+&lt;td&gt;Talk, confirm, correct&lt;/td&gt;
+&lt;td&gt;Write rules, define acceptance, arbitrate&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;When does AI stop?&lt;/td&gt;
+&lt;td&gt;When I say stop&lt;/td&gt;
+&lt;td&gt;When the rule says it&amp;rsquo;s done&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;If I leave the keyboard for 8 hours&lt;/td&gt;
+&lt;td&gt;The system halts, waiting for me&lt;/td&gt;
+&lt;td&gt;The system has been making progress for 8 hours&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;The single test for L5: when you walk away from the keyboard for 8 hours and come back, has the system stopped waiting for you, or has it already finished its run?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In L5, the focus of your work fundamentally changes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Write &lt;strong&gt;specs&lt;/strong&gt;, not prompts&lt;/li&gt;
+&lt;li&gt;Define acceptance criteria (tests, lint, human-review checkpoints), don&amp;rsquo;t review every step&lt;/li&gt;
+&lt;li&gt;Design &lt;strong&gt;hooks and guardrails&lt;/strong&gt;, not confirmation buttons&lt;/li&gt;
+&lt;li&gt;Build a &lt;strong&gt;feedback loop&lt;/strong&gt; (failures auto-feed back to the AI to keep iterating), don&amp;rsquo;t manually retry&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You open your laptop in the morning, and what you see is no longer &amp;ldquo;Claude is waiting on me to approve something.&amp;rdquo; It&amp;rsquo;s: &lt;strong&gt;&amp;ldquo;Out of last night&amp;rsquo;s 12 PRs, 9 already passed automated acceptance, 3 are flagged red for me to judge.&amp;rdquo;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The only thing you do: &lt;strong&gt;look at those 3 reds, and patch the rule that let them turn red.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id="im-already-crawling-toward-it-what-l45-actually-feels-like"&gt;I&amp;rsquo;m already crawling toward it: what L4.5 actually feels like
+&lt;/h2&gt;&lt;p&gt;L5 sounds far off, but my L4 has actually been transitioning into L4.5.&lt;/p&gt;
+&lt;p&gt;The feeling is already different. Claude Code can run remotely, run in the background; I&amp;rsquo;m not staring at every line it writes. Most of my day is spent &lt;strong&gt;looking at the reports it hands me&lt;/strong&gt;, then doing a few things:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Judge whether the direction is right&lt;/li&gt;
+&lt;li&gt;Decide: keep going, switch approach, or send it back to redo&lt;/li&gt;
+&lt;li&gt;Make calls and decisions at key checkpoints&lt;/li&gt;
+&lt;li&gt;Handle whatever it can&amp;rsquo;t crack and gets stuck on&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Honestly, I&amp;rsquo;m now more like a remote-control manager than a programmer.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I didn&amp;rsquo;t write the code, but &lt;strong&gt;I set the direction, I drew the boundaries, I judged the quality&lt;/strong&gt;. It&amp;rsquo;s a strange state — the rhythm has changed completely. I get a noticeably larger amount done in a day, but every individual decision carries far more weight. One bad direction can torch hours of downstream output.&lt;/p&gt;
+&lt;p&gt;This still isn&amp;rsquo;t L5. L5 is when even the &amp;ldquo;look at the reports&amp;rdquo; step is partly handed off — the rules auto-filter 80% of the content, and I only look at the remaining 20%. But this transition state, L4.5, is already enough to make me feel it: &lt;strong&gt;managing AI feels nothing like writing code yourself. They are two completely different jobs.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id="the-productivity-gap-is-widening"&gt;The productivity gap is widening
+&lt;/h2&gt;&lt;p&gt;This is the thing I most want to call out: &lt;strong&gt;the productivity gap between people stuck on different stages is widening at an order-of-magnitude rate.&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;L1&lt;/strong&gt; people use AI to answer questions and look stuff up. Limited gains, but real.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;L2 / L3&lt;/strong&gt; people fold AI into their code-editing flow. Multiple times more efficient than L1.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;L4&lt;/strong&gt; people get AI to run and complete a whole task autonomously. Multiple times more efficient again.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;L5&lt;/strong&gt; people have a dozen tasks running in parallel and only do arbitration and legislation. Another order of magnitude on top.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The thresholds between these layers aren&amp;rsquo;t linear. L1 → L2 is easy: install a plugin. L4 → L5 is &lt;em&gt;very&lt;/em&gt; hard — it requires you to redesign the entire shape of your work. &lt;strong&gt;You stop being &amp;ldquo;the person using the tool&amp;rdquo; and become &amp;ldquo;the person designing the rules for using the tool.&amp;rdquo;&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id="what-it-asks-of-you-both-knowledge-density-and-total-knowledge"&gt;What it asks of you: both knowledge density &lt;em&gt;and&lt;/em&gt; total knowledge
+&lt;/h2&gt;&lt;p&gt;Here&amp;rsquo;s the most counter-intuitive part.&lt;/p&gt;
+&lt;p&gt;A lot of people assume the AI era lowers the bar — &amp;ldquo;AI handles details, I just need a sketch.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Wrong. The exact opposite.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The AI era &lt;strong&gt;raises&lt;/strong&gt; the bar — and on &lt;strong&gt;two axes at once&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Total knowledge — you need to know more.&lt;/strong&gt; Judging direction, drawing boundaries, arbitrating: every one of those decisions stands on actually understanding the domain. If you only know a tech stack at a surface level, you literally cannot tell that the code AI wrote is bad.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Knowledge density — your judgments per unit time must be higher and sharper.&lt;/strong&gt; In L5, your day looks like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;10 minutes reading a PR summary, decide whether to merge&lt;/li&gt;
+&lt;li&gt;5 minutes reading a failure report, decide whether to fix code or fix the rule&lt;/li&gt;
+&lt;li&gt;20 minutes writing a spec that defines a feature&amp;rsquo;s acceptance edges&lt;/li&gt;
+&lt;li&gt;30 minutes reviewing a new rule, judging whether it&amp;rsquo;ll friendly-fire other tasks&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Every action is a decision; nothing is &amp;ldquo;execution.&amp;rdquo;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In less time you have to make more decisions, more accurately: see at a glance where the AI will derail; while writing the spec, predict where the boundary will explode; the moment you see a new rule, know what it&amp;rsquo;ll friendly-fire.&lt;/p&gt;
+&lt;p&gt;These are exactly the abilities AI cannot replace. Because at their core they&amp;rsquo;re &lt;strong&gt;experience + taste + judgment&lt;/strong&gt;, not information processing.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;My read: &lt;strong&gt;second half of this year through the first half of next year&lt;/strong&gt;, the first genuinely native L5 product will land — possibly Anthropic itself, possibly a third party on top of the Claude API. By that point, the gap between people will be wider still.&lt;/p&gt;</description></item><item><title>Standing in 2025 — Looking Back at AI, and Looking Forward</title><link>https://bhj8.github.io/en/p/standing-in-2025-looking-back-at-ai-and-looking-forward/</link><pubDate>Wed, 12 Mar 2025 00:00:00 +0000</pubDate><guid>https://bhj8.github.io/en/p/standing-in-2025-looking-back-at-ai-and-looking-forward/</guid><description>&lt;p&gt;Foreword:
+It&amp;rsquo;s now 2025, and AI is white-hot. In this post I want to share my personal take on AI — what I understand, what I expect, and how it&amp;rsquo;s helping my career and life.&lt;/p&gt;
+&lt;h2 id="looking-at-the-present-from-the-past-and-predicting-the-future-from-now"&gt;Looking at the present from the past, and predicting the future from now.
+&lt;/h2&gt;&lt;h3 id="an-article-from-january-2015-that-predicted-todays-ai"&gt;An article from January 2015 that predicted today&amp;rsquo;s AI
+&lt;/h3&gt;&lt;p&gt;On &lt;strong&gt;January 27, 2015&lt;/strong&gt;, an article was published that completely upended my view of AI. Here&amp;rsquo;s the (Chinese-translated) link:
+&lt;a class="link" href="https://zhuanlan.zhihu.com/p/19950456" target="_blank" rel="noopener"
+&gt;Artificial Intelligence may very well lead to humanity&amp;rsquo;s immortality or extinction — and it&amp;rsquo;s quite possible all of this will happen within our lifetimes&lt;/a&gt; (in Chinese)
+If you&amp;rsquo;re interested, please read the whole thing! I strongly recommend it!
+In this post I&amp;rsquo;ll just lift two of its conclusions:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Human technological progress is exponential!
+&lt;img src="https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/image.png"
+width="1120"
+height="688"
+srcset="https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/image_hu_608fd31f9c5075c.png 480w, https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/image_hu_6076e0a1ada71714.png 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="162"
+data-flex-basis="390px"
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;AI&amp;rsquo;s growth could leap past human cognition in an instant!
+&lt;img src="https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/image-1.png"
+width="1376"
+height="1124"
+srcset="https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/image-1_hu_dc914e6f3ec72b85.png 480w, https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/image-1_hu_f4729ea222e5a6fb.png 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="122"
+data-flex-basis="293px"
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;At the time, most people would have called this nonsense. After all, in January 2015 OpenAI didn&amp;rsquo;t even exist. Look at the timeline:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;span class="lnt"&gt;6
+&lt;/span&gt;&lt;span class="lnt"&gt;7
+&lt;/span&gt;&lt;span class="lnt"&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;2015 — OpenAI founded, focused on AGI.
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;2016 — AlphaGo beats Lee Sedol; AI surpasses humans at Go.
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;2017 — Transformers (Google) ignite the NLP revolution and become the foundation for GPT, BERT, etc.
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;2019 — GPT-2 (OpenAI) released, showing strong text generation.
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;2020 — GPT-3 (175B parameters) released, kicking off the AIGC craze.
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;2022 — ChatGPT (GPT-3.5) released and instantly explodes.
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;2023 — GPT-4 released, far more capable, multimodal (text + images).
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;2023 onward — AI products everywhere.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;If you read that article, you should be a little stunned right now. Its predictions are almost spot on — incredibly forward-looking!
+&lt;strong&gt;Ten years ago, when the internet had only just gone mainstream and most people had only just gotten a smartphone, the author already predicted, accurately, where AI would be a decade later.&lt;/strong&gt;
+Once again, I strongly recommend everyone who hasn&amp;rsquo;t read it go read it.&lt;/p&gt;
+&lt;p&gt;History has confirmed the article&amp;rsquo;s accuracy. So let&amp;rsquo;s see what that 2015 article predicted for &lt;em&gt;after&lt;/em&gt; 2025.
+&lt;img src="https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/image-2.png"
+width="1190"
+height="979"
+srcset="https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/image-2_hu_ac4fee9463f84589.png 480w, https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/image-2_hu_50acefc6d248380f.png 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="121"
+data-flex-basis="291px"
+&gt;
+The article splits AI into three stages: Artificial Narrow Intelligence (ANI), Artificial General Intelligence (AGI), and Artificial Super Intelligence (ASI). I think we&amp;rsquo;d all agree that as humans, we&amp;rsquo;ve now reached AGI.&lt;/p&gt;
+&lt;p&gt;My personal take:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The moment ASI arrives, its intelligence will, in an instant, dwarf the sum of all human intelligence — growing at unbelievable, absurd exponential rates. Humanity is therefore extinguished, or made immortal.&lt;/li&gt;
+&lt;li&gt;The most optimistic estimate: ASI in 2030. Conservative: 2050. Pessimistic: 2080, or never.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;All of today&amp;rsquo;s AI is essentially modeled on the human brain. Look at this from a compute angle:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;As of 2024, the world&amp;#39;s fastest supercomputer (e.g. Frontier) has reached 1.2 EFLOPS (1.2 × 10¹⁸ FLOPS).
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Because the human brain doesn&amp;#39;t run like a computer, direct comparisons are hard, but typical estimates put it at 1 EFLOPS to 100 EFLOPS (10¹⁸ to 10²⁰ FLOPS).
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;You can see, today&amp;rsquo;s strongest compute is approaching the brain. I&amp;rsquo;ve always believed: when computer compute exceeds the brain, intelligence will get very close to the brain too. And right now something like o3 (whose compute is still nowhere near a brain) is already far past the vast majority of humans. So what about the future? What happens as compute keeps growing?&lt;/p&gt;
+&lt;p&gt;In short: I think AI intelligence will continue to compound exponentially, just as that article predicted, possibly all the way to AGI and beyond.&lt;/p&gt;
+&lt;h3 id="an-article-i-wrote-in-december-2023-about-how-i-understand-and-use-ai"&gt;An article I wrote in December 2023 about how I understand and use AI
+&lt;/h3&gt;&lt;p&gt;Back in the GPT-3 era I&amp;rsquo;d already started using AI heavily. GPT-4&amp;rsquo;s arrival especially gave my technical chops, vision, and thinking a quantum leap.
+Original: &lt;a class="link" href="https://bhj8.github.io/en/p/how-i-use-ai-notes-from-the-field/" &gt;How I Use AI — Notes from the Field&lt;/a&gt;
+Now, with even more, even stronger AI products around, my hands-on ability has grown massively, and I&amp;rsquo;m even more convinced that what I wrote then was correct.
+That&amp;rsquo;s exactly what the next section is about.&lt;/p&gt;
+&lt;h2 id="how-ai-completely-flips-the-way-i-solve-problems-and-think-about-them"&gt;How AI completely flips the way I solve problems and think about them.
+&lt;/h2&gt;&lt;p&gt;Let me re-quote my own conclusion:
+&lt;strong&gt;Human life is finite. We can&amp;rsquo;t master that much knowledge or that many skills.
+AI overturns the traditional learn-then-execute pipeline: master the framework, leave the details to AI, and your efficiency and ceiling go way up.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Some specific points:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt; 1
+&lt;/span&gt;&lt;span class="lnt"&gt; 2
+&lt;/span&gt;&lt;span class="lnt"&gt; 3
+&lt;/span&gt;&lt;span class="lnt"&gt; 4
+&lt;/span&gt;&lt;span class="lnt"&gt; 5
+&lt;/span&gt;&lt;span class="lnt"&gt; 6
+&lt;/span&gt;&lt;span class="lnt"&gt; 7
+&lt;/span&gt;&lt;span class="lnt"&gt; 8
+&lt;/span&gt;&lt;span class="lnt"&gt; 9
+&lt;/span&gt;&lt;span class="lnt"&gt;10
+&lt;/span&gt;&lt;span class="lnt"&gt;11
+&lt;/span&gt;&lt;span class="lnt"&gt;12
+&lt;/span&gt;&lt;span class="lnt"&gt;13
+&lt;/span&gt;&lt;span class="lnt"&gt;14
+&lt;/span&gt;&lt;span class="lnt"&gt;15
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;### AI completely changes how we learn knowledge and master skills
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;The traditional model demands you internalize a full system; AI fills in the specific details and dramatically speeds up learning.
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;You only need to grasp the &amp;#34;trunks&amp;#34; of the knowledge tree; AI fills in the &amp;#34;leaves.&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;### AI accelerates execution — going from learning to shipping is way faster
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Projects that previously required full mastery before you could start can now be moved forward as long as you know it&amp;#39;s broadly feasible — AI handles the rest.
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Examples: building a blog, an AI WeChat public account, an AI chat website — all started as a concept, then AI fleshed out the details and got it shipped.
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;### AI is an efficient executor, but the ceiling is still set by you
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;AI helps with problems that already have mature solutions, but on frontier exploratory problems it still struggles.
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Your own ability and depth of thought decide the final outcome — AI is just an amplifier.
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;### Practice is everything; the best way to use AI is &amp;#34;do it with your hands&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;Real growth comes from actually doing it. The tricks come naturally as you go.
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&amp;#34;Use it if you can, just dive in&amp;#34; — far more important than talking about technique.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;For me personally, AI now touches &lt;strong&gt;80%+&lt;/strong&gt; of what I do, work and dev included.
+DeepSeek R1&amp;rsquo;s reasoning ability can attack a problem from every angle. Its breadth and knowledge far exceed mine. If one day I genuinely learn that kind of structured thinking, I can&amp;rsquo;t even imagine the result.
+As I said: practice is everything. Use it deeply, you&amp;rsquo;ll get it. Without using it, talk is moonlight on water — useless.&lt;/p&gt;
+&lt;h2 id="roundup-of-ai-products-as-of-today"&gt;Roundup of AI products as of today
+&lt;/h2&gt;&lt;p&gt;As of writing, March 12, 2025, here&amp;rsquo;s my summary of the popular AIs out there, including ones I&amp;rsquo;ve personally used. Their characteristics, pros and cons. Includes more than just LLMs. For your reference:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;LLMs&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;GPT family
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;o3, o1&lt;/strong&gt; — currently the strongest &lt;em&gt;and&lt;/em&gt; the most expensive reasoning models. Massive context (o1 = 200K), the strongest reasoning and logic right now. Especially good at code analysis and logic. I only call this big brother in when its little siblings can&amp;rsquo;t solve a problem.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;o1-mini, o3-mini, o3-mini-high&lt;/strong&gt; — mini versions with better speed and price/performance trade-offs. For hard code problems, I usually try them first.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;4o&lt;/strong&gt; — the multimodal one. Well-rounded, fast. Reads images directly, parses audio. Speed and price are excellent. My most-used model right now.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;4.5&lt;/strong&gt; — newest GPT, way better creativity and &amp;ldquo;humanness,&amp;rdquo; but seriously expensive. I save it for creative work and copy.&lt;/li&gt;
+&lt;li&gt;Other GPT models — all weaker siblings; the only upside is a slightly cheaper price. Not worth discussing.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;DeepSeek family
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;R1&lt;/strong&gt; — currently the strongest Chinese-language reasoning model and a price/performance monster. You&amp;rsquo;ve all seen how strong it is. Cheap, especially good at very Chinese-flavored reasoning problems. Heads up: its coding ability is weaker than other models — really, don&amp;rsquo;t use it for code. I use it for problems with strong Chinese-language texture. Very grounded.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;V3&lt;/strong&gt; — non-reasoning version. I rarely use it.&lt;/li&gt;
+&lt;li&gt;Other parameter sizes — DeepSeek&amp;rsquo;s strength is hitting GPT-4o-class performance with the lowest compute and hardware. A lot of websites sneakily pass off 32B / 70B versions as the full 671B. I&amp;rsquo;m calling it out because &lt;strong&gt;R1 32B 4-bit quantized&lt;/strong&gt; is the best model you can run locally on a 4090 24G consumer GPU. From experience, useful for things involving confidentiality.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Claude family
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Claude 3.7&lt;/strong&gt; — multiple variants; the everyday one is Sonnet. Currently the second-best after GPT. Very humane to use; many heavy users say its coding ability beats GPT-4o. Great UX — they pioneered Canvas, and GitHub Copilot put it in their membership, which says a lot about its code price/performance. I use it to cross-check GPT&amp;rsquo;s code.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Grok family
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Grok 3&lt;/strong&gt; — Musk&amp;rsquo;s AI. Reportedly uses the most reasoning compute of anyone right now. In code it doesn&amp;rsquo;t have an obvious edge over the others. Worth noting: its content moderation is extremely loose.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Gemini family
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Gemini 2.0&lt;/strong&gt; — Google&amp;rsquo;s. Thanks to Google&amp;rsquo;s infrastructure muscle, very fast. Natively multimodal. Search ability clearly beats other models. (Of course — Google!) I don&amp;rsquo;t use it much; intelligence-wise it&amp;rsquo;s not clearly ahead.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Other / local models
+&lt;ul&gt;
+&lt;li&gt;On Hugging Face there&amp;rsquo;s a flood of models, plus QwQ from China and others — each with their own strengths. Most are smaller, specialized for a specific domain. With limited bandwidth, I generally don&amp;rsquo;t bother.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Manus
+&lt;ul&gt;
+&lt;li&gt;From all the noise, this is hype and a scam. Once people actually use it, we&amp;rsquo;ll see if it&amp;rsquo;s gold.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;AI image generation&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Stable Diffusion&lt;/strong&gt; — the famous SD. Open source, deeply customizable. Different base models = different styles. Tons of plugins. Easy to deploy and run on a home PC. Downsides: output is fully tied to the base model, and the learning curve is steep.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Midjourney&lt;/strong&gt; — also famous (MJ). Very strong, only available as a service. Wide range of styles. Downsides: little customization, expensive. The polar opposite of SD.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;DALL·E 3&lt;/strong&gt; — way behind the above two. The only upside is integration into the native ChatGPT web. Not really useful.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;TTS (text-to-speech)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;VITS family&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;VITS was originally released by a Chinese developer; lots of forks and downstream work. Currently the strongest open-source one is GPT-SoVITS. With just a few minutes of source audio, it can produce highly similar multilingual speech. A home PC is enough to fine-tune and infer.
+Some &amp;ldquo;do it with your hands&amp;rdquo; results from me:
+Inferred version of my own voice
+&lt;audio controls&gt;
+&lt;source src="https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/my_AI.wav" type="audio/mpeg"&gt;
+&lt;/audio&gt;
+WW2 commentary, original voice
+&lt;audio controls&gt;
+&lt;source src="https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/ww2Start.wav" type="audio/mpeg"&gt;
+&lt;/audio&gt;
+WW2 commentary, AI-synthesized
+&lt;audio controls&gt;
+&lt;source src="https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/ww2Start_AI.wav" type="audio/mpeg"&gt;
+&lt;/audio&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Other vendors — Microsoft TTS, Google TTS, Douyin, all closed-source. Custom fine-tuning is expensive; otherwise you&amp;rsquo;re stuck with their pretrained voices. That said, the out-of-the-box quality is already excellent!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;STT (speech-to-text)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Whisper&lt;/strong&gt; — OpenAI&amp;rsquo;s open-source model, supports 100+ languages. Currently the strongest open-source STT. Runs locally on a home PC.&lt;/li&gt;
+&lt;li&gt;Others — Microsoft, Google, iFlytek, etc., all have plenty of APIs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Other&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Suno&lt;/strong&gt; — AI music generation, sounds good, but practical use is still weak. Future looks promising.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Sora&lt;/strong&gt; — video synthesis is everywhere now, but most output looks weird. Another path is heavily customized SD with image stitching for video. Both are being explored.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Combo / tooling&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;GitHub Copilot&lt;/strong&gt; — strongly recommended. Microsoft&amp;rsquo;s flagship. Deeply integrated into IDEs, especially VS Code and Visual Studio. Free tier exists, paid is $10/month. Wraps GPT, Claude, and Gemini. Once it sees your IDE context, it&amp;rsquo;s incredibly convenient.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cursor&lt;/strong&gt; — an AI-first IDE built on VS Code, neck-and-neck with Copilot. Also very convenient. But because it&amp;rsquo;s an IDE rather than a plugin, you give up some flexibility.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Poe&lt;/strong&gt; — an aggregator over multiple AIs; basically a wrapper frontend that calls each vendor&amp;rsquo;s API. Pros: one-stop access, some free quota. Cons: API calls usually fall short of native vendor sites in features and quality.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="my-personal-outlook-on-the-future-of-ai"&gt;My personal outlook on the future of AI
+&lt;/h2&gt;&lt;p&gt;I think AI has already permanently changed how I think and how I solve problems.
+&lt;del&gt;Of course, if ASI shows up and humanity gets wiped out, none of this matters. So our default assumption has to be that AI carries us up the next tech tier.&lt;/del&gt;
+In this era you have to keep up, keep leveling up, keep absorbing new knowledge.
+&lt;strong&gt;The only constant in the world is change itself.&lt;/strong&gt;
+After watching the inflated boom in the China market, I&amp;rsquo;ve concluded: AI on its own doesn&amp;rsquo;t generate huge value the way some prior technologies did. It only produces magic when combined with another field.
+Like internet dev, traditional retail, traditional manufacturing, literature &amp;amp; film, education, etc.&lt;/p&gt;
+&lt;p&gt;Either way, we should all think like founders. Letting AI fill in the details and do the grunt work for you is the right move. Build out your own knowledge framework, stop sweating the details. Grab the essence of the problem and the main contradiction.
+In the future, I&amp;rsquo;ll go even deeper with AI in everything I do. I also hope to lift my whole team&amp;rsquo;s AI fluency and improve the workflow.
+Here are a few practical AI deployments I&amp;rsquo;ve distilled from work — some already shipped, some that I want my team to ship later:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Code dev&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Heavy use of GitHub Copilot to dramatically speed up coding and to auto-catch errors. Especially good for structured code. For unfamiliar libraries and APIs, it&amp;rsquo;s totally possible to be in a state of &lt;em&gt;&amp;ldquo;I don&amp;rsquo;t remember it, but somehow I can use it&amp;rdquo;&lt;/em&gt; / &lt;em&gt;&amp;ldquo;I haven&amp;rsquo;t read the docs, but once I get the framework I can write code right away.&amp;rdquo;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Use git hooks to AI-review every commit. Keeps quality up and obvious mistakes out.&lt;/li&gt;
+&lt;li&gt;Standardize project layout. Use the &lt;code&gt;tree&lt;/code&gt; command (Windows) plus AI to keep directory structure clean.&lt;/li&gt;
+&lt;li&gt;Reasoning about new requirements. When you face something you&amp;rsquo;ve never built, your first plan often misses corners. Ask AI to analyze: what&amp;rsquo;s the solution path, what should you watch for?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Game design / config&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Use AI to name variables. Few people pull off &amp;ldquo;faithful, expressive, elegant&amp;rdquo; naming. Things get confusing fast — AI helps a lot.&lt;/li&gt;
+&lt;li&gt;Use AI for localization, even one-click scripts. High-quality, low-cost passable multi-language.&lt;/li&gt;
+&lt;li&gt;Use AI for Excel formulas and number-crunching. Heavy Excel formulas are insane — just ask AI.&lt;/li&gt;
+&lt;li&gt;Use AI to debug error messages. Designers usually aren&amp;rsquo;t from a code background and are stumped by errors. Paste the error, ask AI; most of the time you get something actionable. (This applies to anyone touching a project!)&lt;/li&gt;
+&lt;li&gt;Use AI to write designer-side tools. Spot pain points in your own task and quickly write a tool to remove them.&lt;/li&gt;
+&lt;li&gt;Idea collection. AI can quickly throw out a lot of ideas; you still have to filter and synthesize.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Art&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Reference and inspiration. Set up SD and Midjourney pipelines. Anything you can&amp;rsquo;t Google up in the right &amp;ldquo;vibe,&amp;rdquo; ask AI to draw. Quickly confirm direction with the requesting team. Build a curated prompt library by style — you can rapidly produce on-brief mockups, and unimportant cutscenes / scene art can ship as-is.
+&lt;img src="https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/IMG_3637.JPG"
+width="1440"
+height="1440"
+srcset="https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/IMG_3637_hu_b59e4a1f7830201c.JPG 480w, https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/IMG_3637_hu_da8e9108dc4dbe5a.JPG 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="240px"
+&gt;
+&lt;img src="https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/IMG_3638.JPG"
+width="1024"
+height="1024"
+srcset="https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/IMG_3638_hu_37d3bbbecbcafa5.JPG 480w, https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/IMG_3638_hu_6d1c597a91f21d7a.JPG 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="240px"
+&gt;
+&lt;img src="https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/IMG_3639.JPG"
+width="1024"
+height="1024"
+srcset="https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/IMG_3639_hu_17b90cedcddd3ab5.JPG 480w, https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/IMG_3639_hu_285697749b7ab9cf.JPG 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="240px"
+&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Item icons, character concept art&lt;/strong&gt; — already shipped successfully in the past. Tons of icons, even character concepts. AI does the first pass, art polishes — huge efficiency gain.
+&lt;img src="https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/image-3.png"
+width="1659"
+height="939"
+srcset="https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/image-3_hu_f1dc21b19e32ae1d.png 480w, https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/image-3_hu_b0d65b58d9757c6b.png 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="176"
+data-flex-basis="424px"
+&gt;
+&lt;img src="https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/image-4.png"
+width="348"
+height="417"
+srcset="https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/image-4_hu_a8b740841bad1695.png 480w, https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/image-4_hu_c747cccfc666f5b2.png 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="83"
+data-flex-basis="200px"
+&gt;
+&lt;img src="https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/image-5.png"
+width="411"
+height="273"
+srcset="https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/image-5_hu_8525486876b4ef6b.png 480w, https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/image-5_hu_d51a8f8b8da45747.png 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="150"
+data-flex-basis="361px"
+&gt;
+&lt;img src="https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/image-6.png"
+width="238"
+height="279"
+srcset="https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/image-6_hu_333e0f42a7ff06ee.png 480w, https://bhj8.github.io/p/%E7%AB%99%E5%9C%A82025%E5%B9%B4%E5%9B%9E%E9%A1%BE%E5%92%8C%E5%B1%95%E6%9C%9Bai/image-6_hu_9d5ade1676bbad4e.png 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="85"
+data-flex-basis="204px"
+&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Other&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Voiceover. If you need it, GPT-SoVITS does customized VO well.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Two reference videos for understanding AI&amp;rsquo;s origins:
+&lt;a class="link" href="https://www.youtube.com/watch?v=RUtvBkibIT8" target="_blank" rel="noopener"
+&gt;【Computer History】 NLP from &amp;ldquo;Past&amp;rdquo; to &amp;ldquo;Present&amp;rdquo;&lt;/a&gt;
+&lt;a class="link" href="https://www.youtube.com/watch?v=7iNJyEbYDdc&amp;amp;t=408s" target="_blank" rel="noopener"
+&gt;Why the Feynman Technique is called the ultimate learning method&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Palworld Co-op Guide for the Pirated Build</title><link>https://bhj8.github.io/en/p/palworld-co-op-guide-for-the-pirated-build/</link><pubDate>Tue, 30 Jan 2024 00:00:00 +0000</pubDate><guid>https://bhj8.github.io/en/p/palworld-co-op-guide-for-the-pirated-build/</guid><description>&lt;p&gt;Palworld is hot right now, so of course me and my friends had to jump in.&lt;/p&gt;
+&lt;h4 id="disclaimer"&gt;Disclaimer
+&lt;/h4&gt;&lt;p&gt;I&amp;rsquo;ve always supported genuine copies — I have an Xbox Game Pass subscription so I can play Palworld for free, and I own close to a thousand games across Steam, Epic, etc. It&amp;rsquo;s just that some of my friends haven&amp;rsquo;t tried it, and with mortgages and car loans they&amp;rsquo;re frugal. I&amp;rsquo;ll get them on the train first; later I&amp;rsquo;ll talk them into actually paying for a copy.&lt;/p&gt;
+&lt;p&gt;When you do something, the most important thing is knowing whether it can actually work. Let me just tell you up front:
+The pirated build of Palworld can absolutely be played in co-op. No issues at all.&lt;/p&gt;
+&lt;h3 id="step-1-download-the-pirated-build-of-palworld-and-install-the-co-op-patch"&gt;Step 1: Download the pirated build of Palworld and install the co-op patch
+&lt;/h3&gt;&lt;p&gt;Figure this out yourself; if you can&amp;rsquo;t get past this you can stop reading — even reading on, you wouldn&amp;rsquo;t be able to follow.
+For the co-op patch, set it to LAN co-op mode.&lt;/p&gt;
+&lt;h3 id="step-2-on-the-host-install-steamcmd-download-the-palworld-dedicated-server-files-and-bring-up-the-server"&gt;Step 2: On the host, install steamCmd, download the Palworld dedicated server files, and bring up the server.
+&lt;/h3&gt;&lt;p&gt;&lt;a class="link" href="https://developer.valvesoftware.com/wiki/SteamCMD#Windows" target="_blank" rel="noopener"
+&gt;Official server-hosting guide&lt;/a&gt;
+Follow the guide to install steamcmd, download the Palworld server files, and start the server. After it&amp;rsquo;s up, you&amp;rsquo;ll see a string of English output showing the AppID.&lt;/p&gt;
+&lt;h3 id="step-3-co-op-and-acceleration"&gt;Step 3: Co-op and acceleration
+&lt;/h3&gt;&lt;p&gt;If you&amp;rsquo;re hosting on a cloud server, you can skip the steps below — just open port 8211 in the cloud security group.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Option 1&lt;/strong&gt;: Port-forwarding so other players can reach the host directly. Only works if you have a public IP.
+Configure port forwarding for port 8211 on your router and modem.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Option 2&lt;/strong&gt;: LAN acceleration (recommended)
+&lt;a class="link" href="https://bhj8.github.io/en/p/usbeam-lan-party-fast-self-hosted-server-guide-ultimate-edition-with-one-click-deploy/" &gt;LAN acceleration deploy&lt;/a&gt;
+Use a virtual LAN to play and accelerate. Because the relay server is right next door, latency drops to under 20ms.
+When connecting, use the LAN IP.&lt;/p&gt;
+&lt;p&gt;Those are the core steps. If you don&amp;rsquo;t want to mess around, just buy the game.&lt;/p&gt;</description></item><item><title>How I Use AI — Notes from the Field</title><link>https://bhj8.github.io/en/p/how-i-use-ai-notes-from-the-field/</link><pubDate>Tue, 26 Dec 2023 00:00:00 +0000</pubDate><guid>https://bhj8.github.io/en/p/how-i-use-ai-notes-from-the-field/</guid><description>&lt;h3 id="gpt--the-greatest-invention-in-history"&gt;GPT — the greatest invention in history
+&lt;/h3&gt;&lt;p&gt;Personal opinion. At least, as of right now.
+My programming and CS chops have leveled up massively, and I really owe that to GPT, especially GPT-4. Yes, it&amp;rsquo;s gone through many iterations and is far from where it started.&lt;/p&gt;
+&lt;h3 id="the-mainstream-ais"&gt;The mainstream AIs
+&lt;/h3&gt;&lt;p&gt;A quick rundown of the popular conversational LLMs right now, ordered by my recommendation:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;GPT-4&lt;/strong&gt; — strongest and most useful&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Claude 2&lt;/strong&gt; — up to 100k context&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;New Bing&lt;/strong&gt; — built on GPT-4, free to use, good for search&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GPT-3.5&lt;/strong&gt; — cheap, mostly used for high-volume API calls&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Bard&lt;/strong&gt; — Google&amp;rsquo;s offering, so-so. Upside: free&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;iFlytek Spark (讯飞星火)&lt;/strong&gt; — decent. Upside: convenient if you&amp;rsquo;re in China&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Baidu ERNIE Bot (百度文心一言)&lt;/strong&gt; — no comment&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Other miscellaneous ones&lt;/strong&gt; — with so many better options, why use junk?&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Local LLMs&lt;/strong&gt; — can be deployed locally, can be fine-tuned. Compared with using someone else&amp;rsquo;s product, you have far more creative possibilities.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In actual use, GPT-4 is the most helpful for both work and life, and the best one to use. The downsides are that registration and subscription are annoying, and $20/month is pricey. But I can tell you with full confidence: it is &lt;em&gt;absolutely&lt;/em&gt; worth every cent. Truly insane.
+From here on, I&amp;rsquo;ll only talk about GPT-4. Other products aren&amp;rsquo;t worth discussing.&lt;/p&gt;
+&lt;h3 id="what-gpt-4-changed-for-me"&gt;What GPT-4 changed for me
+&lt;/h3&gt;&lt;p&gt;There are a million articles online about how amazing GPT-4 is and how to use it. I&amp;rsquo;m not going to repeat any of that. I&amp;rsquo;ll just talk about the biggest shifts for me personally.&lt;/p&gt;
+&lt;h4 id="a-complete-overhaul-of-how-i-learn-and-how-i-get-things-done"&gt;A complete overhaul of how I learn and how I get things done
+&lt;/h4&gt;&lt;p&gt;Traditionally, to write code or learn a new skill, you have to study the whole thing front-to-back, and only after enough projects, enough hitting walls, can you confidently say &amp;ldquo;yeah, I can handle this kind of problem.&amp;rdquo;
+The world&amp;rsquo;s knowledge is an ocean — the more you learn, the more you realize you don&amp;rsquo;t know. In one limited human life you can only ever master a tiny sliver. Especially in tech, innovation outpaces your ability to keep up.
+Picture all knowledge and skills as a giant tree. Each module is a trunk — say, Python is one trunk; Python&amp;rsquo;s syntax and libraries are the leaves on that trunk.
+Normally, to write decent Python software, you have to internalize the trunk and most of the leaves.
+Now here&amp;rsquo;s the problem: Python, Go, C#, Java, JS, TS, C++, etc. — that&amp;rsquo;s already a long list. Then there&amp;rsquo;s everything Linux: nginx, ufw, vim, OpenVPN, and on and on. .NET land has another whole stack. That&amp;rsquo;s before you get to algorithms, frameworks, design patterns, Docker, jump servers, and so on.
+With this much, even a whole life only gets you mastery of one or two. Everything else, you have to pretend you didn&amp;rsquo;t see.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Human life is finite. We can&amp;rsquo;t master that much.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;GPT-4 totally upends this. It can answer questions and crank out tons of code on demand. (Of course, your professional level still caps the ceiling.)&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;GPT-4 massively speeds up learning, especially looking things up and debugging.&lt;/li&gt;
+&lt;li&gt;GPT-4 acts like a junior who completes the work you direct. Your own ability sets the upper bound.&lt;/li&gt;
+&lt;li&gt;Plus a huge amount of miscellaneous work.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;GPT-4 is an extension of my ability — it handles the details.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;To stick with the tree metaphor: I learn the trunks and the big-picture frame myself. The leaves and details, GPT-4 fills in.
+Walking every trunk &lt;em&gt;and&lt;/em&gt; every leaf is too much for me. But touring all the trunks is easy. When I need a specific leaf, I tap GPT-4 to flesh it out.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Cover as many trunks as possible. When a problem hits, lean on GPT-4 for the leaves.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This completely overturns my old &amp;ldquo;learn it all first, then do it&amp;rdquo; methodology. Now, as long as I have a sense of all the trunks, I can ship something that&amp;rsquo;s theoretically possible but whose details I don&amp;rsquo;t yet know — and ship it fast.&lt;/p&gt;
+&lt;p&gt;A few examples:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Building this blog.&lt;/strong&gt; In theory, set up a website, get a server. The details are massive — see &lt;a class="link" href="https://bhj8.github.io/en/p/the-tech-behind-my-blog/" &gt;The Tech Behind My Blog&lt;/a&gt;. That much technical detail, even though I&amp;rsquo;d never done it before, was tractable because I knew the trunks; the leaves I learned from GPT-4.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Building an AI WeChat public account.&lt;/strong&gt; From an idea, starting with one official OpenAI API example, then a secondary WeChat account driven by simulated PC WeChat clicks, step by step it grew. I really was clueless at the start. Eventually it had Midjourney, Stable Diffusion, GPT-3.5/4, New Bing, voice-recognition chat, a membership system, and more. Tons of system and technical details. I knew it was theoretically doable and had a vague plan; GPT-4 filled in the rest. By the way, the account was called &lt;strong&gt;Xiao Hui Hen Zhi Hui (小慧很智慧)&lt;/strong&gt;. At its peak it had 4k+ subscribers. Costs got too high and I had limited bandwidth, so I stopped maintaining it.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Building an AI chat website.&lt;/strong&gt; Started by forking an open-source vue3+express site from GitHub. Later I rewrote the backend in Python (FastAPI), with a database, account auth, etc. Eventually added WeChat Pay, SMS phone verification, and more. WeChat Pay especially is a beast — you also need an ICP-filed mainland China server and domain. But I knew it was possible, and I made it work in the end!&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://bhj8.github.io/en/p/building-a-dynamic-multi-server-lan-over-openvpn-tunnels/" &gt;Building a giant LAN over OpenVPN tunnels&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;There are many similar cases in everyday work and life. I&amp;rsquo;ll stop listing.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;GPT-4 completely flips the old &amp;ldquo;learn-it-all-then-start&amp;rdquo; model. Now, if it&amp;rsquo;s theoretically possible, I can move on it immediately and finish at terrifying speed.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Of course, for highly complex, exploratory work, both GPT-4 and I are stuck. Like research-grade new algorithms, or a distributed system that handles tens of millions of concurrent connections.
+But for most &lt;strong&gt;tasks someone has already solved before&lt;/strong&gt;, with GPT-4 in the loop, I can do them fairly well.&lt;/p&gt;
+&lt;p&gt;As for specific tips and tricks — there&amp;rsquo;s already a flood of those online, and a few sentences won&amp;rsquo;t cover it. If you actually care, just go bang on it. If you can use it, the tricks come naturally as you go. If you can&amp;rsquo;t, no amount of talk will help.&lt;/p&gt;</description></item><item><title>Building a Dynamic Multi-Server LAN over OpenVPN Tunnels</title><link>https://bhj8.github.io/en/p/building-a-dynamic-multi-server-lan-over-openvpn-tunnels/</link><pubDate>Thu, 14 Dec 2023 00:00:00 +0000</pubDate><guid>https://bhj8.github.io/en/p/building-a-dynamic-multi-server-lan-over-openvpn-tunnels/</guid><description>&lt;h3 id="disclaimer"&gt;Disclaimer
+&lt;/h3&gt;&lt;p&gt;This post is strictly about OpenVPN tunneling/forwarding. The use cases are LAN-style co-op acceleration and remote-office intranets. Nothing else.&lt;/p&gt;
+&lt;h3 id="background"&gt;Background
+&lt;/h3&gt;&lt;p&gt;Lately I&amp;rsquo;ve been playing co-op with friends — &lt;em&gt;Raft&lt;/em&gt;, &lt;em&gt;Stardew Valley&lt;/em&gt;, &lt;em&gt;Overcooked&lt;/em&gt;, etc. Mainland Chinese ISPs use NAT extensively (especially China Mobile), so even when players are geographically close, P2P co-op is laggy, high-latency, and packet-lossy. Often you can&amp;rsquo;t even join the lobby.
+I have an earlier post about using &lt;em&gt;UsbEAm LAN Party&lt;/em&gt; to build a LAN — once everyone&amp;rsquo;s on a virtual LAN, you can play locally. Even when going through Steam&amp;rsquo;s API for relays, most games will switch to LAN co-op.
+So building a LAN gives a great speed-up to most P2P games! (This is also useful for remote-office intranets — fundamentally you&amp;rsquo;re simulating a virtual LAN; whatever LAN-only feature you need, you have it.)&lt;/p&gt;
+&lt;h3 id="going-deeper"&gt;Going deeper
+&lt;/h3&gt;&lt;p&gt;Building a virtual LAN over OpenVPN is easy. If you need a primer, see my other post &lt;a class="link" href="https://bhj8.github.io/en/p/usbeam-lan-party-fast-self-hosted-server-guide-ultimate-edition-with-one-click-deploy/" &gt;One-click LAN deploy&lt;/a&gt;.
+But I wanted to push it further. The LAN setups in that post all use a single server. Suppose you now need to play with friends in Hong Kong or Macau. Because cross-border routes differ, those friends might struggle to even reach your single server, and latency / loss will be brutal.
+That made me ask: can I deploy multiple servers? One in mainland China for domestic users. One in Hong Kong for cross-border users. The two servers connected over a GIA premium line, both stitched into the same LAN.&lt;/p&gt;
+&lt;h3 id="implementation"&gt;Implementation
+&lt;/h3&gt;&lt;p&gt;Building a shared LAN across two-or-more servers is significantly harder than one. Good news: I figured it out. Approach:
+&lt;strong&gt;Server A&lt;/strong&gt; in Hangzhou (mainland): all users connecting to it get IPs in &lt;code&gt;10.251.0.0/16&lt;/code&gt; and &lt;code&gt;10.250.0.0/16&lt;/code&gt;.
+&lt;strong&gt;Server B&lt;/strong&gt; in Hong Kong: all users connecting to it get IPs in &lt;code&gt;10.249.0.0/16&lt;/code&gt; and &lt;code&gt;10.248.0.0/16&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Server B runs OpenVPN as a &lt;em&gt;client&lt;/em&gt; and connects to Server A, getting the address &lt;code&gt;10.251.0.2&lt;/code&gt;.
+IP forwarding has to be enabled on both servers.&lt;/p&gt;
+&lt;p&gt;Routes on Server A:
+Outbound: &lt;code&gt;10.249.0.0/16&lt;/code&gt;, &lt;code&gt;10.248.0.0/16&lt;/code&gt; → route via &lt;code&gt;10.251.0.2&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Routes on Server B:
+Outbound: &lt;code&gt;10.251.0.0/16&lt;/code&gt;, &lt;code&gt;10.250.0.0/16&lt;/code&gt; → route via &lt;code&gt;10.251.0.1&lt;/code&gt; (Server A&amp;rsquo;s intranet address).&lt;/p&gt;
+&lt;p&gt;The middle wiring is fiddly; you have to debug it piece by piece. Some Linux commands you&amp;rsquo;ll use a lot:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;route&lt;/code&gt; — view the current routing table&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ip a&lt;/code&gt; — view all network interfaces&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;netstat -an&lt;/code&gt; — view current network connections&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Don&amp;rsquo;t forget to &lt;code&gt;push&lt;/code&gt; the route table to clients on both A and B&amp;rsquo;s server configs.&lt;/p&gt;
+&lt;p&gt;End result: whether you connect to A or B, you&amp;rsquo;re inside the same big &lt;code&gt;10.0.0.0/8&lt;/code&gt;. Both sides can ping each other freely, and if clients use TUN mode you can even go further at L2 / link layer. I&amp;rsquo;ll stop here.&lt;/p&gt;
+&lt;h3 id="notes"&gt;Notes
+&lt;/h3&gt;&lt;p&gt;What if we make the problem harder — say, hundreds of servers building one giant intranet? How would you architect that?
+The above only had Server B talking to Server A as a client. If we add Servers C, D, E… how do &lt;em&gt;they&lt;/em&gt; talk?&lt;/p&gt;
+&lt;p&gt;Two basic options.
+&lt;strong&gt;Option 1&lt;/strong&gt;: pick one server as primary, the rest as secondary. All secondaries only talk to the primary, which forwards traffic between secondaries.
+This is easy to configure but if the primary goes down everyone loses connection. Secondaries can&amp;rsquo;t talk to each other directly; everything has to go through the primary, dramatically reducing network utilization. The cluster&amp;rsquo;s network is bottlenecked on the primary&amp;rsquo;s max throughput. Also, you&amp;rsquo;ll see packets taking the long way round. So…
+&lt;strong&gt;Option 2&lt;/strong&gt;: every server talks pairwise with every other server, maintaining routing tables to form one giant mesh.
+That has its own problem: each server has to keep connections open with every other server. As the count grows, this resource cost balloons. And the configuration is a nightmare — every server&amp;rsquo;s route table is unique, every one has to be maintained. (You can script it, of course.)&lt;/p&gt;
+&lt;p&gt;Each has trade-offs; in real-world deployments you mix them. Within a region, one primary with several secondaries underneath. Across regions worldwide, primaries talk to each other and cascade. The &amp;ldquo;secondary&amp;rdquo; of an upper layer becomes the &amp;ldquo;primary&amp;rdquo; of the lower layer — recursive nesting.
+I&amp;rsquo;ve never operated a cluster that big; my mental model is probably very primitive. But the core idea should be 80–90% on track. The real production setup is probably way more complex.&lt;/p&gt;
+&lt;p&gt;That said — for game devs, you usually shard by country anyway. Even ultra-high-concurrency Redis lives inside the data center&amp;rsquo;s intranet. There may be the occasional cross-country sync, but most of the time you don&amp;rsquo;t need this. From things like Cloudflare Tunnel though, you can see this kind of architecture &lt;em&gt;is&lt;/em&gt; used in the wild.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ll write a separate post sometime on ultra-high-concurrency Redis in games.&lt;/p&gt;</description></item><item><title>The Tech Behind My Blog</title><link>https://bhj8.github.io/en/p/the-tech-behind-my-blog/</link><pubDate>Wed, 13 Dec 2023 00:00:00 +0000</pubDate><guid>https://bhj8.github.io/en/p/the-tech-behind-my-blog/</guid><description>&lt;h3 id="problems-i-needed-the-blog-to-solve"&gt;Problems I needed the blog to solve
+&lt;/h3&gt;&lt;p&gt;Before building the blog, I had a few requirements:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Pick a simple, general-purpose blog framework — and one that looks good.&lt;/li&gt;
+&lt;li&gt;Full feature set: comments, etc.&lt;/li&gt;
+&lt;li&gt;Bullet-proof against attacks, especially DDoS.&lt;/li&gt;
+&lt;li&gt;Optimized for mainland-China network conditions — fast access from inside China too.&lt;/li&gt;
+&lt;li&gt;No ICP filing — even though there&amp;rsquo;s no problematic content, I just don&amp;rsquo;t want the hassle.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="full-breakdown-of-the-tech"&gt;Full breakdown of the tech
+&lt;/h3&gt;&lt;p&gt;The blog framework is Hugo (Go), with a sharp-looking theme.
+The site is fully hosted on GitHub Pages; the backend is a GitHub Codespace where I write remotely with VS Code. GitHub Actions auto-deploys on push, so a new post is live in about 10 seconds.
+On Cloudflare I bought 10 years of &lt;code&gt;baohongjiang.com&lt;/code&gt; and pointed it at GitHub Pages. Visit &lt;code&gt;baohongjiang.com&lt;/code&gt; and you&amp;rsquo;re at the blog. Everything is HTTPS-encrypted end to end.
+Traffic analytics use Google Analytics and Cloudflare in parallel, so I have accurate visitor metrics.
+Comments are managed via Disqus — for well-known reasons, comments are not visible or postable from inside mainland China.&lt;/p&gt;
+&lt;p&gt;At this point the blog is full-featured and fast. The site is essentially static, so backend attacks aren&amp;rsquo;t a thing. And because the site is hosted on GitHub Pages and proxied through Cloudflare, a DDoS attack would have to first break Cloudflare and &lt;em&gt;then&lt;/em&gt; take down GitHub before it could even touch my blog. Roughly speaking, you&amp;rsquo;d need tens of terabits per second to be able to hurt me. I kind of wish my blog were big enough to be worth that kind of attack. Haha.&lt;/p&gt;
+&lt;p&gt;Now, for well-known reasons, although mainland China can reach the site fine and the speed is OK, latency is over 200ms and packet loss is bad. So I had to specifically optimize for mainland China.
+Cloudflare does have geo load-balancing, but it&amp;rsquo;s enterprise-only and &lt;em&gt;expensive&lt;/em&gt;. So I bought &lt;code&gt;baohongjiang.cn&lt;/code&gt;, ran a bunch of tests, and picked the best Hong Kong GIA-line VPS I could find for nginx reverse-proxying.
+When you visit &lt;code&gt;baohongjiang.cn&lt;/code&gt;, you&amp;rsquo;re really hitting the GIA-line VPS, which then fetches my site. Latency from mainland Chinese ISPs drops to around 30ms with very low packet loss. It flies.&lt;/p&gt;
+&lt;p&gt;The full request path:
+user → baohongjiang.cn → Hong Kong VPS → baohongjiang.com → Cloudflare → GitHub Pages (origin)&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;baohongjiang.com&lt;/code&gt; is the rock-solid international entry point. &lt;code&gt;baohongjiang.cn&lt;/code&gt; is the mainland-China fast lane.&lt;/p&gt;
+&lt;p&gt;This setup is &lt;em&gt;not&lt;/em&gt; the cheapest possible — straight GitHub Pages costs you nothing. But I just wanted to flex.&lt;/p&gt;</description></item><item><title>Why Fictional Meaning Matters in Games</title><link>https://bhj8.github.io/en/p/hello-world/</link><pubDate>Fri, 01 Dec 2023 00:00:00 +0000</pubDate><guid>https://bhj8.github.io/en/p/hello-world/</guid><description>&lt;p&gt;Most of my previous posts have been about tech. Tech is binary — 1 is 1, 2 is 2; it works or it doesn&amp;rsquo;t, just run it and find out. Game design has plenty of widely-accepted principles, but no absolute test for &amp;ldquo;right.&amp;rdquo; It&amp;rsquo;s like writing a novel: everyone has their own way, good novels share certain qualities, but you can&amp;rsquo;t copy-paste them like code.
+After thinking about it for a while, I&amp;rsquo;m writing a piece on game development from the angle of &lt;em&gt;meaning&lt;/em&gt;.&lt;/p&gt;
+&lt;h3 id="why-does-anything-mean-anything"&gt;Why does anything mean anything?
+&lt;/h3&gt;&lt;p&gt;To live is to chase some kind of meaning. Maslow&amp;rsquo;s hierarchy: people first satisfy survival, then reproduction, then higher psychological/spiritual needs.
+From an evolutionary-psychology angle, every behavior, especially instinctive ones, is engraved in our genes.
+The ultimate question of what life &lt;em&gt;means&lt;/em&gt; is philosophy — too hard, I&amp;rsquo;m not the one to discuss it.
+Men like 18-year-olds. Women care about beauty. Kids fear being seen as dumb. Old people fear dying. People have gambling instincts, jealousy, conceit, cravings — money in particular. And so on.
+Human nature is too complex; I can&amp;rsquo;t catalog it here.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;To be alive is to be moved by your own nature. Games exist to satisfy that nature.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id="what-fictional-meaning-does-inside-a-game"&gt;What &amp;ldquo;fictional meaning&amp;rdquo; does inside a game
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Fictional meaning is what lets players find meaning inside a game.&lt;/strong&gt;
+Take Paradox games. &lt;em&gt;Hearts of Iron&lt;/em&gt; satisfies the fantasy of conquering the world, ruling over masses, plus other desires that aren&amp;rsquo;t polite to spell out here. A whole horde of military and history fans love it.
+&lt;em&gt;Stellaris&lt;/em&gt; is heaven for sci-fi nerds — governments and factions, ideologies, science, populations. Underneath it&amp;rsquo;s a numbers strategy game, but the layered fictional meanings let you genuinely live a second life. (I love watching you all dump a pile of &amp;ldquo;no&amp;rdquo; votes in the Galactic Community while being unable to do anything about me. Hehe.)
+Meaning is also tied to what the player already understands.
+Most survival games include eating and drinking, because that need is etched into the player&amp;rsquo;s genes — easy to get, hard to find boring.&lt;/p&gt;
+&lt;p&gt;A small aside: the traffic-magnet &amp;ldquo;small adult games&amp;rdquo; — most are mediocre, even simplistic in mechanics. (There are great ones too; not painting them all with one brush.)
+Some have basically just animations, no real gameplay. Same for some text-based AVGs.
+But even those leave a strong impression on players, and even with no marketing they pull serious traffic. No mystery — every guy understands this.&lt;/p&gt;
+&lt;p&gt;Look at other entertainment forms, especially Chinese web novels. Inside China there&amp;rsquo;s a flood of &amp;ldquo;low-IQ power-fantasy&amp;rdquo; novels. Massive readerships. No mystery — they &lt;em&gt;feel good&lt;/em&gt; to read.
+Web novels and games&amp;rsquo; fictional meaning are basically the same thing: satisfying human desire.
+People have even abstracted the techniques — pull-in topics, work/rest balance, pacing. Open with a flirt scene, then pick up a powerful artifact, then humiliate a villain, etc. All sorts of &amp;ldquo;feel-good beats&amp;rdquo; weaved together so the reader can&amp;rsquo;t put it down.
+That&amp;rsquo;s structurally identical to game-level design. Game level design is exactly about weaving elements together so the player feels different emotions across the arc. &lt;em&gt;Tomb Raider&lt;/em&gt; is a great example — tense story, then a QTE, then transition to a beautiful environment, then a puzzle, then tense combat, then loot. Repeat with different rhythms, building toward a story climax.&lt;/p&gt;
+&lt;p&gt;Fundamentally, game level design is laying down feel-good beats so the player keeps &amp;ldquo;reading.&amp;rdquo;
+Of course, you also have to control difficulty, pace progression, factor in player skill, etc. In practice it&amp;rsquo;s much more complex.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Once a game has meaning, players can step inside and feel the beats.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id="only-meaning-that-hits-hard-makes-players-remember-and-love-your-game"&gt;Only meaning that hits hard makes players remember and love your game
+&lt;/h3&gt;&lt;p&gt;There are too many games now. Why is the player going to click your trailer page, why are they going to play your game?
+Take post-apocalyptic survival. The genre has always been popular. The moment I open a trailer page I can already imagine: I&amp;rsquo;m alone (or with a team), end-of-world setting — what would I do? That experience is fantastic.
+Plenty of games have unclear meaning. I can&amp;rsquo;t even be bothered to click in.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Cyberpunk 2077&lt;/em&gt;, controversies aside, has a phenomenal worldview, drawing inspiration from things like &lt;em&gt;Blade Runner&lt;/em&gt;. Full of conflict and what-ifs. Especially the chasm between the corporate elite and the underclass. On the surface Night City is hyper-developed, neon, dripping with high tech — but every alley is packed with the homeless, filth, chaos, against gleaming megatowers. It begs you to imagine.
+&lt;em&gt;GTA 5&lt;/em&gt;: do whatever you want in an open world. So so satisfying.
+&lt;em&gt;PUBG&lt;/em&gt;: 100 players fight to be the last one standing on a small island.
+&lt;em&gt;Rimworld&lt;/em&gt;: stranded on an alien planet, survive and grow.
+And so on.&lt;/p&gt;
+&lt;p&gt;Almost every popular game has a one-sentence meaning that pulls players in.
+Of course, &lt;em&gt;Dota&lt;/em&gt;, &lt;em&gt;LoL&lt;/em&gt;, &lt;em&gt;Honor of Kings&lt;/em&gt;, &lt;em&gt;TFT&lt;/em&gt;, &lt;em&gt;Hearthstone&lt;/em&gt; etc. mostly run on raw gameplay.&lt;/p&gt;
+&lt;p&gt;Game ops cares about user numbers, and if you win on meaning before they even start playing — if just &lt;em&gt;seeing&lt;/em&gt; the game makes them think it&amp;rsquo;s interesting — you&amp;rsquo;re already getting double the bang for your buck.
+Personally, I&amp;rsquo;m focused on post-apocalyptic survival games. The genre has long-term player demand and lower user-acquisition cost.&lt;/p&gt;
+&lt;h3 id="story-and-plot"&gt;Story and plot
+&lt;/h3&gt;&lt;p&gt;Some say a game is a second life.
+A great second life is one with rises and falls. Like novels and drama. A great game&amp;rsquo;s story, retold as a novel, would also be great. Or: a game&amp;rsquo;s story &lt;em&gt;is&lt;/em&gt; a kind of novel.&lt;/p&gt;
+&lt;p&gt;This includes:
+&lt;strong&gt;Worldview / setting&lt;/strong&gt;
+Plenty of room for fan-imagination
+&lt;strong&gt;The in-game experience&lt;/strong&gt;
+Highs and lows, emotional pull&lt;/p&gt;
+&lt;p&gt;My writing isn&amp;rsquo;t great, so I&amp;rsquo;ll leave it there.&lt;/p&gt;
+&lt;h3 id="standing-on-giants-shoulders-plus-a-flash-of-inspiration"&gt;Standing on giants&amp;rsquo; shoulders, plus a flash of inspiration
+&lt;/h3&gt;&lt;p&gt;Most &amp;ldquo;meanings&amp;rdquo; aren&amp;rsquo;t original. They&amp;rsquo;re absorbed from predecessors and prior works.
+Take bikini armor — by any sensible standard, how is barely-there clothing supposed to provide protection? But: those who get it, get it. That trope has been going strong for ages.&lt;/p&gt;
+&lt;p&gt;A huge number of works draw inspiration from other works (not just games), stand on giants&amp;rsquo; shoulders, and then walk further.&lt;/p&gt;</description></item><item><title>SSD vs RamDisk</title><link>https://bhj8.github.io/en/p/ssd-vs-ramdisk/</link><pubDate>Fri, 17 Nov 2023 00:00:00 +0000</pubDate><guid>https://bhj8.github.io/en/p/ssd-vs-ramdisk/</guid><description>&lt;p&gt;During the 6.18 sale this year I built a beast PC: 13900K + 4090, both CPU and GPU on water. With a beast like this, you naturally want to push every spec. This post is about pushing disk speed to the limit.
+A small flex first: domestic (China) YMTC NAND really delivers. SSD prices have come down hard.&lt;/p&gt;
+&lt;p&gt;OK, to the point.&lt;/p&gt;
+&lt;h2 id="chasing-the-ceiling-of-disk-speed"&gt;Chasing the ceiling of disk speed
+&lt;/h2&gt;&lt;p&gt;After a lot of research I went with RAID 0 — and conveniently, my motherboard supports it. (The drive is mostly games and code, and code is on GitHub. There&amp;rsquo;s data-loss risk, but I can live with it. More on that later.)
+I bought YMTC&amp;rsquo;s &amp;ldquo;Fanxiang&amp;rdquo; SSDs, each rated at up to 7500 MB/s read/write.
+I put two in a RAID 0. The result:&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://bhj8.github.io/p/ssd-vs-ramdisk-%E5%9B%BA%E6%80%81%E7%A1%AC%E7%9B%98vs%E5%86%85%E5%AD%98%E7%A1%AC%E7%9B%98/SSD.png"
+width="715"
+height="524"
+srcset="https://bhj8.github.io/p/ssd-vs-ramdisk-%E5%9B%BA%E6%80%81%E7%A1%AC%E7%9B%98vs%E5%86%85%E5%AD%98%E7%A1%AC%E7%9B%98/SSD_hu_43f0a1816c2086b8.png 480w, https://bhj8.github.io/p/ssd-vs-ramdisk-%E5%9B%BA%E6%80%81%E7%A1%AC%E7%9B%98vs%E5%86%85%E5%AD%98%E7%A1%AC%E7%9B%98/SSD_hu_b6d372d074c19f5e.png 1024w"
+loading="lazy"
+alt="SSD"
+class="gallery-image"
+data-flex-grow="136"
+data-flex-basis="327px"
+&gt;&lt;/p&gt;
+&lt;p&gt;Sequential reads/writes top out around ~12000 MB/s — that&amp;rsquo;s 12 GB/s! At that speed everything feels great!
+Allowing for the typical &amp;ldquo;1+1&amp;lt;2&amp;rdquo; overhead of RAID 0, that tracks.&lt;/p&gt;
+&lt;p&gt;Memory speed is well-known to be very fast — typically tens of GB/s. I&amp;rsquo;ve got a &lt;em&gt;lot&lt;/em&gt; of memory, 32G × 2 at 4800MHz, and on a normal day I don&amp;rsquo;t even use half. So I had a thought: maybe I should try a RAM disk and benchmark it.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://bhj8.github.io/p/ssd-vs-ramdisk-%E5%9B%BA%E6%80%81%E7%A1%AC%E7%9B%98vs%E5%86%85%E5%AD%98%E7%A1%AC%E7%9B%98/RamDisk.png"
+width="729"
+height="528"
+srcset="https://bhj8.github.io/p/ssd-vs-ramdisk-%E5%9B%BA%E6%80%81%E7%A1%AC%E7%9B%98vs%E5%86%85%E5%AD%98%E7%A1%AC%E7%9B%98/RamDisk_hu_f10b06267cf38b83.png 480w, https://bhj8.github.io/p/ssd-vs-ramdisk-%E5%9B%BA%E6%80%81%E7%A1%AC%E7%9B%98vs%E5%86%85%E5%AD%98%E7%A1%AC%E7%9B%98/RamDisk_hu_1acfd43cd88f8ab8.png 1024w"
+loading="lazy"
+alt="RamDisk"
+class="gallery-image"
+data-flex-grow="138"
+data-flex-basis="331px"
+&gt;&lt;/p&gt;
+&lt;p&gt;Top-end sequential read/write is very high, but the gap vs. the SSD isn&amp;rsquo;t huge. Add another SSD to the RAID 0 and 3 SSDs would beat the RAM disk on raw sequential.&lt;/p&gt;
+&lt;p&gt;But look closer — the RAM disk&amp;rsquo;s random 4K is &lt;em&gt;way&lt;/em&gt; faster than the SSD. At rnd4k Q1T1 it&amp;rsquo;s 10× faster!
+Random 4K is the workload that actually shows you everyday speed.&lt;/p&gt;
+&lt;p&gt;Why is random 4K so much faster?
+Memory is built for massive addressing; SSD controllers are way slower.&lt;/p&gt;
+&lt;p&gt;Notice another thing here: memory latency is &lt;em&gt;much&lt;/em&gt; lower than the SSD&amp;rsquo;s. rnd4k Q1T1 vs rnd4k Q32T1 — Q is concurrency. At Q1T1 there&amp;rsquo;s only one process; the next op can&amp;rsquo;t proceed until the previous one finishes.
+We see that the SSD&amp;rsquo;s latency is high and the RAM disk&amp;rsquo;s is low.
+SSD average latency:
+$$1/(73.22 \times 1000 / 4) \approx 0.054\ \text{ms}$$
+RAM disk average latency:
+$$1/(695 \times 1000 / 4) \approx 0.0057\ \text{ms}$$&lt;/p&gt;
+&lt;p&gt;These match what hardware fundamentals would tell you.
+So the RAM disk is genuinely much faster at random 4K, and SSDs are unlikely to ever close that latency floor.&lt;/p&gt;
+&lt;h3 id="conclusion"&gt;Conclusion
+&lt;/h3&gt;&lt;p&gt;SSD and RAM disk sequential read/write are not far apart. With RAID, the SSD even pulls ahead.
+The RAM disk&amp;rsquo;s 4K random read/write is far ahead of any SSD, because RAM latency is an order of magnitude lower than NAND. That makes single-threaded 4K 10× faster on a RAM disk! But at the &lt;em&gt;limits&lt;/em&gt; of 4K, the gap with RAID-stacked SSDs gets small enough that adding more SSDs to the RAID can simply close it.&lt;/p&gt;
+&lt;p&gt;But memory is dramatically more expensive than SSD: a 2T domestic SSD is 500-something RMB; 32G of RAM is 1500+ RMB.
+Unless you have a workload that&amp;rsquo;s actually latency-sensitive in a serious way, I just recommend SSDs in RAID across the board.&lt;/p&gt;
+&lt;h3 id="about-other-databases-and-redis"&gt;About other databases and Redis
+&lt;/h3&gt;&lt;p&gt;Database bottlenecks are usually 4K read/write. For a long stretch of history, we used spinning disks where peak sequential was a few tens of MB/s — hundreds of times slower than RAM.
+Redis basically moves the database into RAM to get extreme 4K performance. That&amp;rsquo;s why high-concurrency services lean on Redis, syncing to disk databases on a schedule.&lt;/p&gt;
+&lt;p&gt;But, my friend, times have changed. From my testing, you can see: a RAID of SSDs is &lt;em&gt;also&lt;/em&gt; very strong. (Of course, I was testing a RAM disk, not pure RAM. There&amp;rsquo;s a real multiplicative loss there.)
+RAID also gives you rich backup arrays with redundancy. Pricing is reasonable. Plus, Redis costs real human time and effort to learn and operate.&lt;/p&gt;
+&lt;p&gt;Granted, Redis still wins on concurrency over a traditional disk-based DB. But honestly, in our line of work — game development — for normal cases a regular disk DB is plenty. SSDs handle thousands or even tens of thousands of concurrent connections fine. (If you&amp;rsquo;re hitting hundreds of thousands, your business is making bank and will have a real backend team.) Spend a few thousand RMB, buy several SSDs, build a fast RAID 10 with double redundancy. Combine with periodic cold and hot backups. Low cost, high concurrency.&lt;/p&gt;
+&lt;p&gt;Also, RAM disks aren&amp;rsquo;t super useful in everyday life, so RAM-disk software is genuinely hard to find these days. Hhh.&lt;/p&gt;</description></item><item><title>UsbEAm LAN Party — Fast Self-Hosted Server Guide (Ultimate Edition) with One-Click Deploy</title><link>https://bhj8.github.io/en/p/usbeam-lan-party-fast-self-hosted-server-guide-ultimate-edition-with-one-click-deploy/</link><pubDate>Tue, 14 Nov 2023 00:00:00 +0000</pubDate><guid>https://bhj8.github.io/en/p/usbeam-lan-party-fast-self-hosted-server-guide-ultimate-edition-with-one-click-deploy/</guid><description>&lt;p&gt;CentOS 7.x — one-click foolproof installer:
+&lt;code&gt;wget -O LAN-party-fast-setup.sh https://baohongjiang.com/downloads/LAN-party-fast-setup/LAN-party-fast-setup.sh &amp;amp;&amp;amp; chmod +x LAN-party-fast-setup.sh &amp;amp;&amp;amp; ./LAN-party-fast-setup.sh&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Ubuntu — one-click foolproof installer:
+&lt;code&gt;wget -O LAN-party-fast-setup-ubuntu.sh https://baohongjiang.com/downloads/LAN-party-fast-setup/LAN-party-fast-setup-ubuntu.sh &amp;amp;&amp;amp; chmod +x LAN-party-fast-setup-ubuntu.sh &amp;amp;&amp;amp; ./LAN-party-fast-setup-ubuntu.sh&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;This post was originally on my Zhihu, but the one-click script needs somewhere to live. Hence this blog post.&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://zhuanlan.zhihu.com/p/666639903" target="_blank" rel="noopener"
+&gt;Original Zhihu thread (in Chinese)&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="if-you-use-the-one-click-script-ignore-the-rest-below"&gt;If you use the one-click script, ignore the rest below
+&lt;/h3&gt;&lt;p&gt;&lt;a class="link" href="https://bhj8.github.io/downloads/LAN-party-fast-setup/LAN-party-fast-setup.sh" &gt;CentOS one-click script download&lt;/a&gt;
+System requirements: CentOS 7.x
+Open firewall ports: TCP:3075, UDP:3074&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://bhj8.github.io/downloads/LAN-party-fast-setup/LAN-party-fast-setup-ubuntu.sh" &gt;Ubuntu one-click script download&lt;/a&gt;
+System requirements: Ubuntu 20.04 &amp;amp; 22.04
+Open firewall ports: TCP:3075, UDP:3074&lt;/p&gt;</description></item><item><title>A Go-based Excel-to-CSV Exporter — 60× Faster Than the Python One</title><link>https://bhj8.github.io/en/p/a-go-based-excel-to-csv-exporter-60-faster-than-the-python-one/</link><pubDate>Tue, 31 Oct 2023 00:00:00 +0000</pubDate><guid>https://bhj8.github.io/en/p/a-go-based-excel-to-csv-exporter-60-faster-than-the-python-one/</guid><description>&lt;h4 id="license-notice"&gt;License notice
+&lt;/h4&gt;&lt;p&gt;MIT.
+This post discusses a generic table-export tool used in game development; it&amp;rsquo;s not tied to any specific project. The trigger was the painfully slow Python exporter we used at work, but I wrote this code in my own time, at home. I gave the tool to my workplace project to use, to lift the team&amp;rsquo;s efficiency.
+So this tool is not under any NDA, not tied to any organization. Personally owned.
+The source is now open so anyone can use it.&lt;/p&gt;
+&lt;h2 id="background-and-approach"&gt;Background and approach
+&lt;/h2&gt;&lt;p&gt;Most game studios use Excel as their config data format. Game programs obviously can&amp;rsquo;t read Excel directly, so there&amp;rsquo;s usually an &amp;ldquo;exporter&amp;rdquo; written by an old-school programmer — typically Python, because the env is convenient and writing CLI tools in Python is nice. Especially for tooling.
+But as everyone knows, Python has the GIL — no matter how good your code is, you&amp;rsquo;re stuck on a single core. As game configs grow, even a small tweak can cost minutes to re-export. Just unbearable.&lt;/p&gt;
+&lt;p&gt;I had a flash of inspiration: writing the exporter in Go would be beautiful. Goroutines give you crazy concurrency on multiple cores, plus Go&amp;rsquo;s structs are all value types — double speedup! (Yes, C++ would be faster, but it&amp;rsquo;s hard to write well, especially under heavy concurrency. Hand-rolling it, I&amp;rsquo;m not even sure I&amp;rsquo;d beat Go, and Go is safer. Also, I&amp;rsquo;m not really a C++ guy 😉😉😉.)&lt;/p&gt;
+&lt;h3 id="end-result"&gt;End result
+&lt;/h3&gt;&lt;p&gt;TL;DR: nearly &lt;strong&gt;60× faster&lt;/strong&gt;. From a few minutes down to about 3 seconds. I have reason to suspect the bottleneck now is disk read speed rather than CPU. A faster SSD would help, but 3 seconds is already so fast that further optimization isn&amp;rsquo;t worth it.&lt;/p&gt;
+&lt;h2 id="downloads"&gt;Downloads
+&lt;/h2&gt;&lt;h4 id="required"&gt;Required
+&lt;/h4&gt;&lt;p&gt;&lt;a class="link" href="https://bhj8.github.io/downloads/go-excel2csv/config.xml" &gt;Config file&lt;/a&gt;
+Before running, you have to configure the export directory and the English name. Required. Place it in the same directory as the Go binary.&lt;/p&gt;
+&lt;h4 id="pick-one-of-the-following"&gt;Pick one of the following
+&lt;/h4&gt;&lt;p&gt;&lt;a class="link" href="https://bhj8.github.io/downloads/go-excel2csv/excel2CSV.go" &gt;Go source&lt;/a&gt;
+You&amp;rsquo;ll need to set up Go and configure the libraries it depends on.&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://bhj8.github.io/downloads/go-excel2csv/excel2csv.exe" &gt;Standalone .exe (recommended)&lt;/a&gt;
+Double-click and go. But because the tool reads/writes files and uses system libraries, antivirus may flag it. Use your own judgement.&lt;/p&gt;</description></item><item><title>My First Blog Post</title><link>https://bhj8.github.io/en/p/my-first-blog-post/</link><pubDate>Tue, 31 Oct 2023 00:00:00 +0000</pubDate><guid>https://bhj8.github.io/en/p/my-first-blog-post/</guid><description>&lt;h2 id="why-build-a-blog"&gt;Why build a blog?
+&lt;/h2&gt;&lt;h3 id="1-to-organize-what-i-know--and-force-myself-to-dig-deeper-into-a-few-things"&gt;1. To organize what I know — and force myself to dig deeper into a few things.
+&lt;/h3&gt;&lt;p&gt;As my horizons and skills grew, I noticed that pretty much every developer I look up to keeps a blog of their own, full of genuinely useful stuff. &lt;a class="link" href="https://www.liaoxuefeng.com/" target="_blank" rel="noopener"
+&gt;Liao Xue Feng&amp;rsquo;s blog (廖雪峰的博客)&lt;/a&gt; in particular — half of my Python is owed to that site. Highly recommended. It&amp;rsquo;s dense, the level is sky-high, even if he sells courses on his WeChat too. I want to record what I learn and what I figure out, because writing it out and organizing it works far better than just &amp;ldquo;knowing it&amp;rdquo; in your head.&lt;/p&gt;
+&lt;h3 id="2-building-the-blog-is-itself-an-engineering-exercise"&gt;2. Building the blog is itself an engineering exercise.
+&lt;/h3&gt;&lt;p&gt;I went with the Hugo framework (Go), even though I&amp;rsquo;m much more fluent in Python. Go is just &lt;em&gt;fast&lt;/em&gt;. Haha. Building the blog itself turned out to be a full-on technical exploration, and I picked up a ton along the way. First was hosting via GitHub Pages — I&amp;rsquo;d heard of it, never tried it. Once I actually used it, I realized how powerful it is, and combined with GitHub Actions for auto-deploy and GitHub Codespaces, it solves a huge pile of pain points. Before, I only knew the words; you only really &lt;em&gt;get&lt;/em&gt; something once you&amp;rsquo;ve done it. I&amp;rsquo;ll pass that line on to you, dear reader.&lt;/p&gt;
+&lt;h2 id="whats-coming-on-the-blog"&gt;What&amp;rsquo;s coming on the blog
+&lt;/h2&gt;&lt;p&gt;Roughly: my personal life and work, technical articles, game design, my takes on games, that kind of thing. I&amp;rsquo;ll keep updating.&lt;/p&gt;</description></item><item><title>Who I Am</title><link>https://bhj8.github.io/en/p/who-i-am/</link><pubDate>Tue, 31 Oct 2023 00:00:00 +0000</pubDate><guid>https://bhj8.github.io/en/p/who-i-am/</guid><description>&lt;p&gt;Whenever I have to introduce myself, I get a little stuck.&lt;/p&gt;
+&lt;p&gt;On one hand, I have over &lt;strong&gt;40,000 hours&lt;/strong&gt; of gameplay across an absurd variety of titles — the depth and breadth of my gaming experience are, honestly, what I consider my biggest asset. And it keeps growing every day.&lt;/p&gt;
+&lt;p&gt;On the other hand, I have a pretty rounded set of game-related skills. I started in art, I&amp;rsquo;ve written a fair amount of code, and I&amp;rsquo;d say I&amp;rsquo;ve got some real instincts for computers. More importantly, I&amp;rsquo;ve now spent several years actually working in games, shipping a bunch of projects and even leading teams on some of them.&lt;/p&gt;
+&lt;p&gt;Whenever I tell people I play a &lt;em&gt;lot&lt;/em&gt; of games, it sounds cheap. (Even though I&amp;rsquo;m genuinely proud of it — it&amp;rsquo;s the biggest fortune of my life.) Because these days even elementary schoolers play games, so what&amp;rsquo;s special about me, right?&lt;/p&gt;
+&lt;p&gt;But it&amp;rsquo;s exactly that pile of gaming experience that made me grow so fast once I joined the games industry.&lt;/p&gt;
+&lt;p&gt;My first growth spurt happened at &lt;strong&gt;Mei Ri Ji Li (每日给力)&lt;/strong&gt;, and I&amp;rsquo;m still grateful to my direct manager there. When I joined I was honestly a mess — I didn&amp;rsquo;t even know git. Game data lived in spreadsheets and I didn&amp;rsquo;t even know what &amp;ldquo;exporting tables&amp;rdquo; was. Truly clueless. If I were my own boss, I wouldn&amp;rsquo;t have hired me. Hahaha. Lucky for me, I had a solid foundation, and using a computer is basically second nature to me. I can pick new things up scary fast. So I quickly turned into a halfway-decent designer.&lt;/p&gt;
+&lt;p&gt;My second growth spurt I owe entirely to ChatGPT, especially GPT-4. Genuinely the greatest invention of this century!&lt;/p&gt;
+&lt;p&gt;Two angles:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Unprecedented motivation, plus actual project experience.&lt;/strong&gt; When the AI wave hit, I started from a single Python snippet calling OpenAI&amp;rsquo;s API. Step by step, from &amp;ldquo;an idea in my head&amp;rdquo; I built out my own WeChat public account, hooked up AI image generation, then a full website with payment and membership. Along the way I had to learn a &lt;em&gt;huge&lt;/em&gt; range of computer science: programming languages, multi-core/multi-threaded concurrency, cryptography, Linux, and on and on. From zero I waded through all of it. I genuinely walked through the front door of computer science!!! Without those first compliments from my early users, I honestly can&amp;rsquo;t imagine I&amp;rsquo;d have been able to push as far as I did.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;The best teacher, period.&lt;/strong&gt; Thank you, GPT-4. Computer science is a massive, sprawling thing, and a beginner can&amp;rsquo;t even configure their environment, let alone Google the right question. Most of the time a beginner doesn&amp;rsquo;t even know &lt;em&gt;what&lt;/em&gt; the question is. GPT-4 wrote a ton of code for me, I just kept asking and it kept answering. The $20 a month is the most worthwhile money I&amp;rsquo;ve ever spent in my life!&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Now I want to push further into games. The more I learn, the more I realize I don&amp;rsquo;t know. I really, really want to get into a multinational game studio and learn how their pipelines and tools work. I want to be the best at this. There&amp;rsquo;s so much value in it! 👍👍👍&lt;/p&gt;</description></item></channel></rss>
