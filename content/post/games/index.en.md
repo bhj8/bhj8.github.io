@@ -12,11 +12,11 @@ No download — the link is the game.
 
 ## VOID PROTOCOL
 
-First-person wave shooter. Textures, sound, models and animation are all generated in code at runtime. Not a single asset file.
+First-person wave shooter. You're a reclamation process dropped into a block being freed — nothing inside it was ever finished, which is why every texture, sound, model and animation is generated in code at runtime. Not a single asset file.
 
 Platform: PC · no mobile support
 
-[![VOID PROTOCOL](void-protocol-arena.jpg)](/games/void-protocol/)
+[![VOID PROTOCOL](void-protocol-play.jpg)](/games/void-protocol/)
 
 <p style="text-align:center;margin:1.2em 0 2.4em">
   <a href="/games/void-protocol/" target="_blank" rel="noopener"
