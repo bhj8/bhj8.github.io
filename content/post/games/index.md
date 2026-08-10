@@ -12,11 +12,11 @@ categories:
 
 ## VOID PROTOCOL
 
-第一人称波次射击。贴图、音效、模型、动画全是代码在运行时生成的，一个素材文件都没有。
+第一人称波次射击。你是回收进程，被派进一个正在被释放的区块——里面的东西都没做完，所以贴图、音效、模型、动画全是代码在运行时生成的，一个素材文件都没有。
 
 终端：PC · 移动端未适配
 
-[![VOID PROTOCOL](void-protocol-arena.jpg)](/games/void-protocol/)
+[![VOID PROTOCOL](void-protocol-play.jpg)](/games/void-protocol/)
 
 <p style="text-align:center;margin:1.2em 0 2.4em">
   <a href="/games/void-protocol/" target="_blank" rel="noopener"
