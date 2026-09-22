@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tutorials on Hongjiang Bao's Blog</title><link>https://bhj8.github.io/en/tags/tutorials/</link><description>Recent content in Tutorials on Hongjiang Bao's Blog</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 30 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://bhj8.github.io/en/tags/tutorials/index.xml" rel="self" type="application/rss+xml"/><item><title>Palworld Co-op Guide for the Pirated Build</title><link>https://bhj8.github.io/en/p/palworld-co-op-guide-for-the-pirated-build/</link><pubDate>Tue, 30 Jan 2024 00:00:00 +0000</pubDate><guid>https://bhj8.github.io/en/p/palworld-co-op-guide-for-the-pirated-build/</guid><description>&lt;p&gt;Palworld is hot right now, so of course me and my friends had to jump in.&lt;/p&gt;
+&lt;h4 id="disclaimer"&gt;Disclaimer
+&lt;/h4&gt;&lt;p&gt;I&amp;rsquo;ve always supported genuine copies — I have an Xbox Game Pass subscription so I can play Palworld for free, and I own close to a thousand games across Steam, Epic, etc. It&amp;rsquo;s just that some of my friends haven&amp;rsquo;t tried it, and with mortgages and car loans they&amp;rsquo;re frugal. I&amp;rsquo;ll get them on the train first; later I&amp;rsquo;ll talk them into actually paying for a copy.&lt;/p&gt;
+&lt;p&gt;When you do something, the most important thing is knowing whether it can actually work. Let me just tell you up front:
+The pirated build of Palworld can absolutely be played in co-op. No issues at all.&lt;/p&gt;
+&lt;h3 id="step-1-download-the-pirated-build-of-palworld-and-install-the-co-op-patch"&gt;Step 1: Download the pirated build of Palworld and install the co-op patch
+&lt;/h3&gt;&lt;p&gt;Figure this out yourself; if you can&amp;rsquo;t get past this you can stop reading — even reading on, you wouldn&amp;rsquo;t be able to follow.
+For the co-op patch, set it to LAN co-op mode.&lt;/p&gt;
+&lt;h3 id="step-2-on-the-host-install-steamcmd-download-the-palworld-dedicated-server-files-and-bring-up-the-server"&gt;Step 2: On the host, install steamCmd, download the Palworld dedicated server files, and bring up the server.
+&lt;/h3&gt;&lt;p&gt;&lt;a class="link" href="https://developer.valvesoftware.com/wiki/SteamCMD#Windows" target="_blank" rel="noopener"
+&gt;Official server-hosting guide&lt;/a&gt;
+Follow the guide to install steamcmd, download the Palworld server files, and start the server. After it&amp;rsquo;s up, you&amp;rsquo;ll see a string of English output showing the AppID.&lt;/p&gt;
+&lt;h3 id="step-3-co-op-and-acceleration"&gt;Step 3: Co-op and acceleration
+&lt;/h3&gt;&lt;p&gt;If you&amp;rsquo;re hosting on a cloud server, you can skip the steps below — just open port 8211 in the cloud security group.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Option 1&lt;/strong&gt;: Port-forwarding so other players can reach the host directly. Only works if you have a public IP.
+Configure port forwarding for port 8211 on your router and modem.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Option 2&lt;/strong&gt;: LAN acceleration (recommended)
+&lt;a class="link" href="https://bhj8.github.io/en/p/usbeam-lan-party-fast-self-hosted-server-guide-ultimate-edition-with-one-click-deploy/" &gt;LAN acceleration deploy&lt;/a&gt;
+Use a virtual LAN to play and accelerate. Because the relay server is right next door, latency drops to under 20ms.
+When connecting, use the LAN IP.&lt;/p&gt;
+&lt;p&gt;Those are the core steps. If you don&amp;rsquo;t want to mess around, just buy the game.&lt;/p&gt;</description></item></channel></rss>
