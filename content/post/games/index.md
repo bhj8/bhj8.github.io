@@ -1,47 +1,18 @@
 ---
 title: 我做的游戏
 date: 2026-08-07
-description: 我做的可玩demo，浏览器点开就能玩。
+description: 两个游戏原型：VOID PROTOCOL 与战线 FRONTLINE。
 image: void-protocol.jpg
-weight: 1
 categories:
     - 游戏
 ---
 
-不用下载，浏览器打开就是游戏。
+记录两个我做过的游戏原型。
 
 ## VOID PROTOCOL
 
-第一人称波次射击。你是回收进程，被派进一个正在被释放的区块——里面的东西都没做完，所以贴图、音效、模型、动画全是代码在运行时生成的，一个素材文件都没有。
-
-终端：PC · 移动端未适配
-
-[![VOID PROTOCOL](void-protocol-play.jpg)](/games/void-protocol/)
-
-<p style="text-align:center;margin:1.2em 0 2.4em">
-  <a href="/games/void-protocol/" target="_blank" rel="noopener"
-     style="display:inline-block;padding:1em 3.4em;border-radius:10px;font-size:1.15em;
-            background:#05070c;color:#5fe6ff;border:2px solid #5fe6ff;letter-spacing:.18em;
-            font-weight:700;text-decoration:none;box-shadow:0 0 22px rgba(95,230,255,.35)">
-    ▶ 开 始 游 戏
-  </a>
-</p>
+第一人称波次射击游戏。玩家扮演回收进程，进入一个正在被释放的区块。贴图、音效、模型和动画都由代码在运行时生成。
 
 ## 战线 FRONTLINE
 
-2.5D 即时战略。没有农民，没有采矿，资源来自你占领的据点。掩体决定伤害，压制决定推进，侧翼决定胜负。
-
-终端：PC · 移动端未适配
-
-[![战线 FRONTLINE](frontline.jpg)](/games/frontline/)
-
-<p style="text-align:center;margin:1.2em 0 2.4em">
-  <a href="/games/frontline/" target="_blank" rel="noopener"
-     style="display:inline-block;padding:1em 3.4em;border-radius:10px;font-size:1.15em;
-            background:#14100a;color:#e0a54a;border:2px solid #e0a54a;letter-spacing:.18em;
-            font-weight:700;text-decoration:none;box-shadow:0 0 22px rgba(224,165,74,.35)">
-    ▶ 开 始 游 戏
-  </a>
-</p>
-
-后续做一个加一个。
+2.5D 即时战略游戏。没有农民和采矿，资源来自占领的据点。围绕掩体、压制和侧翼展开攻防。

@@ -15,3 +15,35 @@ weight = 2
 
   [en.params.sidebar]
   subtitle = "A guy born loving games — not just playing them, but building them."
+
+[[zh-cn.menu.main]]
+identifier = "games"
+name = "游戏"
+url = "https://baohongjiang.com/demogames/"
+weight = 5
+[zh-cn.menu.main.params]
+icon = "device-gamepad"
+
+[[zh-cn.menu.main]]
+identifier = "art-history"
+name = "美术史"
+url = "https://baohongjiang.com/ArtHistory/"
+weight = 6
+[zh-cn.menu.main.params]
+icon = "palette"
+
+[[en.menu.main]]
+identifier = "games"
+name = "Games"
+url = "https://baohongjiang.com/demogames/"
+weight = 5
+[en.menu.main.params]
+icon = "device-gamepad"
+
+[[en.menu.main]]
+identifier = "art-history"
+name = "Art History"
+url = "https://baohongjiang.com/ArtHistory/"
+weight = 6
+[en.menu.main.params]
+icon = "palette"
