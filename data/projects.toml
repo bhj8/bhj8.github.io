@@ -1,0 +1,19 @@
+[[projects]]
+url = "https://baohongjiang.com/demogames/"
+icon = "device-gamepad"
+[projects.zh]
+title = "游戏实验室"
+description = "浏览器游戏与可玩原型"
+[projects.en]
+title = "Game Lab"
+description = "Browser games and playable prototypes"
+
+[[projects]]
+url = "https://baohongjiang.com/ArtHistory/"
+icon = "palette"
+[projects.zh]
+title = "美术史图谱"
+description = "艺术流派、作品与发展脉络"
+[projects.en]
+title = "Art History Atlas"
+description = "Art movements, works and their connections"

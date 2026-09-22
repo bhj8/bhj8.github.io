@@ -1,3 +1,64 @@
-/*
-    You can add your own custom styles here.
-*/
+.home-projects {
+    h2 {
+        margin: 0 0 12px;
+        color: var(--body-text-color);
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+}
+
+.home-projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.project-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 20px;
+    border-radius: var(--card-border-radius);
+    background: var(--card-background);
+    box-shadow: var(--shadow-l1);
+    color: var(--card-text-color-main);
+    transition: box-shadow 160ms ease, background-color 160ms ease;
+
+    &:hover {
+        background: var(--card-background-selected);
+        box-shadow: var(--shadow-l2);
+    }
+
+    &:focus-visible {
+        outline: 2px solid var(--accent-color);
+        outline-offset: 4px;
+    }
+}
+
+.project-icon {
+    display: flex;
+    flex: 0 0 auto;
+    color: var(--accent-color);
+
+    svg { width: 26px; height: 26px; stroke-width: 1.5; }
+}
+
+.project-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-width: 0;
+}
+
+.project-title { font-size: 1.6rem; font-weight: 600; line-height: 1.35; }
+.project-description { font-size: 1.3rem; line-height: 1.5; color: var(--card-text-color-secondary); }
+.project-arrow { margin-left: auto; flex-shrink: 0; color: var(--card-text-color-secondary); font-size: 1.8rem; }
+
+@media (max-width: 600px) {
+    .home-projects-grid { grid-template-columns: 1fr; gap: 10px; }
+    .project-card { padding: 16px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .project-card { transition: none; }
+}

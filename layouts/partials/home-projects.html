@@ -1,0 +1,18 @@
+{{ $english := eq .Language.Lang "en" }}
+<section class="home-projects" aria-labelledby="home-projects-title">
+    <h2 id="home-projects-title">{{ if $english }}My Projects{{ else }}我的作品{{ end }}</h2>
+    <div class="home-projects-grid">
+        {{ range .Site.Data.projects.projects }}
+            {{ $copy := .zh }}
+            {{ if $english }}{{ $copy = .en }}{{ end }}
+            <a class="project-card" href="{{ .url }}">
+                <span class="project-icon" aria-hidden="true">{{ partial "helper/icon" .icon }}</span>
+                <span class="project-copy">
+                    <span class="project-title">{{ $copy.title }}</span>
+                    <span class="project-description">{{ $copy.description }}</span>
+                </span>
+                <span class="project-arrow" aria-hidden="true">↗</span>
+            </a>
+        {{ end }}
+    </div>
+</section>
